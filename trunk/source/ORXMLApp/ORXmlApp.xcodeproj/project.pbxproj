@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9B2059C70FD83B0E001CD2DF /* ORXml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B846AC10FD6FB6E00F2268B /* ORXml.framework */; };
+		9B2059E10FD83C27001CD2DF /* ORXml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B846AC10FD6FB6E00F2268B /* ORXml.framework */; };
+		9B205A2C0FD83E5C001CD2DF /* ORLibXmlReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */; };
+		9B205A2D0FD83E5C001CD2DF /* ORLibXmlReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */; };
+		9B846AB60FD6FAD600F2268B /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B846AB20FD6FAD600F2268B /* Test.m */; };
+		9B846AB70FD6FAD600F2268B /* Adress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B846AB30FD6FAD600F2268B /* Adress.m */; };
+		9B846AC90FD6FBE400F2268B /* ORXMLSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */; };
+		9B846ACB0FD6FBF800F2268B /* ORXMLSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B846AB10FD6FAD600F2268B /* ORXMLSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B846AD40FD6FC7500F2268B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9B846AD70FD6FCA600F2268B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */; };
+		9B846AE30FD6FDC900F2268B /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B846AE20FD6FDC900F2268B /* libxml2.2.dylib */; };
+		9B846B290FD6FFA600F2268B /* TestFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9B846B280FD6FFA600F2268B /* TestFile.xml */; };
+		9B8A6A790FD9775F00696B99 /* ORXMLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6A740FD9775F00696B99 /* ORXMLRuntime.m */; };
+		9B8A6A7A0FD9775F00696B99 /* NSString+FormatCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */; };
+		9B8A6A7B0FD9775F00696B99 /* ORXMLError.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A760FD9775F00696B99 /* ORXMLError.h */; };
+		9B8A6A7C0FD9775F00696B99 /* NSString+FormatCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */; };
+		9B8A6A7D0FD9775F00696B99 /* ORXMLRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A780FD9775F00696B99 /* ORXMLRuntime.h */; };
+		9B8A6A940FD9798100696B99 /* ORXMLDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A930FD9798100696B99 /* ORXMLDriver.h */; };
+		9B8A6A960FD979D500696B99 /* ORXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A950FD979D500696B99 /* ORXMLWriter.h */; };
+		9B8A6AA80FD97B0900696B99 /* ORXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */; };
+		9B8A6AB00FD97D3F00696B99 /* ORLibXmlDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6AAE0FD97D3F00696B99 /* ORLibXmlDriver.h */; };
+		9B8A6AB10FD97D3F00696B99 /* ORLibXmlDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */; };
+		9B8A6B330FD9829300696B99 /* ORLibXmlWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */; };
+		9B8A6B340FD9829300696B99 /* ORLibXmlWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B846AC70FD6FBCF00F2268B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B846AC00FD6FB6E00F2268B;
+			remoteInfo = ORXml;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B2059D10FD83B3B001CD2DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9B2059E10FD83C27001CD2DF /* ORXml.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* ORXmlApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXmlApp_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* ORXmlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORXmlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1A6C320FD868FA0088E7E7 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlReader.h; sourceTree = "<group>"; };
+		9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlReader.m; sourceTree = "<group>"; };
+		9B846AB00FD6FAD500F2268B /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		9B846AB10FD6FAD600F2268B /* ORXMLSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLSerializer.h; sourceTree = "<group>"; };
+		9B846AB20FD6FAD600F2268B /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		9B846AB30FD6FAD600F2268B /* Adress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adress.m; sourceTree = "<group>"; };
+		9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORXMLSerializer.m; sourceTree = "<group>"; };
+		9B846AB50FD6FAD600F2268B /* Adress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adress.h; sourceTree = "<group>"; };
+		9B846AC10FD6FB6E00F2268B /* ORXml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ORXml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B846AC20FD6FB6E00F2268B /* ORXml-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ORXml-Info.plist"; sourceTree = "<group>"; };
+		9B846AD50FD6FCA600F2268B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B846AD60FD6FCA600F2268B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B846AE20FD6FDC900F2268B /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		9B846B280FD6FFA600F2268B /* TestFile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestFile.xml; sourceTree = "<group>"; };
+		9B8A6A740FD9775F00696B99 /* ORXMLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORXMLRuntime.m; sourceTree = "<group>"; };
+		9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FormatCategory.m"; sourceTree = "<group>"; };
+		9B8A6A760FD9775F00696B99 /* ORXMLError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLError.h; sourceTree = "<group>"; };
+		9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FormatCategory.h"; sourceTree = "<group>"; };
+		9B8A6A780FD9775F00696B99 /* ORXMLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLRuntime.h; sourceTree = "<group>"; };
+		9B8A6A930FD9798100696B99 /* ORXMLDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLDriver.h; sourceTree = "<group>"; };
+		9B8A6A950FD979D500696B99 /* ORXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLWriter.h; sourceTree = "<group>"; };
+		9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLReader.h; sourceTree = "<group>"; };
+		9B8A6AAE0FD97D3F00696B99 /* ORLibXmlDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlDriver.h; sourceTree = "<group>"; };
+		9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlDriver.m; sourceTree = "<group>"; };
+		9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlWriter.h; sourceTree = "<group>"; };
+		9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2059C70FD83B0E001CD2DF /* ORXml.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B846ABF0FD6FB6E00F2268B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B846AD40FD6FC7500F2268B /* Cocoa.framework in Frameworks */,
+				9B846AE30FD6FDC900F2268B /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9B846ABA0FD6FADC00F2268B /* ORXml */,
+				9B846AB00FD6FAD500F2268B /* Test.h */,
+				9B846AB20FD6FAD600F2268B /* Test.m */,
+				9B846AB50FD6FAD600F2268B /* Adress.h */,
+				9B846AB30FD6FAD600F2268B /* Adress.m */,
+				9B846AD50FD6FCA600F2268B /* AppDelegate.h */,
+				9B846AD60FD6FCA600F2268B /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B846AE20FD6FDC900F2268B /* libxml2.2.dylib */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* ORXmlApp.app */,
+				9B846AC10FD6FB6E00F2268B /* ORXml.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* ORXmlApp */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = ORXmlApp;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ORXmlApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A6C320FD868FA0088E7E7 /* license.txt */,
+				9B846B280FD6FFA600F2268B /* TestFile.xml */,
+				9B846AC20FD6FB6E00F2268B /* ORXml-Info.plist */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B846ABA0FD6FADC00F2268B /* ORXml */ = {
+			isa = PBXGroup;
+			children = (
+				9B8A6AB20FD97D4600696B99 /* IO */,
+				9B8A6A760FD9775F00696B99 /* ORXMLError.h */,
+				9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */,
+				9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */,
+				9B8A6A780FD9775F00696B99 /* ORXMLRuntime.h */,
+				9B8A6A740FD9775F00696B99 /* ORXMLRuntime.m */,
+				9B846AB10FD6FAD600F2268B /* ORXMLSerializer.h */,
+				9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */,
+			);
+			name = ORXml;
+			sourceTree = "<group>";
+		};
+		9B8A6AB20FD97D4600696B99 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				9B8A6AB50FD97D8E00696B99 /* Writer */,
+				9B8A6AB40FD97D8500696B99 /* Reader */,
+				9B8A6AB30FD97D6400696B99 /* Driver */,
+				9B8A6A930FD9798100696B99 /* ORXMLDriver.h */,
+				9B8A6A950FD979D500696B99 /* ORXMLWriter.h */,
+				9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */,
+			);
+			name = IO;
+			sourceTree = "<group>";
+		};
+		9B8A6AB30FD97D6400696B99 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				9B8A6AAE0FD97D3F00696B99 /* ORLibXmlDriver.h */,
+				9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
+		9B8A6AB40FD97D8500696B99 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */,
+				9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */,
+			);
+			name = Reader;
+			sourceTree = "<group>";
+		};
+		9B8A6AB50FD97D8E00696B99 /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */,
+				9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */,
+			);
+			name = Writer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B846ABC0FD6FB6E00F2268B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B846ACB0FD6FBF800F2268B /* ORXMLSerializer.h in Headers */,
+				9B205A2C0FD83E5C001CD2DF /* ORLibXmlReader.h in Headers */,
+				9B8A6A7B0FD9775F00696B99 /* ORXMLError.h in Headers */,
+				9B8A6A7C0FD9775F00696B99 /* NSString+FormatCategory.h in Headers */,
+				9B8A6A7D0FD9775F00696B99 /* ORXMLRuntime.h in Headers */,
+				9B8A6A940FD9798100696B99 /* ORXMLDriver.h in Headers */,
+				9B8A6A960FD979D500696B99 /* ORXMLWriter.h in Headers */,
+				9B8A6AA80FD97B0900696B99 /* ORXMLReader.h in Headers */,
+				9B8A6AB00FD97D3F00696B99 /* ORLibXmlDriver.h in Headers */,
+				9B8A6B330FD9829300696B99 /* ORLibXmlWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* ORXmlApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ORXmlApp" */;
+			buildPhases = (
+				9B2059D10FD83B3B001CD2DF /* CopyFiles */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B846AC80FD6FBCF00F2268B /* PBXTargetDependency */,
+			);
+			name = ORXmlApp;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ORXmlApp;
+			productReference = 8D1107320486CEB800E47090 /* ORXmlApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B846AC00FD6FB6E00F2268B /* ORXml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B846AC50FD6FB6F00F2268B /* Build configuration list for PBXNativeTarget "ORXml" */;
+			buildPhases = (
+				9B846ABC0FD6FB6E00F2268B /* Headers */,
+				9B846ABD0FD6FB6E00F2268B /* Resources */,
+				9B846ABE0FD6FB6E00F2268B /* Sources */,
+				9B846ABF0FD6FB6E00F2268B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ORXml;
+			productName = ORXml;
+			productReference = 9B846AC10FD6FB6E00F2268B /* ORXml.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ORXmlApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* ORXmlApp */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* ORXmlApp */,
+				9B846AC00FD6FB6E00F2268B /* ORXml */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				9B846B290FD6FFA600F2268B /* TestFile.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B846ABD0FD6FB6E00F2268B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				9B846AB60FD6FAD600F2268B /* Test.m in Sources */,
+				9B846AB70FD6FAD600F2268B /* Adress.m in Sources */,
+				9B846AD70FD6FCA600F2268B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B846ABE0FD6FB6E00F2268B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B846AC90FD6FBE400F2268B /* ORXMLSerializer.m in Sources */,
+				9B205A2D0FD83E5C001CD2DF /* ORLibXmlReader.m in Sources */,
+				9B8A6A790FD9775F00696B99 /* ORXMLRuntime.m in Sources */,
+				9B8A6A7A0FD9775F00696B99 /* NSString+FormatCategory.m in Sources */,
+				9B8A6AB10FD97D3F00696B99 /* ORLibXmlDriver.m in Sources */,
+				9B8A6B340FD9829300696B99 /* ORLibXmlWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B846AC80FD6FBCF00F2268B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B846AC00FD6FB6E00F2268B /* ORXml */;
+			targetProxy = 9B846AC70FD6FBCF00F2268B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B846AC30FD6FB6F00F2268B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "ORXml-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ORXml;
+			};
+			name = Debug;
+		};
+		9B846AC40FD6FB6F00F2268B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "ORXml-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ORXml;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ORXmlApp_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ORXmlApp;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ORXmlApp_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ORXmlApp;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B846AC50FD6FB6F00F2268B /* Build configuration list for PBXNativeTarget "ORXml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B846AC30FD6FB6F00F2268B /* Debug */,
+				9B846AC40FD6FB6F00F2268B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ORXmlApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ORXmlApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
