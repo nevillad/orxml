@@ -43,4 +43,9 @@
 {
 }
 
+- (NSData *)data
+{
+	return nil;
+}
+
 @end

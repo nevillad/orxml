@@ -27,6 +27,7 @@
 - (void)endNode;
 - (void)setValue:(NSString *)value;
 - (void)startNodeWithName:(NSString *)name;
+- (NSData *)data;
 
 @end
 

@@ -20,10 +20,10 @@
 
 #import <Foundation/Foundation.h>
 #import "ORXMLWriter.h"
-
+#import <libxml/xmlmemory.h>
 
 @interface ORLibXmlWriter : NSObject <ORXMLWriter> {
-
+	xmlDocPtr _doc;
 }
 
 @end

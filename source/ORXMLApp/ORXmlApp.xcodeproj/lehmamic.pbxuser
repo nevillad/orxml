@@ -207,6 +207,25 @@
 			9B8A6CCE0FD98FBF00696B99 /* PBXTextBookmark */ = 9B8A6CCE0FD98FBF00696B99 /* PBXTextBookmark */;
 			9B8A6CCF0FD98FBF00696B99 /* PBXTextBookmark */ = 9B8A6CCF0FD98FBF00696B99 /* PBXTextBookmark */;
 			9B8A6CD00FD98FBF00696B99 /* PBXTextBookmark */ = 9B8A6CD00FD98FBF00696B99 /* PBXTextBookmark */;
+			9B8A6CE00FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE00FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE20FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE20FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE30FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE30FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE40FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE40FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE50FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE50FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE60FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE60FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE70FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE70FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE80FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE80FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CE90FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CE90FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CEB0FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CEB0FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CEC0FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CEC0FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CEE0FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CEE0FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CEF0FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CEF0FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CF00FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CF00FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CF10FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CF10FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CF20FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CF20FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CF30FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CF30FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CF40FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CF40FD9953600696B99 /* PBXTextBookmark */;
+			9B8A6CF50FD9953600696B99 /* PBXTextBookmark */ = 9B8A6CF50FD9953600696B99 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 9B846AAD0FD6FAC000F2268B /* Source Control */;
 		userBuildSettings = {
@@ -318,8 +337,8 @@
 	};
 	9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1168, 722}}";
-			sepNavSelRange = "{1034, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1059, 28}";
 			sepNavVisRange = "{0, 1202}";
 		};
 	};
@@ -819,8 +838,8 @@
 	9B8A6A950FD979D500696B99 /* ORXMLWriter.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1059, 185}";
-			sepNavVisRange = "{0, 1252}";
+			sepNavSelRange = "{1245, 17}";
+			sepNavVisRange = "{0, 1270}";
 		};
 	};
 	9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */ = {
@@ -914,15 +933,15 @@
 	9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1112, 0}";
-			sepNavVisRange = "{0, 1123}";
+			sepNavSelRange = "{1087, 0}";
+			sepNavVisRange = "{0, 1167}";
 		};
 	};
 	9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1168, 722}}";
-			sepNavSelRange = "{999, 0}";
-			sepNavVisRange = "{0, 1067}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 728}}";
+			sepNavSelRange = "{1299, 0}";
+			sepNavVisRange = "{0, 1308}";
 		};
 	};
 	9B8A6B550FD9830900696B99 /* PBXTextBookmark */ = {
@@ -1471,6 +1490,215 @@
 		rLoc = 1058;
 		rType = 0;
 		vrLen = 1085;
+		vrLoc = 0;
+	};
+	9B8A6CE00FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6CE10FD9953600696B99 /* lehmamic.pbxuser */;
+		name = "lehmamic.pbxuser: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1783;
+		vrLoc = 0;
+	};
+	9B8A6CE10FD9953600696B99 /* lehmamic.pbxuser */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = lehmamic.pbxuser;
+		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXmlApp.xcodeproj/lehmamic.pbxuser;
+		sourceTree = "<absolute>";
+	};
+	9B8A6CE20FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6A950FD979D500696B99 /* ORXMLWriter.h */;
+		name = "ORXMLWriter.h: 30";
+		rLen = 17;
+		rLoc = 1245;
+		rType = 0;
+		vrLen = 1270;
+		vrLoc = 0;
+	};
+	9B8A6CE30FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */;
+		name = "ORLibXmlWriter.m: 48";
+		rLen = 0;
+		rLoc = 1299;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	9B8A6CE40FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */;
+		name = "ORLibXmlReader.h: 23";
+		rLen = 28;
+		rLoc = 1059;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	9B8A6CE50FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */;
+		name = "ORLibXmlWriter.h: 26";
+		rLen = 0;
+		rLoc = 1158;
+		rType = 0;
+		vrLen = 1139;
+		vrLoc = 0;
+	};
+	9B8A6CE60FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */;
+		name = "ORLibXmlWriter.h: 25";
+		rLen = 0;
+		rLoc = 1140;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
+	9B8A6CE70FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6A950FD979D500696B99 /* ORXMLWriter.h */;
+		name = "ORXMLWriter.h: 25";
+		rLen = 185;
+		rLoc = 1059;
+		rType = 0;
+		vrLen = 1252;
+		vrLoc = 0;
+	};
+	9B8A6CE80FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */;
+		name = "ORLibXmlWriter.m: 44";
+		rLen = 0;
+		rLoc = 1301;
+		rType = 0;
+		vrLen = 1273;
+		vrLoc = 0;
+	};
+	9B8A6CE90FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6CEA0FD9953600696B99 /* lehmamic.pbxuser */;
+		name = "lehmamic.pbxuser: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1783;
+		vrLoc = 0;
+	};
+	9B8A6CEA0FD9953600696B99 /* lehmamic.pbxuser */ = {
+		isa = PBXFileReference;
+		name = lehmamic.pbxuser;
+		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXmlApp.xcodeproj/lehmamic.pbxuser;
+		sourceTree = "<absolute>";
+	};
+	9B8A6CEB0FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */;
+		name = "ORLibXmlWriter.h: 25";
+		rLen = 0;
+		rLoc = 1140;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
+	9B8A6CEC0FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6CED0FD9953600696B99 /* lehmamic.pbxuser */;
+		name = "lehmamic.pbxuser: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1783;
+		vrLoc = 0;
+	};
+	9B8A6CED0FD9953600696B99 /* lehmamic.pbxuser */ = {
+		isa = PBXFileReference;
+		name = lehmamic.pbxuser;
+		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXmlApp.xcodeproj/lehmamic.pbxuser;
+		sourceTree = "<absolute>";
+	};
+	9B8A6CEE0FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */;
+		name = "ORLibXmlWriter.h: 25";
+		rLen = 0;
+		rLoc = 1140;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
+	9B8A6CEF0FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */;
+		name = "ORLibXmlReader.h: 23";
+		rLen = 28;
+		rLoc = 1059;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	9B8A6CF00FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6A950FD979D500696B99 /* ORXMLWriter.h */;
+		name = "ORXMLWriter.h: 30";
+		rLen = 17;
+		rLoc = 1245;
+		rType = 0;
+		vrLen = 1270;
+		vrLoc = 0;
+	};
+	9B8A6CF10FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */;
+		name = "ORLibXmlWriter.m: 48";
+		rLen = 0;
+		rLoc = 1299;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	9B8A6CF20FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */;
+		name = "ORLibXmlReader.h: 27";
+		rLen = 15;
+		rLoc = 1143;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	9B8A6CF30FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */;
+		name = "ORLibXmlWriter.h: 26";
+		rLen = 0;
+		rLoc = 1158;
+		rType = 0;
+		vrLen = 1139;
+		vrLoc = 0;
+	};
+	9B8A6CF40FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */;
+		name = "ORLibXmlReader.h: 23";
+		rLen = 28;
+		rLoc = 1059;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	9B8A6CF50FD9953600696B99 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */;
+		name = "ORLibXmlWriter.h: 23";
+		rLen = 0;
+		rLoc = 1087;
+		rType = 0;
+		vrLen = 1167;
 		vrLoc = 0;
 	};
 }
