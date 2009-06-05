@@ -23,4 +23,24 @@
 
 @implementation ORLibXmlWriter
 
+- (void)addAttributeWithName:(NSString *)name forValue:(NSString *)value
+{
+}
+
+- (void)close
+{
+}
+
+- (void)endNode
+{
+}
+
+- (void)setValue:(NSString *)value
+{
+}
+
+- (void)startNodeWithName:(NSString *)name
+{
+}
+
 @end

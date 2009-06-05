@@ -19,9 +19,10 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "ORXMLWriter.h"
 
 
-@interface ORLibXmlWriter : NSObject {
+@interface ORLibXmlWriter : NSObject <ORXMLWriter> {
 
 }
 
