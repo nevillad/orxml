@@ -1,2 +1,0 @@
-/Users/lehmamic/Development/Projects/Cocoa/ORXmlApp/AppDelegate.m: In function '-[AppDelegate applicationDidFinishLaunching:]':
-/Users/lehmamic/Development/Projects/Cocoa/ORXmlApp/AppDelegate.m:33: warning: unused variable 'test'
