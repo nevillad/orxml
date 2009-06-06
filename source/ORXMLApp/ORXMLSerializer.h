@@ -19,8 +19,10 @@
 *****************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "ORXMLDriver.h"
 
 @interface ORXMLSerializer : NSObject {
+	id<ORXMLDriver> _driver;
 	//xmlDocPtr _doc;
 }
 - (id)deserializeWithData:(NSData *)data error:(NSError **)outError;

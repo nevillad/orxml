@@ -23,6 +23,19 @@
 
 @implementation ORLibXmlWriter
 
+#pragma mark Initialization Members
+
+- (id)init
+{
+	if(self = [super init]) {
+		_doc = xmlNewDoc((const xmlChar *)"1.0");
+	}
+	
+	return self;
+}
+
+#pragma mark ORXMLWriter Members
+
 - (void)addAttributeWithName:(NSString *)name forValue:(NSString *)value
 {
 }
