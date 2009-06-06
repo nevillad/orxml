@@ -19,15 +19,28 @@
  *****************************************************************************/
 
 #import "ORXMLSerializer.h"
-#import "ORLibXmlReader.h"
+#import "ORLibXmlDriver.h"
+#import "ORXMLWriter.h"
+#import "ORXMLReader.h"
 //#import <objc/runtime.h>
 
 
 @implementation ORXMLSerializer
 
+- (id)init
+{
+	if(self = [super init]) {
+		_driver = [[ORLibXmlDriver alloc] init];
+	}
+	
+	return self;
+}
+
 - (id)deserializeWithData:(NSData *)data error:(NSError **)outError
 {
-	ORLibXmlReader *xmlReader = [[ORLibXmlReader alloc] initWithData:data];
+	id<ORXMLReader> xmlReader = [_driver xmlReaderForData:data];
+	
+	NSLog(@"%@", xmlReader);
 	
 //	// parse the document
 //	_doc = NULL;
@@ -61,14 +74,15 @@
 //	// return the created instance
 //	return result;
 	
-	[xmlReader release];
-	
 	return nil;
 }
 
 - (NSData *)serializeTarget:(id)target
 {
-	return nil;
+	id<ORXMLWriter> xmlWriter = [_driver xmlWriter];
+	
+
+	return [xmlWriter data];
 }
 
 
@@ -236,5 +250,10 @@
 //	}
 //	return array;
 //}
+
+- (void)dealloc
+{
+	[super dealloc];
+}
 
 @end

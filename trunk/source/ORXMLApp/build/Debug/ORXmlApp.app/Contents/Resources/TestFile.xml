@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Test name="Michael" uid="28">
-	<Adress street="AlphaBetaGammastrasse 1" city="Zürich" postCode="8000" />
-  
-  <Hobbies>
-    <Hobby describtion="blabla"/>
-    <Hobby describtion="blupblup"/>
-  </Hobbies>
-</Test>

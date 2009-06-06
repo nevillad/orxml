@@ -19,6 +19,7 @@
  *****************************************************************************/
 
 #import "ORLibXmlDriver.h"
+#import "ORLibXmlWriter.h"
 
 
 @implementation ORLibXmlDriver
@@ -30,7 +31,7 @@
 
 - (id<ORXMLWriter>) xmlWriter
 {
-	return nil;
+	return [[[ORLibXmlWriter alloc] init] autorelease];
 }
 
 @end
