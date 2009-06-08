@@ -19,6 +19,7 @@
  *****************************************************************************/
 
 #import "ORLibXmlReader.h"
+#import "ORXmlException.h"
 
 
 @implementation ORLibXmlReader
@@ -27,8 +28,88 @@
 {
 	if(self = [super init])
 	{
+		_doc = [self parseDocumentWithData:data];
+			
+			
+//			// get the root node
+//			xmlNodePtr root = xmlDocGetRootElement(_doc);
+//			if(root == NULL && outError) {
+//				*outError = [NSError errorWithDomain:@"ORXMLErrorDomain" code:ENOROO userInfo:NULL];
+//				xmlFreeDoc(_doc);
+//				return nil;
+//			}
 	}
 	return self;
+}
+
+- (void)dealloc
+{
+	[self close];
+	[super dealloc];
+}
+
+- (xmlDocPtr)parseDocumentWithData:(NSData *)data
+{
+	xmlDocPtr document = NULL;
+	
+	// parse xml file if some data is available
+	if (data && data.length > 0)
+	{
+		document = xmlParseMemory([data bytes], [data length]);
+	}
+	
+	// check errors
+	if(document == NULL) {
+		NSException *exception = [ORXmlException exceptionWithName:@"XmlDocumentNotValid" reason:@"The xml document is not valid." userInfo:nil];
+		@throw exception;
+	}
+	
+	return document;
+}
+	
+- (NSString *)name
+{
+	return nil;
+}
+
+- (NSString *)value
+{
+	return nil;
+}
+
+- (int)attributeCount
+{
+	return 0;
+}
+
+- (NSString *)attributeAtIndex:(int)index
+{
+	return nil;
+}
+
+- (NSString *)attributeForName:(int)index
+{
+	return nil;
+}
+
+- (NSArray *)attributeNames
+{
+	return nil;
+}
+
+- (BOOL)readNext
+{
+	return NO;
+}
+
+- (BOOL)readParent
+{
+	return NO;
+}
+
+- (void)close
+{
+	xmlFreeDoc(_doc);
 }
 
 @end

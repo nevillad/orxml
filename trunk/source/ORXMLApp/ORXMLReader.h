@@ -22,6 +22,14 @@
 
 @protocol ORXMLReader
 
-
+- (NSString *)name;
+- (NSString *)value;
+- (int)attributeCount;
+- (NSString *)attributeAtIndex:(int)index;
+- (NSString *)attributeForName:(int)index;
+- (NSArray *)attributeNames;
+- (BOOL)readNext;
+- (BOOL)readParent;
+- (void)close;
 
 @end
