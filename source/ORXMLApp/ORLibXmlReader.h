@@ -26,5 +26,6 @@
 @interface ORLibXmlReader : NSObject <ORXMLReader>{
 	xmlDocPtr _doc;
 }
-- (id)initWithData:(NSData *) data;
+- (id)initWithData:(NSData *)data;
+- (xmlDocPtr)parseDocumentWithData:(NSData *)data;
 @end

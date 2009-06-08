@@ -18,21 +18,22 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORLibXmlDriver.h"
-#import "ORLibXmlWriter.h"
-#import "ORLibXmlReader.h"
+#import "ORXmlException.h"
 
 
-@implementation ORLibXmlDriver
+@implementation ORXmlException
 
-- (id<ORXMLReader>) xmlReaderForData:(NSData *)data
+- (id)initWithName:(NSString *)name reason:(NSString *)reason userInfo:(NSDictionary *)userInfo
 {
-	return [[[ORLibXmlReader alloc] initWithData:data] autorelease];
+	if(self = [super initWithName:name reason:reason userInfo:userInfo]) {
+	}
+	
+	return self;
 }
 
-- (id<ORXMLWriter>) xmlWriter
++ (NSException *)exceptionWithName:(NSString *)name reason:(NSString *)reason userInfo:(NSDictionary *)userInfo
 {
-	return [[[ORLibXmlWriter alloc] init] autorelease];
+	return [[[ORXmlException alloc] initWithName:name reason:reason userInfo:userInfo] autorelease];
 }
 
 @end
