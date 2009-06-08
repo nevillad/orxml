@@ -18,16 +18,21 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORXMLReader.h"
-#import <libxml/xmlmemory.h>
+#import "ORRuntime.h"
+#import "NSString+FormatCategory.h"
 
-@class ORLibXmlNode;
-
-@interface ORLibXmlReader : NSObject <ORXMLReader>{
-	xmlDocPtr _doc;
+BOOL ORClassWithNameExists(NSString *name)
+{
+	NSString *classConformName = [name formatToClassName];
+    Class class = NSClassFromString(classConformName);
+     
+    return class != nil;
 }
-- (id)initWithData:(NSData *)data;
-- (xmlDocPtr)parseDocumentWithData:(NSData *)data;
-- (ORLibXmlNode *)rootNodeFromDocument:(xmlDocPtr)document;
-@end
+
+id ORCreateInstanceFromName(NSString *name)
+{
+	NSString *classConformName = [name formatToClassName];
+    Class class = NSClassFromString(classConformName);
+	
+	return [[[class alloc] init] autorelease];
+}

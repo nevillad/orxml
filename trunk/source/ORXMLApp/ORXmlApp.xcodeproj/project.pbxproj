@@ -23,11 +23,11 @@
 		9B846AD70FD6FCA600F2268B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */; };
 		9B846AE30FD6FDC900F2268B /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B846AE20FD6FDC900F2268B /* libxml2.2.dylib */; };
 		9B846B290FD6FFA600F2268B /* TestFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9B846B280FD6FFA600F2268B /* TestFile.xml */; };
-		9B8A6A790FD9775F00696B99 /* ORXMLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6A740FD9775F00696B99 /* ORXMLRuntime.m */; };
+		9B8A6A790FD9775F00696B99 /* ORRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6A740FD9775F00696B99 /* ORRuntime.m */; };
 		9B8A6A7A0FD9775F00696B99 /* NSString+FormatCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */; };
 		9B8A6A7B0FD9775F00696B99 /* ORXMLError.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A760FD9775F00696B99 /* ORXMLError.h */; };
 		9B8A6A7C0FD9775F00696B99 /* NSString+FormatCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */; };
-		9B8A6A7D0FD9775F00696B99 /* ORXMLRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A780FD9775F00696B99 /* ORXMLRuntime.h */; };
+		9B8A6A7D0FD9775F00696B99 /* ORRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A780FD9775F00696B99 /* ORRuntime.h */; };
 		9B8A6A940FD9798100696B99 /* ORXMLDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A930FD9798100696B99 /* ORXMLDriver.h */; };
 		9B8A6A960FD979D500696B99 /* ORXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6A950FD979D500696B99 /* ORXMLWriter.h */; };
 		9B8A6AA80FD97B0900696B99 /* ORXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */; };
@@ -35,6 +35,12 @@
 		9B8A6AB10FD97D3F00696B99 /* ORLibXmlDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */; };
 		9B8A6B330FD9829300696B99 /* ORLibXmlWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */; };
 		9B8A6B340FD9829300696B99 /* ORLibXmlWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */; };
+		9BDDE18C0FDD8F8500D1312B /* ORXmlException.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BDDE18D0FDD8F8500D1312B /* ORXmlException.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDE18B0FDD8F8500D1312B /* ORXmlException.m */; };
+		9BDDE1A20FDD979000D1312B /* ORLibXmlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */; };
+		9BDDE1A30FDD979000D1312B /* ORLibXmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */; };
+		9BDDE20E0FDD9E5300D1312B /* ORStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE20C0FDD9E5300D1312B /* ORStack.h */; };
+		9BDDE20F0FDD9E5300D1312B /* ORStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDE20D0FDD9E5300D1312B /* ORStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,11 +92,11 @@
 		9B846AD60FD6FCA600F2268B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B846AE20FD6FDC900F2268B /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		9B846B280FD6FFA600F2268B /* TestFile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestFile.xml; sourceTree = "<group>"; };
-		9B8A6A740FD9775F00696B99 /* ORXMLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORXMLRuntime.m; sourceTree = "<group>"; };
+		9B8A6A740FD9775F00696B99 /* ORRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRuntime.m; sourceTree = "<group>"; };
 		9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FormatCategory.m"; sourceTree = "<group>"; };
 		9B8A6A760FD9775F00696B99 /* ORXMLError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLError.h; sourceTree = "<group>"; };
 		9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FormatCategory.h"; sourceTree = "<group>"; };
-		9B8A6A780FD9775F00696B99 /* ORXMLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLRuntime.h; sourceTree = "<group>"; };
+		9B8A6A780FD9775F00696B99 /* ORRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRuntime.h; sourceTree = "<group>"; };
 		9B8A6A930FD9798100696B99 /* ORXMLDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLDriver.h; sourceTree = "<group>"; };
 		9B8A6A950FD979D500696B99 /* ORXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLWriter.h; sourceTree = "<group>"; };
 		9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXMLReader.h; sourceTree = "<group>"; };
@@ -98,6 +104,12 @@
 		9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlDriver.m; sourceTree = "<group>"; };
 		9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlWriter.h; sourceTree = "<group>"; };
 		9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlWriter.m; sourceTree = "<group>"; };
+		9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXmlException.h; sourceTree = "<group>"; };
+		9BDDE18B0FDD8F8500D1312B /* ORXmlException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORXmlException.m; sourceTree = "<group>"; };
+		9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlNode.h; sourceTree = "<group>"; };
+		9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlNode.m; sourceTree = "<group>"; };
+		9BDDE20C0FDD9E5300D1312B /* ORStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORStack.h; sourceTree = "<group>"; };
+		9BDDE20D0FDD9E5300D1312B /* ORStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,12 +222,9 @@
 		9B846ABA0FD6FADC00F2268B /* ORXml */ = {
 			isa = PBXGroup;
 			children = (
+				9BDDE2290FDDA0F400D1312B /* Core */,
 				9B8A6AB20FD97D4600696B99 /* IO */,
 				9B8A6A760FD9775F00696B99 /* ORXMLError.h */,
-				9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */,
-				9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */,
-				9B8A6A780FD9775F00696B99 /* ORXMLRuntime.h */,
-				9B8A6A740FD9775F00696B99 /* ORXMLRuntime.m */,
 				9B846AB10FD6FAD600F2268B /* ORXMLSerializer.h */,
 				9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */,
 			);
@@ -231,6 +240,8 @@
 				9B8A6A930FD9798100696B99 /* ORXMLDriver.h */,
 				9B8A6A950FD979D500696B99 /* ORXMLWriter.h */,
 				9B8A6AA70FD97B0900696B99 /* ORXMLReader.h */,
+				9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */,
+				9BDDE18B0FDD8F8500D1312B /* ORXmlException.m */,
 			);
 			name = IO;
 			sourceTree = "<group>";
@@ -249,6 +260,8 @@
 			children = (
 				9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */,
 				9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */,
+				9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */,
+				9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */,
 			);
 			name = Reader;
 			sourceTree = "<group>";
@@ -262,6 +275,27 @@
 			name = Writer;
 			sourceTree = "<group>";
 		};
+		9BDDE2290FDDA0F400D1312B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9BDDE22A0FDDA0FD00D1312B /* Utils */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9BDDE22A0FDDA0FD00D1312B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9B8A6A780FD9775F00696B99 /* ORRuntime.h */,
+				9B8A6A740FD9775F00696B99 /* ORRuntime.m */,
+				9B8A6A770FD9775F00696B99 /* NSString+FormatCategory.h */,
+				9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */,
+				9BDDE20C0FDD9E5300D1312B /* ORStack.h */,
+				9BDDE20D0FDD9E5300D1312B /* ORStack.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -273,12 +307,15 @@
 				9B205A2C0FD83E5C001CD2DF /* ORLibXmlReader.h in Headers */,
 				9B8A6A7B0FD9775F00696B99 /* ORXMLError.h in Headers */,
 				9B8A6A7C0FD9775F00696B99 /* NSString+FormatCategory.h in Headers */,
-				9B8A6A7D0FD9775F00696B99 /* ORXMLRuntime.h in Headers */,
+				9B8A6A7D0FD9775F00696B99 /* ORRuntime.h in Headers */,
 				9B8A6A940FD9798100696B99 /* ORXMLDriver.h in Headers */,
 				9B8A6A960FD979D500696B99 /* ORXMLWriter.h in Headers */,
 				9B8A6AA80FD97B0900696B99 /* ORXMLReader.h in Headers */,
 				9B8A6AB00FD97D3F00696B99 /* ORLibXmlDriver.h in Headers */,
 				9B8A6B330FD9829300696B99 /* ORLibXmlWriter.h in Headers */,
+				9BDDE18C0FDD8F8500D1312B /* ORXmlException.h in Headers */,
+				9BDDE1A20FDD979000D1312B /* ORLibXmlNode.h in Headers */,
+				9BDDE20E0FDD9E5300D1312B /* ORStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +416,13 @@
 			files = (
 				9B846AC90FD6FBE400F2268B /* ORXMLSerializer.m in Sources */,
 				9B205A2D0FD83E5C001CD2DF /* ORLibXmlReader.m in Sources */,
-				9B8A6A790FD9775F00696B99 /* ORXMLRuntime.m in Sources */,
+				9B8A6A790FD9775F00696B99 /* ORRuntime.m in Sources */,
 				9B8A6A7A0FD9775F00696B99 /* NSString+FormatCategory.m in Sources */,
 				9B8A6AB10FD97D3F00696B99 /* ORLibXmlDriver.m in Sources */,
 				9B8A6B340FD9829300696B99 /* ORLibXmlWriter.m in Sources */,
+				9BDDE18D0FDD8F8500D1312B /* ORXmlException.m in Sources */,
+				9BDDE1A30FDD979000D1312B /* ORLibXmlNode.m in Sources */,
+				9BDDE20F0FDD9E5300D1312B /* ORStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

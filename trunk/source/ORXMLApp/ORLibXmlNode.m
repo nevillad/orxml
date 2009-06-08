@@ -18,16 +18,35 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORXMLReader.h"
-#import <libxml/xmlmemory.h>
+#import "ORLibXmlNode.h"
 
-@class ORLibXmlNode;
 
-@interface ORLibXmlReader : NSObject <ORXMLReader>{
-	xmlDocPtr _doc;
+@implementation ORLibXmlNode
+
+-initWithNode:(xmlNodePtr)node
+{
+	if(self = [super init]) {
+		_node = node;
+	}
+	
+	return self;
 }
-- (id)initWithData:(NSData *)data;
-- (xmlDocPtr)parseDocumentWithData:(NSData *)data;
-- (ORLibXmlNode *)rootNodeFromDocument:(xmlDocPtr)document;
+
+- (ORLibXmlNode *)parent
+{
+	return [[[ORLibXmlNode alloc] initWithNode:_node->parent] autorelease];
+}
+
+- (ORLibXmlNode *)nextChild
+{
+	if(_currentChild == NULL) {
+		_currentChild = _node->xmlChildrenNode;
+	}
+	else {
+		_currentChild = _currentChild->next;
+	}
+	
+	return _currentChild != NULL ? [[[ORLibXmlNode alloc] initWithNode:_currentChild] autorelease] : nil;
+}
+
 @end
