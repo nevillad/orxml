@@ -20,6 +20,7 @@
 
 #import "ORLibXmlReader.h"
 #import "ORXmlException.h"
+#import "ORLibXmlNode.h"
 
 
 @implementation ORLibXmlReader
@@ -65,6 +66,20 @@
 	}
 	
 	return document;
+}
+
+- (ORLibXmlNode *)rootNodeFromDocument:(xmlDocPtr)document
+{
+	// get the root node
+	xmlNodePtr root = xmlDocGetRootElement(_doc);
+	if(root == NULL) {
+		xmlFreeDoc(_doc);
+		
+		NSException *exception = [ORXmlException exceptionWithName:@"XmlDocumentNotValid" reason:@"The xml document is not valid." userInfo:nil];
+		@throw exception;
+	}
+	
+	return [[[ORLibXmlNode alloc] initWithNode:root] autorelease];
 }
 	
 - (NSString *)name

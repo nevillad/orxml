@@ -19,15 +19,14 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
-#import "ORXMLReader.h"
 #import <libxml/xmlmemory.h>
 
-@class ORLibXmlNode;
 
-@interface ORLibXmlReader : NSObject <ORXMLReader>{
-	xmlDocPtr _doc;
+@interface ORLibXmlNode : NSObject {
+	xmlNodePtr _node;
+	xmlNodePtr _currentChild;
 }
-- (id)initWithData:(NSData *)data;
-- (xmlDocPtr)parseDocumentWithData:(NSData *)data;
-- (ORLibXmlNode *)rootNodeFromDocument:(xmlDocPtr)document;
+- (id)initWithNode:(xmlNodePtr)node;
+- (ORLibXmlNode *)parent;
+- (ORLibXmlNode *)nextChild;
 @end

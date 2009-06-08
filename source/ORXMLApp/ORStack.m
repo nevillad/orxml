@@ -18,16 +18,47 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORXMLReader.h"
-#import <libxml/xmlmemory.h>
+#import "ORStack.h"
 
-@class ORLibXmlNode;
 
-@interface ORLibXmlReader : NSObject <ORXMLReader>{
-	xmlDocPtr _doc;
+@implementation ORStack
+
+- (id)init
+{
+	if (self = [super init]) {
+		array = [[NSMutableArray array] retain];
+	}
+	
+	return self;
 }
-- (id)initWithData:(NSData *)data;
-- (xmlDocPtr)parseDocumentWithData:(NSData *)data;
-- (ORLibXmlNode *)rootNodeFromDocument:(xmlDocPtr)document;
+
+- (void)dealloc
+{
+	[array release];
+	[super dealloc];
+}
+
++(ORStack* )stack
+{
+	return [[[ORStack alloc] init] autorelease];
+}
+
+- (id)pop
+{
+	id result = [array lastObject];
+	[array removeLastObject];
+	
+	return result;
+}
+
+- (void)push:(id)item
+{
+	[array addObject:item];
+}
+
+- (int)count
+{
+	return [array count];
+}
+
 @end
