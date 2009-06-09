@@ -61,4 +61,17 @@
 	return [NSString stringWithUTF8String:(const char *)_node->name];
 }
 
+- (int)attributeCount
+{
+	xmlAttrPtr attr = _node->properties;
+	int count = 0;
+
+	while (attr != NULL) {
+		count ++;
+		attr = attr->next;
+	}
+	
+	return count;
+}
+
 @end
