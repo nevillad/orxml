@@ -113,7 +113,14 @@
 
 - (int)attributeCount
 {
-	return 0;
+	int count = 0;
+	
+	if ([_pointerStack count]) {
+		ORLibXmlNode *currentNode = [_pointerStack peek];
+		count = [currentNode attributeCount];
+	}
+	
+	return count;
 }
 
 - (NSString *)attributeAtIndex:(int)index

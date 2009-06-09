@@ -32,4 +32,5 @@
 - (ORLibXmlNode *)nextChild;
 - (NSString *)value;
 - (NSString *)name;
+- (int)attributeCount;
 @end
