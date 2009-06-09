@@ -27,4 +27,6 @@
 - (id)pop;
 - (void)push:(id)item;
 - (int)count;
+- (id)peek;
+- (void)clear;
 @end

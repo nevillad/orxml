@@ -61,4 +61,14 @@
 	return [array count];
 }
 
+- (id)peek
+{
+	return [array lastObject];
+}
+
+- (void)clear
+{
+	[array removeAllObjects];
+}
+
 @end

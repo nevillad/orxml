@@ -23,10 +23,11 @@
 
 @implementation ORLibXmlNode
 
--initWithNode:(xmlNodePtr)node
+- (id)initWithDocument:(xmlDocPtr)doc node:(xmlNodePtr)node
 {
 	if(self = [super init]) {
 		_node = node;
+		_doc = doc;
 	}
 	
 	return self;
@@ -34,7 +35,7 @@
 
 - (ORLibXmlNode *)parent
 {
-	return [[[ORLibXmlNode alloc] initWithNode:_node->parent] autorelease];
+	return [[[ORLibXmlNode alloc] initWithDocument:_doc node:_node->parent] autorelease];
 }
 
 - (ORLibXmlNode *)nextChild
@@ -46,7 +47,18 @@
 		_currentChild = _currentChild->next;
 	}
 	
-	return _currentChild != NULL ? [[[ORLibXmlNode alloc] initWithNode:_currentChild] autorelease] : nil;
+	return _currentChild != NULL ? [[[ORLibXmlNode alloc] initWithDocument:_doc node:_currentChild] autorelease] : nil;
+}
+
+- (NSString *)value
+{
+	xmlChar *value = xmlNodeListGetString(_doc, _node->children, YES);
+	return [NSString stringWithUTF8String:(const char *)value];
+}
+
+- (NSString *)name
+{
+	return [NSString stringWithUTF8String:(const char *)_node->name];
 }
 
 @end
