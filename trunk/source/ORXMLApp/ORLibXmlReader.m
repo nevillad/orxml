@@ -135,7 +135,14 @@
 
 - (NSArray *)attributeNames
 {
-	return nil;
+	NSArray *names;
+	
+	if ([_pointerStack count]) {
+		ORLibXmlNode *currentNode = [_pointerStack peek];
+		names = [currentNode attributeNames];
+	}
+	
+	return names;
 }
 
 - (BOOL)readNext

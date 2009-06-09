@@ -675,9 +675,9 @@
 	};
 	9B846AB50FD6FAD600F2268B /* Adress.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 392}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 999}";
+			sepNavVisRange = "{0, 1267}";
 		};
 	};
 	9B846AC00FD6FB6E00F2268B /* ORXml */ = {
@@ -1283,8 +1283,8 @@
 		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 3584}}";
-			sepNavSelRange = "{3397, 65}";
-			sepNavVisRange = "{3160, 1945}";
+			sepNavSelRange = "{3370, 22}";
+			sepNavVisRange = "{2959, 2001}";
 		};
 	};
 	9BC51FB10FDC1E2300D069E7 /* PBXTextBookmark */ = {
@@ -1362,9 +1362,9 @@
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORLibXmlReader.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 2254}}";
-			sepNavSelRange = "{2381, 0}";
-			sepNavVisRange = "{2578, 801}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 2548}}";
+			sepNavSelRange = "{2917, 0}";
+			sepNavVisRange = "{3003, 801}";
 		};
 	};
 	9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */ = {
@@ -1384,8 +1384,8 @@
 	9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1170, 57}";
-			sepNavVisRange = "{0, 1310}";
+			sepNavSelRange = "{1353, 0}";
+			sepNavVisRange = "{0, 1353}";
 		};
 	};
 	9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */ = {
@@ -1403,7 +1403,7 @@
 		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1117, 0}";
+			sepNavSelRange = "{1368, 0}";
 			sepNavVisRange = "{0, 1368}";
 		};
 	};
@@ -1536,7 +1536,7 @@
 		fRef = 9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */;
 		name = "ORLibXmlReader.m: 67";
 		rLen = 0;
-		rLoc = 3370;
+		rLoc = 3795;
 		rType = 0;
 		vrLen = 501;
 		vrLoc = 920;
@@ -2036,7 +2036,7 @@
 		fRef = 9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */;
 		name = "ORLibXmlNode.h: 30";
 		rLen = 0;
-		rLoc = 1309;
+		rLoc = 1352;
 		rType = 0;
 		vrLen = 1192;
 		vrLoc = 0;
@@ -2090,7 +2090,7 @@
 		fRef = 9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */;
 		name = "ORLibXmlNode.h: 33";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1353;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 0;
@@ -2100,7 +2100,7 @@
 		fRef = 9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */;
 		name = "ORLibXmlNode.m: 52";
 		rLen = 0;
-		rLoc = 1701;
+		rLoc = 2000;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 79;
@@ -2120,7 +2120,7 @@
 		fRef = 9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */;
 		name = "ORLibXmlNode.h: 30";
 		rLen = 0;
-		rLoc = 1309;
+		rLoc = 1352;
 		rType = 0;
 		vrLen = 1192;
 		vrLoc = 0;
@@ -2180,7 +2180,7 @@
 		fRef = 9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */;
 		name = "ORLibXmlNode.h: 33";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1353;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 0;
@@ -2210,7 +2210,7 @@
 		fRef = 9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */;
 		name = "ORLibXmlNode.m: 52";
 		rLen = 0;
-		rLoc = 1701;
+		rLoc = 2000;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 79;
