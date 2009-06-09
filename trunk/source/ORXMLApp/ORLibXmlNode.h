@@ -25,8 +25,11 @@
 @interface ORLibXmlNode : NSObject {
 	xmlNodePtr _node;
 	xmlNodePtr _currentChild;
+	xmlDocPtr _doc;
 }
-- (id)initWithNode:(xmlNodePtr)node;
+- (id)initWithDocument:(xmlDocPtr)doc node:(xmlNodePtr)node;
 - (ORLibXmlNode *)parent;
 - (ORLibXmlNode *)nextChild;
+- (NSString *)value;
+- (NSString *)name;
 @end

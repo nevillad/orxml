@@ -22,10 +22,11 @@
 #import "ORXMLReader.h"
 #import <libxml/xmlmemory.h>
 
-@class ORLibXmlNode;
+@class ORLibXmlNode, ORStack;
 
 @interface ORLibXmlReader : NSObject <ORXMLReader>{
 	xmlDocPtr _doc;
+		ORStack *_pointerStack;
 }
 - (id)initWithData:(NSData *)data;
 - (xmlDocPtr)parseDocumentWithData:(NSData *)data;

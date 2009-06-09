@@ -21,31 +21,36 @@
 #import "ORLibXmlReader.h"
 #import "ORXmlException.h"
 #import "ORLibXmlNode.h"
+#import "ORStack.h"
 
 
 @implementation ORLibXmlReader
 
+- (id)init
+{
+	if(self = [super init]) {
+		_pointerStack = [[ORStack alloc] init];
+	}
+	
+	return self;
+}
+
 - (id)initWithData:(NSData *) data
 {
-	if(self = [super init])
+	if(self = [self init])
 	{
 		_doc = [self parseDocumentWithData:data];
-			
-			
-//			// get the root node
-//			xmlNodePtr root = xmlDocGetRootElement(_doc);
-//			if(root == NULL && outError) {
-//				*outError = [NSError errorWithDomain:@"ORXMLErrorDomain" code:ENOROO userInfo:NULL];
-//				xmlFreeDoc(_doc);
-//				return nil;
-//			}
+		ORLibXmlNode *root = [self rootNodeFromDocument:_doc];		
+		[_pointerStack push:root];
 	}
+	
 	return self;
 }
 
 - (void)dealloc
 {
 	[self close];
+	[_pointerStack release];
 	[super dealloc];
 }
 
@@ -79,17 +84,31 @@
 		@throw exception;
 	}
 	
-	return [[[ORLibXmlNode alloc] initWithNode:root] autorelease];
+	return [[[ORLibXmlNode alloc] initWithDocument:_doc node:root] autorelease];
 }
-	
+
 - (NSString *)name
 {
-	return nil;
+	NSString *name;
+	
+	if([_pointerStack count]) {
+		ORLibXmlNode *currentNode = [_pointerStack peek];
+		name = [currentNode name];
+	}
+	
+	return name;
 }
 
 - (NSString *)value
 {
-	return nil;
+	NSString *value;
+	
+	if ([_pointerStack count]) {
+		ORLibXmlNode *currentNode = [_pointerStack peek];
+		value = [currentNode value];
+	}
+		
+	return value;
 }
 
 - (int)attributeCount
@@ -114,16 +133,41 @@
 
 - (BOOL)readNext
 {
-	return NO;
+	BOOL sucessfully = NO;
+	
+	// get the current node
+	ORLibXmlNode *currentNode = [_pointerStack peek];
+	
+	// get the next children of the current node
+	ORLibXmlNode *nextNode = [currentNode nextChild];
+	
+	// push the next child onto the stack -> set as current node
+	if(nextNode != nil) {
+		[_pointerStack push:nextNode];
+		
+		sucessfully = YES;
+	}
+	
+	return sucessfully;
 }
 
 - (BOOL)readParent
 {
-	return NO;
+	BOOL sucessfully = NO;
+	
+	// remove the last node from the stack -> setthe parent node as current node
+	if([_pointerStack count] > 0) {
+		[_pointerStack peek];
+		
+		sucessfully = YES;
+	}
+	
+	return sucessfully;
 }
 
 - (void)close
 {
+	[_pointerStack clear];
 	xmlFreeDoc(_doc);
 }
 
