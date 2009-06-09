@@ -74,4 +74,19 @@
 	return count;
 }
 
+- (NSArray *)attributeNames
+{
+	NSMutableArray *names = [NSMutableArray array];
+	xmlAttrPtr attr = _node->properties;
+	
+	while (attr != NULL) {
+		NSString *name = [NSString stringWithUTF8String:(const char *)attr->name];
+		[names addObject:name];
+		
+		attr = attr->next;
+	}
+	
+	return names;
+}
+
 @end
