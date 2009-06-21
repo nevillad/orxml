@@ -26,7 +26,7 @@
 - (NSString *)value;
 - (int)attributeCount;
 - (NSString *)attributeAtIndex:(int)index;
-- (NSString *)attributeForName:(int)index;
+- (NSString *)attributeForName:(NSString *)name;
 - (NSArray *)attributeNames;
 - (BOOL)readNext;
 - (BOOL)readParent;

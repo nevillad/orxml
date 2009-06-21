@@ -34,4 +34,6 @@
 - (NSString *)name;
 - (int)attributeCount;
 - (NSArray *)attributeNames;
+- (NSString *)attributeAtIndex:(int)index;
+- (NSString *)attributeForName:(NSString *)name;
 @end
