@@ -125,10 +125,17 @@
 
 - (NSString *)attributeAtIndex:(int)index
 {
-	return nil;
+	NSString *attribute;
+	
+	if ([_pointerStack count]) {
+		ORLibXmlNode *currentNode = [_pointerStack peek];
+		attribute = [currentNode attributeAtIndex:index];
+	}
+	
+	return attribute;
 }
 
-- (NSString *)attributeForName:(int)index
+- (NSString *)attributeForName:(NSString *)name;
 {
 	return nil;
 }

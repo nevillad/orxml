@@ -74,6 +74,50 @@
 	return count;
 }
 
+- (NSString *)attributeAtIndex:(int)index
+{
+	xmlAttrPtr attr = _node->properties;
+	
+	NSString *attribute;
+	int count = 0;
+	
+	while (attr != NULL) {
+		
+		if(count == index) {
+			xmlChar *value = xmlNodeListGetString(_doc, attr->children, YES);
+			attribute = [NSString stringWithUTF8String:(const char *)value];
+			
+			break;
+		}
+		
+		count ++;
+		attr = attr->next;
+	}
+	
+	return attribute;
+}
+
+- (NSString *)attributeForName:(NSString *)name
+{
+	xmlAttrPtr attr = _node->properties;
+	
+	NSString *attribute;
+	
+	while (attr != NULL) {
+		
+		NSString *attributeName = [NSString stringWithUTF8String:(const char *)attr->name];
+		
+		if([name isEqualToString:attributeName]) {
+			xmlChar *value = xmlNodeListGetString(_doc, attr->children, YES);
+			attribute = [NSString stringWithUTF8String:(const char *)value];
+		}
+		
+		attr = attr->next;
+	}
+	
+	return attribute;
+}
+
 - (NSArray *)attributeNames
 {
 	NSMutableArray *names = [NSMutableArray array];
