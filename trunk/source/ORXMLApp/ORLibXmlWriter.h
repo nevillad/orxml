@@ -24,6 +24,7 @@
 
 @interface ORLibXmlWriter : NSObject <ORXMLWriter> {
 	xmlDocPtr _doc;
+	xmlNodePtr _cur;
 }
 
 @end
