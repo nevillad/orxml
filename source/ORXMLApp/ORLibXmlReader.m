@@ -87,6 +87,8 @@
 	return [[[ORLibXmlNode alloc] initWithDocument:_doc node:root] autorelease];
 }
 
+#pragma mark ORXmlReader Members
+
 - (NSString *)name
 {
 	NSString *name;
