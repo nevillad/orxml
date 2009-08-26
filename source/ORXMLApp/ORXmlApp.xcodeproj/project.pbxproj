@@ -41,6 +41,18 @@
 		9BDDE1A30FDD979000D1312B /* ORLibXmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */; };
 		9BDDE20E0FDD9E5300D1312B /* ORStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE20C0FDD9E5300D1312B /* ORStack.h */; };
 		9BDDE20F0FDD9E5300D1312B /* ORStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDE20D0FDD9E5300D1312B /* ORStack.m */; };
+		9BF5D0B81045C993005966E2 /* ORConverterMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0B71045C993005966E2 /* ORConverterMatcher.h */; };
+		9BF5D0BA1045CA2B005966E2 /* ORSingleValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0B91045CA2B005966E2 /* ORSingleValueConverter.h */; };
+		9BF5D0BE1045CABB005966E2 /* ORConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0BD1045CABB005966E2 /* ORConverter.h */; };
+		9BF5D0C11045CBD6005966E2 /* ORContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0C01045CBD6005966E2 /* ORContext.h */; };
+		9BF5D0C31045CC7C005966E2 /* ORMarshallingContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0C21045CC7C005966E2 /* ORMarshallingContext.h */; };
+		9BF5D0C51045CCB8005966E2 /* ORUnmarshallingContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */; };
+		9BF5D0CD1045CFEC005966E2 /* ORConverterLookup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */; };
+		9BF5D0CF1045D043005966E2 /* ORConverterRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */; };
+		9BF5D0D31045D100005966E2 /* ORDefaultConverterLookup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0D11045D100005966E2 /* ORDefaultConverterLookup.h */; };
+		9BF5D0D41045D100005966E2 /* ORDefaultConverterLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5D0D21045D100005966E2 /* ORDefaultConverterLookup.m */; };
+		9BF5D0D81045D220005966E2 /* ORMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0D61045D220005966E2 /* ORMapper.h */; };
+		9BF5D0D91045D220005966E2 /* ORMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5D0D71045D220005966E2 /* ORMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +122,18 @@
 		9BDDE1A10FDD979000D1312B /* ORLibXmlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlNode.m; sourceTree = "<group>"; };
 		9BDDE20C0FDD9E5300D1312B /* ORStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORStack.h; sourceTree = "<group>"; };
 		9BDDE20D0FDD9E5300D1312B /* ORStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORStack.m; sourceTree = "<group>"; };
+		9BF5D0B71045C993005966E2 /* ORConverterMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterMatcher.h; sourceTree = "<group>"; };
+		9BF5D0B91045CA2B005966E2 /* ORSingleValueConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSingleValueConverter.h; sourceTree = "<group>"; };
+		9BF5D0BD1045CABB005966E2 /* ORConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverter.h; sourceTree = "<group>"; };
+		9BF5D0C01045CBD6005966E2 /* ORContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORContext.h; sourceTree = "<group>"; };
+		9BF5D0C21045CC7C005966E2 /* ORMarshallingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMarshallingContext.h; sourceTree = "<group>"; };
+		9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORUnmarshallingContext.h; sourceTree = "<group>"; };
+		9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterLookup.h; sourceTree = "<group>"; };
+		9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterRegistry.h; sourceTree = "<group>"; };
+		9BF5D0D11045D100005966E2 /* ORDefaultConverterLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDefaultConverterLookup.h; sourceTree = "<group>"; };
+		9BF5D0D21045D100005966E2 /* ORDefaultConverterLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDefaultConverterLookup.m; sourceTree = "<group>"; };
+		9BF5D0D61045D220005966E2 /* ORMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMapper.h; sourceTree = "<group>"; };
+		9BF5D0D71045D220005966E2 /* ORMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +246,8 @@
 		9B846ABA0FD6FADC00F2268B /* ORXml */ = {
 			isa = PBXGroup;
 			children = (
+				9BF5D0D51045D212005966E2 /* Mapper */,
+				9BF5D0B61045C973005966E2 /* Converter */,
 				9BDDE2290FDDA0F400D1312B /* Core */,
 				9B8A6AB20FD97D4600696B99 /* IO */,
 				9B8A6A760FD9775F00696B99 /* ORXMLError.h */,
@@ -279,6 +305,8 @@
 			isa = PBXGroup;
 			children = (
 				9BDDE22A0FDDA0FD00D1312B /* Utils */,
+				9BF5D0D11045D100005966E2 /* ORDefaultConverterLookup.h */,
+				9BF5D0D21045D100005966E2 /* ORDefaultConverterLookup.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -294,6 +322,30 @@
 				9BDDE20D0FDD9E5300D1312B /* ORStack.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		9BF5D0B61045C973005966E2 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				9BF5D0B71045C993005966E2 /* ORConverterMatcher.h */,
+				9BF5D0B91045CA2B005966E2 /* ORSingleValueConverter.h */,
+				9BF5D0BD1045CABB005966E2 /* ORConverter.h */,
+				9BF5D0C01045CBD6005966E2 /* ORContext.h */,
+				9BF5D0C21045CC7C005966E2 /* ORMarshallingContext.h */,
+				9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */,
+				9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */,
+				9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */,
+			);
+			name = Converter;
+			sourceTree = "<group>";
+		};
+		9BF5D0D51045D212005966E2 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9BF5D0D61045D220005966E2 /* ORMapper.h */,
+				9BF5D0D71045D220005966E2 /* ORMapper.m */,
+			);
+			name = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +368,16 @@
 				9BDDE18C0FDD8F8500D1312B /* ORXmlException.h in Headers */,
 				9BDDE1A20FDD979000D1312B /* ORLibXmlNode.h in Headers */,
 				9BDDE20E0FDD9E5300D1312B /* ORStack.h in Headers */,
+				9BF5D0B81045C993005966E2 /* ORConverterMatcher.h in Headers */,
+				9BF5D0BA1045CA2B005966E2 /* ORSingleValueConverter.h in Headers */,
+				9BF5D0BE1045CABB005966E2 /* ORConverter.h in Headers */,
+				9BF5D0C11045CBD6005966E2 /* ORContext.h in Headers */,
+				9BF5D0C31045CC7C005966E2 /* ORMarshallingContext.h in Headers */,
+				9BF5D0C51045CCB8005966E2 /* ORUnmarshallingContext.h in Headers */,
+				9BF5D0CD1045CFEC005966E2 /* ORConverterLookup.h in Headers */,
+				9BF5D0CF1045D043005966E2 /* ORConverterRegistry.h in Headers */,
+				9BF5D0D31045D100005966E2 /* ORDefaultConverterLookup.h in Headers */,
+				9BF5D0D81045D220005966E2 /* ORMapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +485,8 @@
 				9BDDE18D0FDD8F8500D1312B /* ORXmlException.m in Sources */,
 				9BDDE1A30FDD979000D1312B /* ORLibXmlNode.m in Sources */,
 				9BDDE20F0FDD9E5300D1312B /* ORStack.m in Sources */,
+				9BF5D0D41045D100005966E2 /* ORDefaultConverterLookup.m in Sources */,
+				9BF5D0D91045D220005966E2 /* ORMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
