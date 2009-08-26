@@ -18,26 +18,17 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "AppDelegate.h"
-#import <ORXml/ORXMLSerializer.h>
-#import "Test.h"
+#import "ORDefaultConverterLookup.h"
 
 
-@implementation AppDelegate
+@implementation ORDefaultConverterLookup
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (id<ORConverter>)lookupConverterForType:(class)type
 {
-	// Test xml serializer
-	NSError *error = nil;
-	ORXMLSerializer *serializer = [[ORXMLSerializer alloc] init];
-	Test *test = [serializer deserializeWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"xml"]] error:&error];
-	[serializer serializeTarget:nil];
-	
-	NSLog(@"%@", test);
-	
-	// Cleanup data source
-	[error release];
-	[serializer release];
+}
+
+- (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority
+{
 }
 
 @end

@@ -18,26 +18,10 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "AppDelegate.h"
-#import <ORXml/ORXMLSerializer.h>
-#import "Test.h"
+#import <Foundation/Foundation.h>
 
+@protocol ORConverterMatcher
 
-@implementation AppDelegate
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-	// Test xml serializer
-	NSError *error = nil;
-	ORXMLSerializer *serializer = [[ORXMLSerializer alloc] init];
-	Test *test = [serializer deserializeWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"xml"]] error:&error];
-	[serializer serializeTarget:nil];
-	
-	NSLog(@"%@", test);
-	
-	// Cleanup data source
-	[error release];
-	[serializer release];
-}
+- (BOOL)canConvertType:(class)type;
 
 @end
