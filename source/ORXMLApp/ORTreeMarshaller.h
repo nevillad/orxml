@@ -18,34 +18,14 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORTreeMarshallingStrategy.h"
-#import "ORMapper.h"
+#import <Foundation/Foundation.h>
 
-@implementation ORTreeMarshallingStrategy
+@class ORMapper;
 
-- (id)initWithMapper:(ORMapper *)mapper
-{
-	if(self = [super init]) {
-		[mapper retain];
-		_mapper = mapper;
-	}
-	
-	return self;
+@interface ORTreeMarshaller : NSObject {
+	ORMapper *_mapper;
 }
 
-- (void)dealloc
-{
-	[_mapper release];
-	[super dealloc];
-}
-
-- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext
-{
-}
-
-- (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext
-{
-	return nil;
-}
+- (id)initWithMapper:(ORMapper *)mapper;
 
 @end
