@@ -20,7 +20,8 @@
 
 #import <Foundation/Foundation.h>
 #import "ORContext.h"
-#import "ORConverter.h"
+
+@protocol ORConverter;
 
 @protocol ORMarshallingContext <ORContext>
 

@@ -20,22 +20,18 @@
 
 #import <Foundation/Foundation.h>
 #import "ORXMLDriver.h"
+#import "ORMarshallingStrategy.h"
+#import "ORConverterLookup.h"
+
+@class ORMapper;
 
 @interface ORXMLSerializer : NSObject {
 	id<ORXMLDriver> _driver;
-	//xmlDocPtr _doc;
+	id<ORMarshallingStrategy> _marshallingStrategy;
+	id<ORConverterLookup> _converterLookup;
+	ORMapper *_mapper;
 }
 - (id)deserializeWithData:(NSData *)data error:(NSError **)outError;
 - (NSData *)serializeTarget:(id)target;
 
-//- (id)createObjectFromNode:(xmlNodePtr)node error:(NSError **)outError;
-//- (void)processAttributesFromNode:(xmlNodePtr)node target:(id)target;
-//- (void)processChildrenFromNode:(xmlNodePtr)node target:(id)target error:(NSError **)outError;
-//- (void)fillPropertyOfTarget:(id)target withValue:(id)value forKey:(NSString *)key;
-//- (NSInteger)elementCountForName:(NSString *)name fromNode:(xmlNodePtr)node;
-//- (BOOL)valueForKeyIsArray:(NSString *)key fromTagret:(id)target;
-//- (NSString *)convertToKVCKey:(NSString *)xmlKey;
-//- (BOOL)classWithNameExists:(NSString *)name;
-//- (NSString *)convertToClassName:(NSString *)xmlClassName;
-//- (NSMutableArray *)arrayFromPropertyWithKey:(NSString *)key fromTarget:(id)target;
 @end

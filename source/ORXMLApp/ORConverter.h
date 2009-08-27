@@ -22,8 +22,11 @@
 #import "ORConverterMatcher.h"
 #import "ORXMLWriter.h"
 #import "ORXMLReader.h"
-#import "ORMarshallingContext.h"
-#import "ORUnmarshallingContext.h"
+//#import "ORMarshallingContext.h"
+//#import "ORUnmarshallingContext.h"
+
+@protocol ORMarshallingContext, ORUnmarshallingContext;
+
 
 @protocol ORConverter <ORConverterMatcher>
 

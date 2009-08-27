@@ -19,10 +19,12 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
-#import "ORConverterLookup.h"
+//#import "ORConverterLookup.h"
 #import "ORConverterRegistry.h"
 
-@interface ORDefaultConverterLookup : NSObject <ORConveterLookup, ORConverterRegistry> {
+@protocol ORConverter;
+
+@interface ORDefaultConverterLookup : NSObject < ORConverterRegistry>{
 
 }
 

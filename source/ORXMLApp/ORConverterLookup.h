@@ -23,6 +23,6 @@
 
 @protocol ORConverterLookup
 
-- (id<ORConverter>)lookupConverterForType:(class)type;
+//- (id<ORConverter>)lookupConverterForType:(class)type;
 
 @end
