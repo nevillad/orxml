@@ -2548,7 +2548,7 @@
 	9BA4A6F71046F5A100AF29DF /* ORTreeMarshallingStrategy.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{999, 0}";
+			sepNavSelRange = "{1001, 33}";
 			sepNavVisRange = "{0, 1231}";
 		};
 	};
@@ -2681,7 +2681,7 @@
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 20";
 		rLen = 0;
-		rLoc = 1561;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 0;
@@ -3151,7 +3151,7 @@
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 14";
 		rLen = 5;
-		rLoc = 1565;
+		rLoc = 1623;
 		rType = 0;
 		vrLen = 243;
 		vrLoc = 0;
@@ -3191,7 +3191,7 @@
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 20";
 		rLen = 0;
-		rLoc = 1561;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 0;
@@ -3211,7 +3211,7 @@
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 24";
 		rLen = 0;
-		rLoc = 1570;
+		rLoc = 1628;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 0;
@@ -3235,9 +3235,9 @@
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORTreeMarshallingStrategy.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{999, 0}";
-			sepNavVisRange = "{0, 1570}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 728}}";
+			sepNavSelRange = "{1234, 57}";
+			sepNavVisRange = "{0, 1628}";
 		};
 	};
 	9BA4A76A1046FCDF00AF29DF /* PBXTextBookmark */ = {
@@ -3285,7 +3285,7 @@
 		fRef = 9BA4A7601046FBEA00AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 22";
 		rLen = 0;
-		rLoc = 1231;
+		rLoc = 1230;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 0;
@@ -3295,7 +3295,7 @@
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 24";
 		rLen = 0;
-		rLoc = 1570;
+		rLoc = 1628;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 0;
@@ -3375,7 +3375,7 @@
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 24";
 		rLen = 0;
-		rLoc = 1570;
+		rLoc = 1628;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 0;
@@ -3445,7 +3445,7 @@
 		fRef = 9BA4A7601046FBEA00AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 22";
 		rLen = 0;
-		rLoc = 1231;
+		rLoc = 1230;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 0;
@@ -3465,7 +3465,7 @@
 		fRef = 9BA4A7601046FBEA00AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 22";
 		rLen = 0;
-		rLoc = 1231;
+		rLoc = 1230;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 0;
@@ -3509,6 +3509,20 @@
 		rType = 0;
 		vrLen = 1570;
 		vrLoc = 0;
+	};
+	9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1158, 0}";
+			sepNavVisRange = "{0, 1165}";
+		};
+	};
+	9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1050, 0}";
+			sepNavVisRange = "{0, 1221}";
+		};
 	};
 	9BC51FB10FDC1E2300D069E7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
