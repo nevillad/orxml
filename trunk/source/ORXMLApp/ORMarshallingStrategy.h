@@ -19,13 +19,13 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "ORXMLWriter.h"
+#import "ORConverterLookup.h"
 #import "ORContext.h"
 
-@protocol ORConverter;
+@protocol ORMarshallingStrategy
 
-@protocol ORUnmarshallingContext <ORContext>
-
-- (id)convertValue:(id)value ofType:(class)type;
-- (id)convertValue:(id)value ofType:(class)type withConverter:(id<ORConverter>)converter;
+- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext;
+- (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext;
 
 @end

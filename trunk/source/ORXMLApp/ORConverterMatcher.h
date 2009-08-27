@@ -22,6 +22,6 @@
 
 @protocol ORConverterMatcher
 
-- (BOOL)canConvertType:(class)type;
+//- (BOOL)canConvertType:(class)type;
 
 @end

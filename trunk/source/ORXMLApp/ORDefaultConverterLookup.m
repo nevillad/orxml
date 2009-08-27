@@ -19,15 +19,15 @@
  *****************************************************************************/
 
 #import "ORDefaultConverterLookup.h"
-
+#import "ORConverter.h"
 
 @implementation ORDefaultConverterLookup
 
-- (id<ORConverter>)lookupConverterForType:(class)type
-{
-}
+//- (id<ORConverter>)lookupConverterForType:(classtype
+//{
+//}
 
-- (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority
+- (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority;
 {
 }
 
