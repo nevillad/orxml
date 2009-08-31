@@ -19,13 +19,18 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "ORDataContext.h"
+#import "ORMarshallingContext.h"
 
 @class ORMapper;
+@protocol ORXMLWriter, ORConverterLookup;
 
-@interface ORTreeMarshaller : NSObject {
+@interface ORTreeMarshaller : ORDataContext <ORMarshallingContext> {
 	ORMapper *_mapper;
+	id<ORXMLWriter> _writer;
+	id<ORConverterLookup> _converterLookup;
 }
 
-- (id)initWithMapper:(ORMapper *)mapper;
+- (id)initWithXmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
 
 @end
