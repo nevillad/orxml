@@ -18,38 +18,16 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORTreeMarshaller.h"
-#import "ORMapper.h"
-#import "ORXMLWriter.h"
-#import "ORConverterLookup.h"
+#import <Foundation/Foundation.h>
+#import "ORDataContext.h"
+#import "ORUnmarshallingContext.h"
 
-@implementation ORTreeMarshaller
+@class ORMapper;
 
-- (id)initWithXmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
-{
-	if(self = [super init]) {
-		[aMapper retain];
-		_mapper = aMapper;
-		
-		_writer = writer;
-		_converterLookup = aConverterLookup;
-	}
-	
-	return self;
+@interface ORTreeUnmarschaller : ORDataContext <ORUnmarshallingContext> {
+	ORMapper *_mapper;
 }
 
-- (void)dealloc
-{
-	[_mapper release];
-	[super dealloc];
-}
-
-- (void)convertValue:(id)value
-{
-}
-
-- (void)convertValue:(id)value withConverter:(id<ORConverter>)converter
-{
-}
+- (id)initWithMapper:(ORMapper *)mapper;
 
 @end
