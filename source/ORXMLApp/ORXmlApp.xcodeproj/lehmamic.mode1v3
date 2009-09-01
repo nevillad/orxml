@@ -231,6 +231,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -281,11 +283,28 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>50</integer>
+									<integer>54</integer>
+									<integer>53</integer>
+								</array>
+								<array>
+									<integer>55</integer>
+									<integer>53</integer>
+								</array>
+								<array>
+									<integer>56</integer>
+									<integer>53</integer>
+								</array>
+								<array>
+									<integer>58</integer>
+									<integer>53</integer>
+								</array>
+								<array>
+									<integer>59</integer>
+									<integer>53</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {383, 914}}</string>
+							<string>{{0, 141}, {383, 914}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -334,7 +353,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9BC069E2104D9D770050746A</string>
+										<string>9BC069FA104D9DF70050746A</string>
 										<key>history</key>
 										<array>
 											<string>9B846AF10FD6FE5400F2268B</string>
@@ -399,15 +418,15 @@
 											<string>9BC06960104C610A0050746A</string>
 											<string>9BC06961104C610A0050746A</string>
 											<string>9BC06964104C610A0050746A</string>
-											<string>9BC06965104C610A0050746A</string>
 											<string>9BC069A9104C66CC0050746A</string>
 											<string>9BC069AA104C66CC0050746A</string>
 											<string>9BC069AC104C66CC0050746A</string>
 											<string>9BC069AE104C66CC0050746A</string>
 											<string>9BC069B0104C66CC0050746A</string>
 											<string>9BC069DD104D9D770050746A</string>
-											<string>9BC069DE104D9D770050746A</string>
-											<string>9BC069DF104D9D770050746A</string>
+											<string>9BC069F4104D9DF70050746A</string>
+											<string>9BC069F5104D9DF70050746A</string>
+											<string>9BC069F6104D9DF70050746A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -550,6 +569,10 @@
 											<string>9BC069C1104C66CC0050746A</string>
 											<string>9BC069E0104D9D770050746A</string>
 											<string>9BC069E1104D9D770050746A</string>
+											<string>9BC069E5104D9DB00050746A</string>
+											<string>9BC069F7104D9DF70050746A</string>
+											<string>9BC069F8104D9DF70050746A</string>
+											<string>9BC069F9104D9DF70050746A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -571,8 +594,6 @@
 							<string>754pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -745,6 +766,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>9B8A6AF40FD97DAB00696B99</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9B846B140FD6FE5400F2268B</string>
 		<string>/Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXmlApp.xcodeproj</string>
@@ -1628,7 +1650,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>9B8A6AF40FD97DAB00696B99</string>
-				<string>9B8A6AF50FD97DAB00696B99</string>
+				<string>9BC069E7104D9DB00050746A</string>
 				<string>9B8A6AF30FD97DAB00696B99</string>
 			</array>
 			<key>WindowString</key>

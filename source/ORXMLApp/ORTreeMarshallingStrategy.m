@@ -21,7 +21,7 @@
 #import "ORTreeMarshallingStrategy.h"
 #import "ORMapper.h"
 #import "ORTreeMarshaller.h"
-#import "ORTreeUnmarschaller.h"
+#import "ORTreeUnmarshaller.h"
 
 @implementation ORTreeMarshallingStrategy
 
@@ -49,7 +49,7 @@
 
 - (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext
 {
-	ORTreeUnmarschaller *unmarshaller = [[[ORTreeUnmarschaller alloc] initWithItem:value xmlReader:reader converterLookup:aConverterLookup mapper:_mapper] autorelease];
+	ORTreeUnmarshaller *unmarshaller = [[[ORTreeUnmarshaller alloc] initWithItem:value xmlReader:reader converterLookup:aConverterLookup mapper:_mapper] autorelease];
 	return [unmarshaller startUnmarshallingWithContext:aContext];
 }
 

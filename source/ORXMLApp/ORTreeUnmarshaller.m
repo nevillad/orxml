@@ -18,11 +18,11 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORTreeUnmarschaller.h"
+#import "ORTreeUnmarshaller.h"
 #import "ORXMLReader.h"
 #import "ORConverterLookup.h"
 
-@implementation ORTreeUnmarschaller
+@implementation ORTreeUnmarshaller
 
 - (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper
 {
