@@ -32,5 +32,6 @@
 }
 
 - (id)initWithXmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
+- (void)startMarshallingItem:(id)item withContext:(id<ORContext>)context;
 
 @end

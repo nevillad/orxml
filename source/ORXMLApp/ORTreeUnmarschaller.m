@@ -19,14 +19,20 @@
  *****************************************************************************/
 
 #import "ORTreeUnmarschaller.h"
+#import "ORXMLReader.h"
+#import "ORConverterLookup.h"
 
 @implementation ORTreeUnmarschaller
 
-- (id)initWithMapper:(ORMapper *)mapper
+- (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper
 {
 	if(self = [super init]) {
 		[mapper retain];
-		_mapper = mapper;
+		
+		_mapper = aMapper;
+	    _reader = reader;
+	    _converterLookup = aConverterLookup;
+		_root = root;
 	}
 	
 	return self;
@@ -38,12 +44,17 @@
 	[super dealloc];
 }
 
-- (id)convertValue:(id)value ofType:(class)type
+- (id)convertValue:(id)value ofType:(Class)type
 {
 	return nil;
 }
 
-- (id)convertValue:(id)value ofType:(class)type withConverter:(id<ORConverter>)converter
+- (id)convertValue:(id)value ofType:(Class)type withConverter:(id<ORConverter>)converter
+{
+	return nil;
+}
+
+- (id)startUnmarshallingWithContext:(id<ORContext>)context
 {
 	return nil;
 }
