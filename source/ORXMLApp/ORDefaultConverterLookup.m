@@ -25,6 +25,7 @@
 
 - (id<ORConverter>)lookupConverterForType:(Class)type
 {
+	return nil;
 }
 
 - (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority;
