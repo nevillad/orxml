@@ -42,8 +42,8 @@
 		9BA4A78A1047040000AF29DF /* ORTreeMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */; };
 		9BC0692E104C524C0050746A /* ORDataContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC0692C104C524C0050746A /* ORDataContext.h */; };
 		9BC0692F104C524C0050746A /* ORDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0692D104C524C0050746A /* ORDataContext.m */; };
-		9BC52B36104831DA00DC0B8B /* ORTreeUnmarschaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarschaller.h */; };
-		9BC52B37104831DA00DC0B8B /* ORTreeUnmarschaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarschaller.m */; };
+		9BC52B36104831DA00DC0B8B /* ORTreeUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */; };
+		9BC52B37104831DA00DC0B8B /* ORTreeUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */; };
 		9BDDE18C0FDD8F8500D1312B /* ORXmlException.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BDDE18D0FDD8F8500D1312B /* ORXmlException.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDE18B0FDD8F8500D1312B /* ORXmlException.m */; };
 		9BDDE1A20FDD979000D1312B /* ORLibXmlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */; };
@@ -132,8 +132,8 @@
 		9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeMarshaller.m; sourceTree = "<group>"; };
 		9BC0692C104C524C0050746A /* ORDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDataContext.h; sourceTree = "<group>"; };
 		9BC0692D104C524C0050746A /* ORDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDataContext.m; sourceTree = "<group>"; };
-		9BC52B34104831DA00DC0B8B /* ORTreeUnmarschaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTreeUnmarschaller.h; sourceTree = "<group>"; };
-		9BC52B35104831DA00DC0B8B /* ORTreeUnmarschaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeUnmarschaller.m; sourceTree = "<group>"; };
+		9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTreeUnmarshaller.h; sourceTree = "<group>"; };
+		9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeUnmarshaller.m; sourceTree = "<group>"; };
 		9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXmlException.h; sourceTree = "<group>"; };
 		9BDDE18B0FDD8F8500D1312B /* ORXmlException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORXmlException.m; sourceTree = "<group>"; };
 		9BDDE1A00FDD979000D1312B /* ORLibXmlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlNode.h; sourceTree = "<group>"; };
@@ -330,8 +330,8 @@
 				9BA4A6F81046F5A100AF29DF /* ORTreeMarshallingStrategy.m */,
 				9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */,
 				9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */,
-				9BC52B34104831DA00DC0B8B /* ORTreeUnmarschaller.h */,
-				9BC52B35104831DA00DC0B8B /* ORTreeUnmarschaller.m */,
+				9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */,
+				9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */,
 				9BC0692C104C524C0050746A /* ORDataContext.h */,
 				9BC0692D104C524C0050746A /* ORDataContext.m */,
 			);
@@ -408,7 +408,7 @@
 				9BA4A6F21046F40100AF29DF /* ORMarshallingStrategy.h in Headers */,
 				9BA4A6F91046F5A100AF29DF /* ORTreeMarshallingStrategy.h in Headers */,
 				9BA4A7891047040000AF29DF /* ORTreeMarshaller.h in Headers */,
-				9BC52B36104831DA00DC0B8B /* ORTreeUnmarschaller.h in Headers */,
+				9BC52B36104831DA00DC0B8B /* ORTreeUnmarshaller.h in Headers */,
 				9BC0692E104C524C0050746A /* ORDataContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +521,7 @@
 				9BF5D0D91045D220005966E2 /* ORMapper.m in Sources */,
 				9BA4A6FA1046F5A100AF29DF /* ORTreeMarshallingStrategy.m in Sources */,
 				9BA4A78A1047040000AF29DF /* ORTreeMarshaller.m in Sources */,
-				9BC52B37104831DA00DC0B8B /* ORTreeUnmarschaller.m in Sources */,
+				9BC52B37104831DA00DC0B8B /* ORTreeUnmarshaller.m in Sources */,
 				9BC0692F104C524C0050746A /* ORDataContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

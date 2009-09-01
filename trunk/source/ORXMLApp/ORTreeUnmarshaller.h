@@ -25,7 +25,7 @@
 @class ORMapper;
 @protocol ORXMLReader, ORConverterLookup;
 
-@interface ORTreeUnmarschaller : ORDataContext <ORUnmarshallingContext> {
+@interface ORTreeUnmarshaller : ORDataContext <ORUnmarshallingContext> {
 	ORMapper *_mapper;
 	id<ORXMLReader> _reader;
 	id<ORConverterLookup> _converterLookup;
