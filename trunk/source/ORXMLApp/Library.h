@@ -18,13 +18,11 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORContext.h"
+#import <Cocoa/Cocoa.h>
 
-@interface ORDataContext : NSObject <ORContext> {
-	id<ORContext> _data;
+
+@interface Library : NSObject {
+
 }
-
-- (void)lazyCreateDataDictionary;
 
 @end

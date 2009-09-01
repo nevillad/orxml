@@ -21,10 +21,8 @@
 #import <Foundation/Foundation.h>
 #import "ORContext.h"
 
-@interface ORDataContext : NSObject <ORContext> {
-	id<ORContext> _data;
+@interface ORDataDictionary : NSObject <ORContext> {
+	NSMutableDictionary *_data;
 }
-
-- (void)lazyCreateDataDictionary;
 
 @end

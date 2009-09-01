@@ -18,13 +18,39 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORContext.h"
+#import "ORDataDictionary.h"
 
-@interface ORDataContext : NSObject <ORContext> {
-	id<ORContext> _data;
+
+@implementation ORDataDictionary
+
+- (id)init
+{
+	if(self = [super init]) {
+		_data = [[NSMutableDictionary alloc] init];
+	}
+	
+	return self;
 }
 
-- (void)lazyCreateDataDictionary;
+- (void)dealloc
+{
+	[_data release];
+	[super dealloc];
+}
+
+- (void)putValue:(id)value forKey:(NSString *)key
+{
+	[_data setObject:value forKey:key];
+}
+
+- (id)getValueForKey:(NSString *)key
+{
+	return [_data valueForKey:key];
+}
+
+- (NSArray *)keys
+{
+	return [_data allKeys];
+}
 
 @end

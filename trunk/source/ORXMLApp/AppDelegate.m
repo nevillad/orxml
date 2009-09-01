@@ -21,6 +21,7 @@
 #import "AppDelegate.h"
 #import <ORXml/ORXMLSerializer.h>
 #import "Test.h"
+#import "Library.h"
 
 
 @implementation AppDelegate
@@ -30,10 +31,10 @@
 	// Test xml serializer
 	NSError *error = nil;
 	ORXMLSerializer *serializer = [[ORXMLSerializer alloc] init];
-	Test *test = [serializer deserializeWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"xml"]] error:&error];
-	[serializer serializeTarget:nil];
+//	Test *test = [serializer deserializeWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"xml"]] error:&error];
 	
-	NSLog(@"%@", test);
+	Library *library = [[[Library alloc] init] autorelease];
+	[serializer serializeTarget:library];
 	
 	// Cleanup data source
 	[error release];
