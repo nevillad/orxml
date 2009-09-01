@@ -23,9 +23,9 @@
 
 @implementation ORDefaultConverterLookup
 
-//- (id<ORConverter>)lookupConverterForType:(classtype
-//{
-//}
+- (id<ORConverter>)lookupConverterForType:(Class)type
+{
+}
 
 - (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority;
 {

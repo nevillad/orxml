@@ -25,7 +25,7 @@
 
 @protocol ORUnmarshallingContext <ORContext>
 
-- (id)convertValue:(id)value ofType:(class)type;
-- (id)convertValue:(id)value ofType:(class)type withConverter:(id<ORConverter>)converter;
+- (id)convertValue:(id)value ofType:(Class)type;
+- (id)convertValue:(id)value ofType:(Class)type withConverter:(id<ORConverter>)converter;
 
 @end

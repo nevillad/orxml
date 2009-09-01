@@ -25,13 +25,13 @@
 
 @implementation ORTreeMarshaller
 
-- (id)initWithXmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
+- (id)initWithXmlWriter:(id<ORXMLWriter>)aWriter converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
 {
 	if(self = [super init]) {
 		[aMapper retain];
 		_mapper = aMapper;
 		
-		_writer = writer;
+		_writer = aWriter;
 		_converterLookup = aConverterLookup;
 	}
 	
@@ -49,6 +49,10 @@
 }
 
 - (void)convertValue:(id)value withConverter:(id<ORConverter>)converter
+{
+}
+
+- (void)startMarshallingItem:(id)item withContext:(id<ORContext>)context
 {
 }
 
