@@ -20,7 +20,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ORContext
+@protocol ORContext <NSObject>
 
 - (void)putValue:(id)value forKey:(NSString *)key;
 - (id)getValueForKey:(NSString *)key;

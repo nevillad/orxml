@@ -22,7 +22,7 @@
 #import "ORXMLReader.h"
 #import "ORXMLWriter.h"
 
-@protocol ORXMLDriver
+@protocol ORXMLDriver <NSObject>
 
 - (id<ORXMLReader>) xmlReaderForData:(NSData *)data;
 - (id<ORXMLWriter>) xmlWriter;

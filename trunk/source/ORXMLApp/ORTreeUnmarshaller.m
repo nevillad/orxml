@@ -28,10 +28,15 @@
 {
 	if(self = [super init]) {
 		[aMapper retain];
-		
 		_mapper = aMapper;
+		
+		[reader retain];
 	    _reader = reader;
+		
+		[aConverterLookup retain];
 	    _converterLookup = aConverterLookup;
+		
+		[root retain];
 		_root = root;
 	}
 	
@@ -41,6 +46,9 @@
 - (void)dealloc
 {
 	[_mapper release];
+	[_reader release];
+	[_converterLookup release];
+	[_root release];
 	[super dealloc];
 }
 

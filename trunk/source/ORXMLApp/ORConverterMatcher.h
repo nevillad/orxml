@@ -20,8 +20,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ORConverterMatcher
+@protocol ORConverterMatcher <NSObject>
 
-//- (BOOL)canConvertType:(class)type;
+- (BOOL)canConvertType:(Class)type;
 
 @end

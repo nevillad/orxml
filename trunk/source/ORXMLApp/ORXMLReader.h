@@ -20,7 +20,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ORXMLReader
+@protocol ORXMLReader <NSObject>
 
 - (NSString *)name;
 - (NSString *)value;

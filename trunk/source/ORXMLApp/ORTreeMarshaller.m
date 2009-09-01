@@ -31,7 +31,10 @@
 		[aMapper retain];
 		_mapper = aMapper;
 		
+		[aWriter retain];
 		_writer = aWriter;
+		
+		[aConverterLookup retain];
 		_converterLookup = aConverterLookup;
 	}
 	
@@ -41,6 +44,8 @@
 - (void)dealloc
 {
 	[_mapper release];
+	[_writer release];
+	[_converterLookup release];
 	[super dealloc];
 }
 
