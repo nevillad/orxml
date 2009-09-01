@@ -23,4 +23,10 @@
 
 @implementation ORMapper
 
+- (NSString *)aliasForType:(Class)type
+{
+//	return [NSString stringWithUTF8String:type->name];
+	return nil;
+}
+
 @end

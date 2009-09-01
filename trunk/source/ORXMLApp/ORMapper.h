@@ -25,4 +25,6 @@
 
 }
 
+- (NSString *)aliasForType:(Class)type;
+
 @end
