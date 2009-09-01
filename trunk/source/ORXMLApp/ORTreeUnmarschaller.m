@@ -27,7 +27,7 @@
 - (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper
 {
 	if(self = [super init]) {
-		[mapper retain];
+		[aMapper retain];
 		
 		_mapper = aMapper;
 	    _reader = reader;
