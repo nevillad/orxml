@@ -30,9 +30,9 @@
 - (id)init
 {
 	if(self = [super init]) {
-		_driver = [[[ORLibXmlDriver alloc] init] autorelease];
-		_mapper = [[[ORMapper alloc] init] autorelease];
-		_marshallingStrategy = [[[ORTreeMarshallingStrategy alloc] initWithMapper:_mapper] autorelease];
+		_driver = [[ORLibXmlDriver alloc] init];
+		_mapper = [[ORMapper alloc] init];
+		_marshallingStrategy = [[ORTreeMarshallingStrategy alloc] initWithMapper:_mapper];
 	}
 	
 	return self;
@@ -64,6 +64,9 @@
 
 - (void)dealloc
 {
+	[_driver release];
+	[_mapper release];
+	[_marshallingStrategy release];
 	[super dealloc];
 }
 

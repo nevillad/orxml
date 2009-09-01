@@ -20,7 +20,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ORXMLWriter
+@protocol ORXMLWriter <NSObject>
 
 - (void)addAttributeWithName:(NSString *)name forValue:(NSString *)value;
 - (void)close;

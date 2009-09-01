@@ -21,7 +21,7 @@
 #import <Foundation/Foundation.h>
 #import "ORConverter.h"
 
-@protocol ORConverterRegistry
+@protocol ORConverterRegistry <NSObject>
 
 - (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority;
 

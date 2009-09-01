@@ -19,7 +19,6 @@
  *****************************************************************************/
 
 #import "ORDefaultConverterLookup.h"
-#import "ORConverter.h"
 
 @implementation ORDefaultConverterLookup
 
