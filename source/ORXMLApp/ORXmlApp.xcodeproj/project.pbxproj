@@ -42,6 +42,9 @@
 		9BA4A78A1047040000AF29DF /* ORTreeMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */; };
 		9BC0692E104C524C0050746A /* ORDataContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC0692C104C524C0050746A /* ORDataContext.h */; };
 		9BC0692F104C524C0050746A /* ORDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0692D104C524C0050746A /* ORDataContext.m */; };
+		9BC06A6E104DB7E40050746A /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC06A6D104DB7E40050746A /* Library.m */; };
+		9BC06AA0104DC1650050746A /* ORDataDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC06A9E104DC1650050746A /* ORDataDictionary.h */; };
+		9BC06AA1104DC1650050746A /* ORDataDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC06A9F104DC1650050746A /* ORDataDictionary.m */; };
 		9BC52B36104831DA00DC0B8B /* ORTreeUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */; };
 		9BC52B37104831DA00DC0B8B /* ORTreeUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */; };
 		9BDDE18C0FDD8F8500D1312B /* ORXmlException.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -132,6 +135,10 @@
 		9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeMarshaller.m; sourceTree = "<group>"; };
 		9BC0692C104C524C0050746A /* ORDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDataContext.h; sourceTree = "<group>"; };
 		9BC0692D104C524C0050746A /* ORDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDataContext.m; sourceTree = "<group>"; };
+		9BC06A6C104DB7E40050746A /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
+		9BC06A6D104DB7E40050746A /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		9BC06A9E104DC1650050746A /* ORDataDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDataDictionary.h; sourceTree = "<group>"; };
+		9BC06A9F104DC1650050746A /* ORDataDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDataDictionary.m; sourceTree = "<group>"; };
 		9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTreeUnmarshaller.h; sourceTree = "<group>"; };
 		9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeUnmarshaller.m; sourceTree = "<group>"; };
 		9BDDE18A0FDD8F8500D1312B /* ORXmlException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORXmlException.h; sourceTree = "<group>"; };
@@ -186,6 +193,8 @@
 				9B846AB30FD6FAD600F2268B /* Adress.m */,
 				9B846AD50FD6FCA600F2268B /* AppDelegate.h */,
 				9B846AD60FD6FCA600F2268B /* AppDelegate.m */,
+				9BC06A6C104DB7E40050746A /* Library.h */,
+				9BC06A6D104DB7E40050746A /* Library.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -334,6 +343,8 @@
 				9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */,
 				9BC0692C104C524C0050746A /* ORDataContext.h */,
 				9BC0692D104C524C0050746A /* ORDataContext.m */,
+				9BC06A9E104DC1650050746A /* ORDataDictionary.h */,
+				9BC06A9F104DC1650050746A /* ORDataDictionary.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -410,6 +421,7 @@
 				9BA4A7891047040000AF29DF /* ORTreeMarshaller.h in Headers */,
 				9BC52B36104831DA00DC0B8B /* ORTreeUnmarshaller.h in Headers */,
 				9BC0692E104C524C0050746A /* ORDataContext.h in Headers */,
+				9BC06AA0104DC1650050746A /* ORDataDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +513,7 @@
 				9B846AB60FD6FAD600F2268B /* Test.m in Sources */,
 				9B846AB70FD6FAD600F2268B /* Adress.m in Sources */,
 				9B846AD70FD6FCA600F2268B /* AppDelegate.m in Sources */,
+				9BC06A6E104DB7E40050746A /* Library.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +536,7 @@
 				9BA4A78A1047040000AF29DF /* ORTreeMarshaller.m in Sources */,
 				9BC52B37104831DA00DC0B8B /* ORTreeUnmarshaller.m in Sources */,
 				9BC0692F104C524C0050746A /* ORDataContext.m in Sources */,
+				9BC06AA1104DC1650050746A /* ORDataDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

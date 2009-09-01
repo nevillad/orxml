@@ -19,22 +19,39 @@
  *****************************************************************************/
 
 #import "ORDataContext.h"
-
+#import "ORDataDictionary.h"
 
 @implementation ORDataContext
 
+- (void)dealloc
+{
+	[_data release];
+	[super dealloc];
+}
+
+- (void)lazyCreateDataDictionary
+{
+	if(_data == nil) {
+		_data = [[ORDataDictionary alloc]init];
+	}
+}
+
 - (void)putValue:(id)value forKey:(NSString *)key
 {
+	[self lazyCreateDataDictionary];
+	[_data putValue:value forKey:key];
 }
 
 - (id)getValueForKey:(NSString *)key
 {
-	return nil;
+	[self lazyCreateDataDictionary];
+	return [_data getValueForKey:key];
 }
 
 - (NSArray *)keys
 {
-	return nil;
+	[self lazyCreateDataDictionary];
+	return [_data keys];
 }
 
 @end

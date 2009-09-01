@@ -59,6 +59,12 @@
 
 - (void)startMarshallingItem:(id)item withContext:(id<ORContext>)context
 {
+	_data = context;
+	
+	if(item == nil) {
+	}
+	else {
+	}
 }
 
 @end

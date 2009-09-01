@@ -24,6 +24,7 @@
 #import "ORXMLReader.h"
 #import "ORTreeMarshallingStrategy.h"
 #import "ORMapper.h"
+#import "ORDefaultConverterLookup.h"
 
 @implementation ORXMLSerializer
 
@@ -33,6 +34,7 @@
 		_driver = [[ORLibXmlDriver alloc] init];
 		_mapper = [[ORMapper alloc] init];
 		_marshallingStrategy = [[ORTreeMarshallingStrategy alloc] initWithMapper:_mapper];
+		_converterLookup = [[ORDefaultConverterLookup alloc] init];
 	}
 	
 	return self;
@@ -54,7 +56,7 @@
 {
 	id<ORXMLWriter> xmlWriter = [_driver xmlWriter];
 
-	[_marshallingStrategy marshalValue:nil 
+	[_marshallingStrategy marshalValue:target
 							 xmlWriter:xmlWriter 
 					   converterLookup:_converterLookup 
 							   context:nil];
@@ -67,6 +69,7 @@
 	[_driver release];
 	[_mapper release];
 	[_marshallingStrategy release];
+	[_converterLookup release];
 	[super dealloc];
 }
 
