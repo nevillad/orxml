@@ -51,20 +51,24 @@
 
 - (void)convertValue:(id)value
 {
+	[self convertValue:value withConverter:nil];
 }
 
 - (void)convertValue:(id)value withConverter:(id<ORConverter>)converter
 {
+	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterLookup lookupConverterForType:[value class]];
+	
+	if(![valueConverter canConvertType:[value class]]) {
+		// throw an exception
+	}
+	
+	[valueConverter marshalValue:value xmlWriter:_writer marshallingContext:self];
 }
 
 - (void)startMarshallingItem:(id)item withContext:(id<ORContext>)context
 {
 	_data = context;
-	
-	if(item == nil) {
-	}
-	else {
-	}
+	[self convertValue:item];
 }
 
 @end
