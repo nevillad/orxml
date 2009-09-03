@@ -884,7 +884,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		rLen = 0;
-		rLoc = 35;
+		rLoc = 34;
 		rType = 1;
 	};
 	9B35B4E210504AA60006874C /* PBXTextBookmark */ = {
@@ -902,7 +902,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1568;
+		rLoc = 1532;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -929,7 +929,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1568;
+		rLoc = 1532;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -939,7 +939,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1568;
+		rLoc = 1532;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -986,7 +986,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1568;
+		rLoc = 1532;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -1036,7 +1036,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1568;
+		rLoc = 1532;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -1123,7 +1123,7 @@
 		fRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 72";
 		rLen = 0;
-		rLoc = 2178;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 1188;
 		vrLoc = 1305;
@@ -1170,7 +1170,7 @@
 		fRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 70";
 		rLen = 0;
-		rLoc = 2127;
+		rLoc = 2100;
 		rType = 0;
 		vrLen = 1188;
 		vrLoc = 1305;
@@ -1200,7 +1200,7 @@
 		fRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 72";
 		rLen = 0;
-		rLoc = 2178;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 1188;
 		vrLoc = 1305;
@@ -1264,6 +1264,34 @@
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 589;
+	};
+	9B35B51B105054130006874C /* ORMemberInfo.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1034, 0}";
+			sepNavVisRange = "{0, 1034}";
+		};
+	};
+	9B35B51D1050543E0006874C /* ORType.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1034, 0}";
+			sepNavVisRange = "{0, 1077}";
+		};
+	};
+	9B35B51E1050543E0006874C /* ORType.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1017, 0}";
+			sepNavVisRange = "{0, 1051}";
+		};
+	};
+	9B35B5211050544D0006874C /* ORReflection.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1001}";
+		};
 	};
 	9B37C7B90FEEC3E80031BB41 /* ORLibXmlNode.m */ = {
 		isa = PBXFileReference;
@@ -1379,9 +1407,9 @@
 	};
 	9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 1232}}";
-			sepNavSelRange = "{2178, 0}";
-			sepNavVisRange = "{1305, 1188}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 1204}}";
+			sepNavSelRange = "{1810, 0}";
+			sepNavVisRange = "{1029, 1240}";
 		};
 	};
 	9B846AB50FD6FAD600F2268B /* Adress.h */ = {
@@ -1411,8 +1439,8 @@
 	9B846AD60FD6FCA600F2268B /* AppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1568, 0}";
-			sepNavVisRange = "{0, 1644}";
+			sepNavSelRange = "{1431, 0}";
+			sepNavVisRange = "{0, 1590}";
 		};
 	};
 	9B846AE10FD6FD2C00F2268B /* ORXMLSerializer.h */ = {
@@ -1621,7 +1649,7 @@
 	9B8A6A780FD9775F00696B99 /* ORRuntime.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1054, 0}";
+			sepNavSelRange = "{1021, 33}";
 			sepNavVisRange = "{0, 1165}";
 		};
 	};
@@ -2016,9 +2044,9 @@
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORTreeMarshallingStrategy.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 770}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 798}}";
 			sepNavSelRange = "{1645, 0}";
-			sepNavVisRange = "{0, 1861}";
+			sepNavVisRange = "{271, 1821}";
 		};
 	};
 	9BA4A7341046F6AC00AF29DF /* PBXTextBookmark */ = {
@@ -2057,6 +2085,11 @@
 		name = ORXMLSerializer.h;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXMLSerializer.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1327, 0}";
+			sepNavVisRange = "{0, 1401}";
+		};
 	};
 	9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */ = {
 		uiCtxt = {
@@ -2102,7 +2135,7 @@
 	9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1185, 0}";
+			sepNavSelRange = "{1485, 3}";
 			sepNavVisRange = "{0, 1498}";
 		};
 	};
@@ -2240,7 +2273,7 @@
 		rLen = 229;
 		rLoc = 1217;
 		rType = 0;
-		vrLen = 1524;
+		vrLen = 1452;
 		vrLoc = 0;
 	};
 	9BA6ED8E1050258D003392EE /* PBXTextBookmark */ = {
@@ -2326,6 +2359,11 @@
 		name = DefaultConverterLookup.java;
 		path = "/Users/lehmamic/Downloads/xstream-1.3.1/xstream/src/java/com/thoughtworks/xstream/core/DefaultConverterLookup.java";
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 1176}}";
+			sepNavSelRange = "{2154, 75}";
+			sepNavVisRange = "{955, 1775}";
+		};
 	};
 	9BA6ED971050258D003392EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2734,7 +2772,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 72";
 		rLen = 0;
-		rLoc = 2494;
+		rLoc = 2467;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 1104;
@@ -3263,7 +3301,7 @@
 		fRef = 9BF5D0D21045D100005966E2 /* ORDefaultConverterProvider.m */;
 		name = "ORDefaultConverterProvider.m: 45";
 		rLen = 0;
-		rLoc = 1844;
+		rLoc = 1900;
 		rType = 0;
 		vrLen = 1442;
 		vrLoc = 0;
@@ -3591,9 +3629,9 @@
 		fRef = 9BA4A75B1046FBC800AF29DF /* ORXMLSerializer.h */;
 		name = "ORXMLSerializer.h: 37";
 		rLen = 24;
-		rLoc = 1397;
+		rLoc = 1370;
 		rType = 0;
-		vrLen = 1449;
+		vrLen = 1428;
 		vrLoc = 0;
 	};
 	9BA6EE7E10504921003392EE /* PBXTextBookmark */ = {
@@ -3621,7 +3659,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 81";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2423;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 1268;
@@ -3661,7 +3699,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 66";
 		rLen = 0;
-		rLoc = 2084;
+		rLoc = 2057;
 		rType = 0;
 		vrLen = 1413;
 		vrLoc = 1318;
@@ -3681,7 +3719,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 36";
 		rLen = 0;
-		rLoc = 1472;
+		rLoc = 1436;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -3691,7 +3729,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 66";
 		rLen = 0;
-		rLoc = 2084;
+		rLoc = 2057;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 1316;
@@ -3701,7 +3739,7 @@
 		fRef = 9B846AD60FD6FCA600F2268B /* AppDelegate.m */;
 		name = "AppDelegate.m: 36";
 		rLen = 0;
-		rLoc = 1472;
+		rLoc = 1436;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -3888,9 +3926,9 @@
 		path = ORDefaultConverterProvider.m;
 		sourceTree = SOURCE_ROOT;
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 910}}";
-			sepNavSelRange = "{1355, 0}";
-			sepNavVisRange = "{589, 1416}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 938}}";
+			sepNavSelRange = "{1789, 0}";
+			sepNavVisRange = "{526, 1533}";
 		};
 	};
 	9BC069FE104DB0C30050746A /* ORXMLSerializer.m */ = {
@@ -3914,7 +3952,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 1050}}";
 			sepNavSelRange = "{1852, 0}";
-			sepNavVisRange = "{1075, 1071}";
+			sepNavVisRange = "{854, 1257}";
 		};
 	};
 	9BC06A13104DB1600050746A /* ORTreeMarshaller.m:30 */ = {
@@ -4613,6 +4651,11 @@
 		name = ORConverter.h;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORConverter.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1001, 33}";
+			sepNavVisRange = "{0, 1452}";
+		};
 	};
 	9BF5D1001045D39A005966E2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

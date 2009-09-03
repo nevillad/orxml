@@ -18,25 +18,9 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "AppDelegate.h"
-#import <ORXml/ORXMLSerializer.h>
-#import "Test.h"
-#import "Library.h"
+#import "ORType.h"
 
 
-@implementation AppDelegate
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-	// Test xml serializer
-	ORXMLSerializer *serializer = [[ORXMLSerializer alloc] init];
-//	Test *test = [serializer deserializeWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"xml"]]];
-	
-	Library *library = [[[Library alloc] init] autorelease];
-	[serializer serializeTarget:library];
-	
-	// Cleanup data source
-	[serializer release];
-}
+@implementation ORType
 
 @end

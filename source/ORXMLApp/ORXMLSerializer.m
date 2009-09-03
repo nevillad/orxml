@@ -53,7 +53,7 @@
 	[super dealloc];
 }
 
-- (id)deserializeWithData:(NSData *)data error:(NSError **)outError
+- (id)deserializeWithData:(NSData *)data
 {
 	id<ORXMLReader> xmlReader = [_driver xmlReaderForData:data];
 	

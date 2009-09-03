@@ -52,6 +52,8 @@
 		}
 	}
 	
+	// throw an exception if no converter has been found
+	
 	return converter;
 }
 

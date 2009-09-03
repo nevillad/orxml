@@ -31,7 +31,7 @@
 	id _converterProvider;
 	ORMapper *_mapper;
 }
-- (id)deserializeWithData:(NSData *)data error:(NSError **)outError;
+- (id)deserializeWithData:(NSData *)data;
 - (NSData *)serializeTarget:(id)target;
 
 - (void)setupConverters;
