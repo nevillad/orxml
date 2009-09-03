@@ -18,17 +18,22 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORConverterMatcher.h"
-#import "ORXMLWriter.h"
-#import "ORXMLReader.h"
+#import "ORDefaultObjectConverter.h"
 
-@protocol ORMarshallingContext, ORUnmarshallingContext;
+@implementation ORDefaultObjectConverter
 
+- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context
+{
+}
 
-@protocol ORConverter <ORConverterMatcher>
+- (id)unmarshalFromXmlReader:(id<ORXMLReader>)reader unmarshallingContext:(id<ORUnmarshallingContext>)context
+{
+	return nil;
+}
 
-- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context;
-- (id)unmarshalFromXmlReader:(id<ORXMLReader>)reader unmarshallingContext:(id<ORUnmarshallingContext>)context;
+- (BOOL)canConvertType:(Class)type
+{
+	return YES;
+}
 
 @end
