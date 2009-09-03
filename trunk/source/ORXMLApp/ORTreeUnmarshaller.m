@@ -20,11 +20,11 @@
 
 #import "ORTreeUnmarshaller.h"
 #import "ORXMLReader.h"
-#import "ORConverterLookup.h"
+#import "ORConverterProvider.h"
 
 @implementation ORTreeUnmarshaller
 
-- (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper
+- (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterProvider:(id<ORConverterProvider>)provider mapper:(ORMapper *)aMapper
 {
 	if(self = [super init]) {
 		[aMapper retain];
@@ -33,8 +33,8 @@
 		[reader retain];
 	    _reader = reader;
 		
-		[aConverterLookup retain];
-	    _converterLookup = aConverterLookup;
+		[provider retain];
+	    _converterProvider = provider;
 		
 		[root retain];
 		_root = root;
@@ -47,7 +47,7 @@
 {
 	[_mapper release];
 	[_reader release];
-	[_converterLookup release];
+	[_converterProvider release];
 	[_root release];
 	[super dealloc];
 }

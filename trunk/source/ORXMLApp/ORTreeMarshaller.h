@@ -23,15 +23,15 @@
 #import "ORMarshallingContext.h"
 
 @class ORMapper;
-@protocol ORXMLWriter, ORConverterLookup;
+@protocol ORXMLWriter, ORConverterProvider;
 
 @interface ORTreeMarshaller : ORDataContext <ORMarshallingContext> {
 	ORMapper *_mapper;
 	id<ORXMLWriter> _writer;
-	id<ORConverterLookup> _converterLookup;
+	id<ORConverterProvider> _converterProvider;
 }
 
-- (id)initWithXmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
+- (id)initWithXmlWriter:(id<ORXMLWriter>)writer converterProvider:(id<ORConverterProvider>)provider mapper:(ORMapper *)aMapper;
 - (void)startMarshallingItem:(id)item withContext:(id<ORContext>)context;
 
 @end

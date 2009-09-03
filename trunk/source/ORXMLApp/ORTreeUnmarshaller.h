@@ -23,16 +23,16 @@
 #import "ORUnmarshallingContext.h"
 
 @class ORMapper;
-@protocol ORXMLReader, ORConverterLookup;
+@protocol ORXMLReader, ORConverterProvider;
 
 @interface ORTreeUnmarshaller : ORDataContext <ORUnmarshallingContext> {
 	ORMapper *_mapper;
 	id<ORXMLReader> _reader;
-	id<ORConverterLookup> _converterLookup;
+	id<ORConverterProvider> _converterProvider;
 	id _root;
 }
 
-- (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
+- (id)initWithItem:(id)root xmlReader:(id<ORXMLReader>)reader converterProvider:(id<ORConverterProvider>)provider mapper:(ORMapper *)aMapper;
 - (id)startUnmarshallingWithContext:(id<ORContext>)context;
 
 @end

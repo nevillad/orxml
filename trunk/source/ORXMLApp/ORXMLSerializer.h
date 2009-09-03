@@ -21,14 +21,14 @@
 #import <Foundation/Foundation.h>
 #import "ORXMLDriver.h"
 #import "ORMarshallingStrategy.h"
-#import "ORConverterLookup.h"
+#import "ORConverterProvider.h"
 
 @class ORMapper;
 
 @interface ORXMLSerializer : NSObject {
 	id<ORXMLDriver> _driver;
 	id<ORMarshallingStrategy> _marshallingStrategy;
-	id<ORConverterLookup> _converterLookup;
+	id<ORConverterProvider> _converterProvider;
 	ORMapper *_mapper;
 }
 - (id)deserializeWithData:(NSData *)data error:(NSError **)outError;

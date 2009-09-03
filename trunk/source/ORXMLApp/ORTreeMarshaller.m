@@ -21,11 +21,11 @@
 #import "ORTreeMarshaller.h"
 #import "ORMapper.h"
 #import "ORXMLWriter.h"
-#import "ORConverterLookup.h"
+#import "ORConverterProvider.h"
 
 @implementation ORTreeMarshaller
 
-- (id)initWithXmlWriter:(id<ORXMLWriter>)aWriter converterLookup:(id<ORConverterLookup>)aConverterLookup mapper:(ORMapper *)aMapper;
+- (id)initWithXmlWriter:(id<ORXMLWriter>)aWriter converterProvider:(id<ORConverterProvider>)provider mapper:(ORMapper *)aMapper;
 {
 	if(self = [super init]) {
 		[aMapper retain];
@@ -34,8 +34,8 @@
 		[aWriter retain];
 		_writer = aWriter;
 		
-		[aConverterLookup retain];
-		_converterLookup = aConverterLookup;
+		[provider retain];
+		_converterProvider = provider;
 	}
 	
 	return self;
@@ -45,7 +45,7 @@
 {
 	[_mapper release];
 	[_writer release];
-	[_converterLookup release];
+	[_converterProvider release];
 	[super dealloc];
 }
 
@@ -56,7 +56,7 @@
 
 - (void)convertValue:(id)value withConverter:(id<ORConverter>)converter
 {
-	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterLookup lookupConverterForType:[value class]];
+	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterProvider lookupConverterForType:[value class]];
 	
 	if(![valueConverter canConvertType:[value class]]) {
 		// throw an exception

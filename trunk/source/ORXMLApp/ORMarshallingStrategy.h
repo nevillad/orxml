@@ -20,12 +20,12 @@
 
 #import <Foundation/Foundation.h>
 #import "ORXMLWriter.h"
-#import "ORConverterLookup.h"
+#import "ORConverterProvider.h"
 #import "ORContext.h"
 
 @protocol ORMarshallingStrategy <NSObject>
 
-- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext;
-- (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext;
+- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer converterProvider:(id<ORConverterProvider>)provider context:(id<ORContext>)aContext;
+- (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterProvider:(id<ORConverterProvider>)provider context:(id<ORContext>)aContext;
 
 @end
