@@ -18,9 +18,9 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORDefaultConverterLookup.h"
+#import "ORDefaultConverterProvider.h"
 
-@implementation ORDefaultConverterLookup
+@implementation ORDefaultConverterProvider
 
 - (id<ORConverter>)converterForType:(Class)type
 {
