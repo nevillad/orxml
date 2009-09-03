@@ -18,13 +18,31 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORConverter.h"
+#import "ORPriorizedItem.h"
 
-@interface ORDefaultObjectConverter : NSObject <ORConverter>{
+@implementation ORPriorizedItem
 
+@synthesize item, priority;
+
+- (id)priorizedItemWithItemAndPriority:(id)anItem priority:(int)aPriority
+{
+	if(self = [super init]) {
+		self.item = anItem;
+		self.priority = aPriority;
+	}
+	
+	return self;
 }
 
-+ (ORDefaultObjectConverter *)converter;
+- (void)dealloc
+{
+	[item release];
+	[super dealloc];
+}
+
++ (ORPriorizedItem *)priorizedItemWithItemAndPriority:(id)anItem priority:(int)aPriority
+{
+	return [[[ORPriorizedItem alloc] priorizedItemWithItemAndPriority:anItem priority:aPriority] autorelease];
+}
 
 @end

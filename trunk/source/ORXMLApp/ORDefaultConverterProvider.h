@@ -25,7 +25,7 @@
 @protocol ORConverter;
 
 @interface ORDefaultConverterProvider : NSObject <ORConverterProvider, ORConverterRegistry>{
-
+	NSMutableArray *_registeredConverters;
 }
 
 @end

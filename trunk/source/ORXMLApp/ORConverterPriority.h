@@ -18,13 +18,10 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "ORConverter.h"
-
-@interface ORDefaultObjectConverter : NSObject <ORConverter>{
-
-}
-
-+ (ORDefaultObjectConverter *)converter;
-
-@end
+enum _ORConverterPriority {
+	ORConverterPriorityLowest		= 0,
+	ORConverterPriorityBelowNormal	= 1,
+	ORConverterPriorityNormal		= 2,
+	ORConverterPriorityAboveNormal	= 3,
+	ORConverterPriorityHighest		= 4
+} typedef ORConverterPriority;

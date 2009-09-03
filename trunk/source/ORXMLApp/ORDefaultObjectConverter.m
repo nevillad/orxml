@@ -22,6 +22,11 @@
 
 @implementation ORDefaultObjectConverter
 
++ (ORDefaultObjectConverter *)converter
+{
+	return [[[ORDefaultObjectConverter alloc] init] autorelease];
+}
+
 - (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context
 {
 }
