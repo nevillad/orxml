@@ -21,7 +21,7 @@
 #import <Foundation/Foundation.h>
 #import "ORConverter.h"
 
-@protocol ORConverterLookup <NSObject>
+@protocol ORConverterProvider <NSObject>
 
 - (id<ORConverter>)lookupConverterForType:(Class)type;
 

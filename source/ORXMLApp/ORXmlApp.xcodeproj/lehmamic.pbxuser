@@ -1606,6 +1606,11 @@
 		name = ORDefaultConverterLookup.h;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORDefaultConverterLookup.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1224, 0}";
+			sepNavVisRange = "{0, 1224}";
+		};
 	};
 	9BA4A65B1046EF6900AF29DF /* ORMarshallingContext.h */ = {
 		isa = PBXFileReference;
@@ -1647,8 +1652,8 @@
 	9BA4A6F11046F40100AF29DF /* ORMarshallingStrategy.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1154, 0}";
-			sepNavVisRange = "{0, 1471}";
+			sepNavSelRange = "{1425, 0}";
+			sepNavVisRange = "{0, 1465}";
 		};
 	};
 	9BA4A6F71046F5A100AF29DF /* ORTreeMarshallingStrategy.h */ = {
@@ -1658,16 +1663,15 @@
 			sepNavVisRange = "{0, 1231}";
 		};
 	};
-	9BA4A6FF1046F5EC00AF29DF /* ORConverterLookup.h */ = {
+	9BA4A6FF1046F5EC00AF29DF /* ORConverterProvider.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
-		name = ORConverterLookup.h;
-		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORConverterLookup.h;
-		sourceTree = "<absolute>";
+		path = ORConverterProvider.h;
+		sourceTree = SOURCE_ROOT;
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1070, 17}";
-			sepNavVisRange = "{0, 1160}";
+			sepNavSelRange = "{1162, 0}";
+			sepNavVisRange = "{0, 1162}";
 		};
 	};
 	9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */ = {
@@ -1676,6 +1680,11 @@
 		name = ORTreeMarshallingStrategy.m;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORTreeMarshallingStrategy.m;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 798}}";
+			sepNavSelRange = "{1990, 0}";
+			sepNavVisRange = "{271, 1821}";
+		};
 	};
 	9BA4A7341046F6AC00AF29DF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1701,8 +1710,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9BA4A7011046F60300AF29DF /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 14";
-		rLen = 5;
-		rLoc = 1623;
+		rLen = 12;
+		rLoc = 1606;
 		rType = 0;
 		vrLen = 243;
 		vrLoc = 0;
@@ -1713,12 +1722,17 @@
 		name = ORXMLSerializer.h;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXMLSerializer.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1264, 0}";
+			sepNavVisRange = "{0, 1423}";
+		};
 	};
 	9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1313, 0}";
-			sepNavVisRange = "{0, 1526}";
+			sepNavSelRange = "{1385, 0}";
+			sepNavVisRange = "{0, 1528}";
 		};
 	};
 	9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */ = {
@@ -1777,7 +1791,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 59";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 1075;
@@ -1856,9 +1870,9 @@
 	};
 	9BA6ED841050258D003392EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterLookup.h */;
+		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterProvider.h */;
 		name = "ORConverterLookup.h: 24";
-		rLen = 17;
+		rLen = 19;
 		rLoc = 1070;
 		rType = 0;
 		vrLen = 1160;
@@ -1889,7 +1903,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 59";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 1075;
@@ -2038,9 +2052,9 @@
 	};
 	9BA6ED971050258D003392EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterLookup.h */;
+		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterProvider.h */;
 		name = "ORConverterLookup.h: 24";
-		rLen = 17;
+		rLen = 19;
 		rLoc = 1070;
 		rType = 0;
 		vrLen = 1160;
@@ -2080,8 +2094,8 @@
 		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 1050}}";
-			sepNavSelRange = "{1828, 0}";
-			sepNavVisRange = "{1075, 1089}";
+			sepNavSelRange = "{1096, 0}";
+			sepNavVisRange = "{1075, 1077}";
 		};
 	};
 	9BC0692C104C524C0050746A /* ORDataContext.h */ = {
@@ -2104,6 +2118,11 @@
 		name = ORDataContext.h;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORDataContext.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1123, 0}";
+			sepNavVisRange = "{0, 1173}";
+		};
 	};
 	9BC0693F104C53740050746A /* ORUnmarshallingContext.h */ = {
 		isa = PBXFileReference;
@@ -2158,7 +2177,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarschaller.m: 27";
 		rLen = 0;
-		rLoc = 1508;
+		rLoc = 1492;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 0;
@@ -2178,7 +2197,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 26";
 		rLen = 18;
-		rLoc = 1225;
+		rLoc = 1227;
 		rType = 0;
 		vrLen = 1165;
 		vrLoc = 0;
@@ -2217,8 +2236,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 29";
-		rLen = 131;
-		rLoc = 1314;
+		rLen = 127;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 1165;
 		vrLoc = 0;
@@ -2228,7 +2247,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarschaller.h: 29";
 		rLen = 0;
-		rLoc = 1251;
+		rLoc = 1253;
 		rType = 0;
 		vrLen = 1168;
 		vrLoc = 0;
@@ -2237,8 +2256,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 26";
-		rLen = 444;
-		rLoc = 1140;
+		rLen = 428;
+		rLoc = 1142;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 0;
@@ -2248,7 +2267,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarschaller.m: 40";
 		rLen = 0;
-		rLoc = 1501;
+		rLoc = 1485;
 		rType = 0;
 		vrLen = 1266;
 		vrLoc = 0;
@@ -2258,7 +2277,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 26";
 		rLen = 0;
-		rLoc = 1222;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 0;
@@ -2278,7 +2297,7 @@
 		fRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 22";
 		rLen = 0;
-		rLoc = 1104;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 0;
@@ -2298,7 +2317,7 @@
 		fRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 43";
 		rLen = 111;
-		rLoc = 1586;
+		rLoc = 1572;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 0;
@@ -2308,7 +2327,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 26";
 		rLen = 0;
-		rLoc = 1222;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 0;
@@ -2318,7 +2337,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 23";
 		rLen = 2;
-		rLoc = 1104;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -2338,7 +2357,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 41";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1570;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 720;
@@ -2388,7 +2407,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 50";
 		rLen = 0;
-		rLoc = 1698;
+		rLoc = 1684;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -2428,7 +2447,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 63";
 		rLen = 0;
-		rLoc = 1697;
+		rLoc = 1683;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 487;
@@ -2448,7 +2467,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 27";
 		rLen = 0;
-		rLoc = 1185;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 0;
@@ -2458,7 +2477,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 49";
 		rLen = 0;
-		rLoc = 1697;
+		rLoc = 1683;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -2498,7 +2517,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 27";
 		rLen = 0;
-		rLoc = 1185;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 0;
@@ -2508,7 +2527,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarschaller.h: 27";
 		rLen = 0;
-		rLoc = 1184;
+		rLoc = 1186;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 0;
@@ -2528,7 +2547,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarschaller.m: 49";
 		rLen = 0;
-		rLoc = 1258;
+		rLoc = 1256;
 		rType = 0;
 		vrLen = 1021;
 		vrLoc = 418;
@@ -2538,7 +2557,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarschaller.h: 27";
 		rLen = 0;
-		rLoc = 1184;
+		rLoc = 1186;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 0;
@@ -2578,7 +2597,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarschaller.h: 27";
 		rLen = 0;
-		rLoc = 1184;
+		rLoc = 1186;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 0;
@@ -2588,7 +2607,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 27";
 		rLen = 0;
-		rLoc = 1185;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 0;
@@ -2598,7 +2617,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 49";
 		rLen = 0;
-		rLoc = 1697;
+		rLoc = 1683;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -2608,7 +2627,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 27";
 		rLen = 0;
-		rLoc = 1185;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 0;
@@ -2618,7 +2637,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 49";
 		rLen = 0;
-		rLoc = 1697;
+		rLoc = 1683;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -2638,7 +2657,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarschaller.h: 27";
 		rLen = 0;
-		rLoc = 1184;
+		rLoc = 1186;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 0;
@@ -2658,7 +2677,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarschaller.m: 35";
 		rLen = 0;
-		rLoc = 1198;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 79;
@@ -2678,7 +2697,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 22";
 		rLen = 0;
-		rLoc = 1104;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 0;
@@ -2707,7 +2726,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarschaller.h: 21";
-		rLen = 256;
+		rLen = 258;
 		rLoc = 1001;
 		rType = 0;
 		vrLen = 1259;
@@ -2734,7 +2753,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarschaller.m: 21";
-		rLen = 506;
+		rLen = 490;
 		rLoc = 1001;
 		rType = 0;
 		vrLen = 1198;
@@ -2742,10 +2761,10 @@
 	};
 	9BC069B3104C66CC0050746A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterLookup.h */;
+		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterProvider.h */;
 		name = "ORConverterLookup.h: 26";
 		rLen = 57;
-		rLoc = 1100;
+		rLoc = 1102;
 		rType = 0;
 		vrLen = 1151;
 		vrLoc = 0;
@@ -2772,7 +2791,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 27";
 		rLen = 0;
-		rLoc = 1185;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 0;
@@ -2835,8 +2854,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 32";
-		rLen = 131;
-		rLoc = 1314;
+		rLen = 127;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 1426;
 		vrLoc = 0;
@@ -2846,7 +2865,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 26";
 		rLen = 0;
-		rLoc = 1271;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 1485;
 		vrLoc = 0;
@@ -2856,7 +2875,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 26";
 		rLen = 0;
-		rLoc = 1153;
+		rLoc = 1155;
 		rType = 0;
 		vrLen = 1385;
 		vrLoc = 0;
@@ -2866,7 +2885,7 @@
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 32";
 		rLen = 0;
-		rLoc = 1335;
+		rLoc = 1333;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 79;
@@ -2876,7 +2895,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 31";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1316;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 0;
@@ -2894,13 +2913,18 @@
 		name = ORDefaultConverterLookup.m;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORDefaultConverterLookup.m;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1037, 0}";
+			sepNavVisRange = "{0, 1244}";
+		};
 	};
 	9BC069E0104D9D770050746A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 9BC06927104C51590050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 60";
 		rLen = 0;
-		rLoc = 1837;
+		rLoc = 1825;
 		rType = 0;
 		vrLen = 1597;
 		vrLoc = 0;
@@ -2910,7 +2934,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarschaller.m: 30";
 		rLen = 0;
-		rLoc = 1302;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1660;
 		vrLoc = 0;
@@ -2920,9 +2944,9 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 47";
 		rLen = 0;
-		rLoc = 1716;
+		rLoc = 1706;
 		rType = 0;
-		vrLen = 1844;
+		vrLen = 1841;
 		vrLoc = 271;
 	};
 	9BC069F7104D9DF70050746A /* PBXTextBookmark */ = {
@@ -2930,7 +2954,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarshaller.h: 29";
 		rLen = 0;
-		rLoc = 1249;
+		rLoc = 1251;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 0;
@@ -2950,7 +2974,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarshaller.h: 28";
 		rLen = 0;
-		rLoc = 1190;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 0;
@@ -2961,6 +2985,11 @@
 		name = ORXMLSerializer.m;
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORXMLSerializer.m;
 		sourceTree = "<group>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 1078}}";
+			sepNavSelRange = "{2216, 0}";
+			sepNavVisRange = "{1104, 1149}";
+		};
 	};
 	9BC06A00104DB0C30050746A /* ORXMLSerializer.m:57 */ = {
 		isa = PBXFileBreakpoint;
@@ -2984,7 +3013,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 52";
 		rLen = 0;
-		rLoc = 1928;
+		rLoc = 1914;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 240;
@@ -2994,7 +3023,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarshaller.h: 28";
 		rLen = 0;
-		rLoc = 1190;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 0;
@@ -3128,7 +3157,7 @@
 		fRef = 9BA4A6F11046F40100AF29DF /* ORMarshallingStrategy.h */;
 		name = "ORMarshallingStrategy.h: 26";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 1471;
 		vrLoc = 0;
@@ -3155,10 +3184,10 @@
 	};
 	9BC06A34104DB3F10050746A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterLookup.h */;
+		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterProvider.h */;
 		name = "ORConverterLookup.h: 24";
 		rLen = 0;
-		rLoc = 1098;
+		rLoc = 1100;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 0;
@@ -3188,7 +3217,7 @@
 		fRef = 9BA4A62C1046EA1800AF29DF /* ORDefaultConverterLookup.h */;
 		name = "ORDefaultConverterLookup.h: 27";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1193;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 0;
@@ -3208,7 +3237,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarshaller.m: 29";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 0;
@@ -3218,7 +3247,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 55";
 		rLen = 0;
-		rLoc = 1876;
+		rLoc = 1882;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 1000;
@@ -3268,7 +3297,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 60";
 		rLen = 0;
-		rLoc = 1837;
+		rLoc = 1825;
 		rType = 0;
 		vrLen = 1477;
 		vrLoc = 120;
@@ -3278,7 +3307,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 55";
 		rLen = 0;
-		rLoc = 1876;
+		rLoc = 1882;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 920;
@@ -3288,7 +3317,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 30";
 		rLen = 0;
-		rLoc = 1275;
+		rLoc = 1273;
 		rType = 0;
 		vrLen = 1479;
 		vrLoc = 120;
@@ -3298,7 +3327,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 47";
 		rLen = 0;
-		rLoc = 1655;
+		rLoc = 1645;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 339;
@@ -3308,7 +3337,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 57";
 		rLen = 0;
-		rLoc = 1829;
+		rLoc = 1817;
 		rType = 0;
 		vrLen = 1265;
 		vrLoc = 418;
@@ -3378,7 +3407,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarshaller.h: 28";
 		rLen = 0;
-		rLoc = 1190;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 0;
@@ -3388,7 +3417,7 @@
 		fRef = 9BA4A75B1046FBC800AF29DF /* ORXMLSerializer.h */;
 		name = "ORXMLSerializer.h: 26";
 		rLen = 0;
-		rLoc = 1122;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -3398,7 +3427,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 69";
 		rLen = 0;
-		rLoc = 2214;
+		rLoc = 2226;
 		rType = 0;
 		vrLen = 1076;
 		vrLoc = 1029;
@@ -3418,7 +3447,7 @@
 		fRef = 9BA4A6F11046F40100AF29DF /* ORMarshallingStrategy.h */;
 		name = "ORMarshallingStrategy.h: 26";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 1471;
 		vrLoc = 0;
@@ -3448,7 +3477,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 31";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1316;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 0;
@@ -3458,17 +3487,17 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 37";
 		rLen = 0;
-		rLoc = 1418;
+		rLoc = 1408;
 		rType = 0;
 		vrLen = 1570;
 		vrLoc = 0;
 	};
 	9BC06A56104DB3F10050746A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterLookup.h */;
+		fRef = 9BA4A6FF1046F5EC00AF29DF /* ORConverterProvider.h */;
 		name = "ORConverterLookup.h: 24";
 		rLen = 0;
-		rLoc = 1098;
+		rLoc = 1100;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 0;
@@ -3500,7 +3529,7 @@
 		rLen = 0;
 		rLoc = 1081;
 		rType = 0;
-		vrLen = 1268;
+		vrLen = 1244;
 		vrLoc = 0;
 	};
 	9BC06A5A104DB3F10050746A /* PBXTextBookmark */ = {
@@ -3508,7 +3537,7 @@
 		fRef = 9BA4A62C1046EA1800AF29DF /* ORDefaultConverterLookup.h */;
 		name = "ORDefaultConverterLookup.h: 27";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1193;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 0;
@@ -3528,7 +3557,7 @@
 		fRef = 9BA4A62C1046EA1800AF29DF /* ORDefaultConverterLookup.h */;
 		name = "ORDefaultConverterLookup.h: 27";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1193;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 0;
@@ -3538,7 +3567,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 31";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1316;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 0;
@@ -3548,7 +3577,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 48";
 		rLen = 0;
-		rLoc = 1566;
+		rLoc = 1552;
 		rType = 0;
 		vrLen = 1427;
 		vrLoc = 271;
@@ -3589,7 +3618,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarshaller.m: 51";
 		rLen = 0;
-		rLoc = 1619;
+		rLoc = 1605;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 1000;
@@ -3643,7 +3672,7 @@
 		fRef = 9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */;
 		name = "ORTreeUnmarshaller.m: 51";
 		rLen = 0;
-		rLoc = 1619;
+		rLoc = 1605;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 1000;
@@ -3653,7 +3682,7 @@
 		fRef = 9BA4A75B1046FBC800AF29DF /* ORXMLSerializer.h */;
 		name = "ORXMLSerializer.h: 26";
 		rLen = 0;
-		rLoc = 1122;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 0;
@@ -3663,7 +3692,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 39";
 		rLen = 0;
-		rLoc = 1521;
+		rLoc = 1523;
 		rType = 0;
 		vrLen = 1588;
 		vrLoc = 240;
@@ -3757,7 +3786,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 55";
 		rLen = 0;
-		rLoc = 1876;
+		rLoc = 1882;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 854;
@@ -3767,7 +3796,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 30";
 		rLen = 0;
-		rLoc = 1275;
+		rLoc = 1273;
 		rType = 0;
 		vrLen = 1353;
 		vrLoc = 271;
@@ -3777,7 +3806,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 47";
 		rLen = 0;
-		rLoc = 1655;
+		rLoc = 1645;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 274;
@@ -3787,7 +3816,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 62";
 		rLen = 0;
-		rLoc = 1829;
+		rLoc = 1817;
 		rType = 0;
 		vrLen = 1009;
 		vrLoc = 775;
@@ -3797,7 +3826,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 48";
 		rLen = 0;
-		rLoc = 1718;
+		rLoc = 1708;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 274;
@@ -3861,7 +3890,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 59";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 1975;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 1104;
@@ -3903,7 +3932,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarshaller.h: 28";
 		rLen = 0;
-		rLoc = 1190;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 0;
@@ -3953,7 +3982,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 57";
 		rLen = 0;
-		rLoc = 1876;
+		rLoc = 1882;
 		rType = 0;
 		vrLen = 1092;
 		vrLoc = 1142;
@@ -3963,7 +3992,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 30";
 		rLen = 0;
-		rLoc = 1275;
+		rLoc = 1273;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 720;
@@ -3973,7 +4002,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 47";
 		rLen = 0;
-		rLoc = 1655;
+		rLoc = 1645;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 274;
@@ -3983,7 +4012,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 62";
 		rLen = 0;
-		rLoc = 1829;
+		rLoc = 1817;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 720;
@@ -3993,7 +4022,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 48";
 		rLen = 0;
-		rLoc = 1718;
+		rLoc = 1708;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 274;
@@ -4003,7 +4032,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 59";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 1975;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 1104;
@@ -4013,7 +4042,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 61";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 655;
@@ -4053,7 +4082,7 @@
 		fRef = 9BC069FE104DB0C30050746A /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 59";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 1975;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 1104;
@@ -4095,7 +4124,7 @@
 		fRef = 9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */;
 		name = "ORTreeUnmarshaller.h: 28";
 		rLen = 0;
-		rLoc = 1190;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 0;
@@ -4272,7 +4301,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 48";
 		rLen = 0;
-		rLoc = 1718;
+		rLoc = 1708;
 		rType = 0;
 		vrLen = 1841;
 		vrLoc = 271;
@@ -4282,7 +4311,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 33";
 		rLen = 0;
-		rLoc = 1313;
+		rLoc = 1319;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 0;
@@ -4342,7 +4371,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 67";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 837;
 		vrLoc = 1000;
@@ -4444,7 +4473,7 @@
 		rLen = 0;
 		rLoc = 1165;
 		rType = 0;
-		vrLen = 1177;
+		vrLen = 1173;
 		vrLoc = 0;
 	};
 	9BC06B02104DC78D0050746A /* PBXTextBookmark */ = {
@@ -4464,7 +4493,7 @@
 		rLen = 0;
 		rLoc = 1173;
 		rType = 0;
-		vrLen = 1203;
+		vrLen = 1173;
 		vrLoc = 0;
 	};
 	9BC06B04104DC78D0050746A /* PBXTextBookmark */ = {
@@ -4502,7 +4531,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 61";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 655;
@@ -4512,7 +4541,7 @@
 		fRef = 9BC069D0104D9D2B0050746A /* ORTreeMarshallingStrategy.m */;
 		name = "ORTreeMarshallingStrategy.m: 48";
 		rLen = 0;
-		rLoc = 1718;
+		rLoc = 1708;
 		rType = 0;
 		vrLen = 1841;
 		vrLoc = 271;
@@ -4522,7 +4551,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 67";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 1048;
 		vrLoc = 778;
@@ -4532,7 +4561,7 @@
 		fRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */;
 		name = "ORTreeMarshaller.h: 33";
 		rLen = 0;
-		rLoc = 1313;
+		rLoc = 1319;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 0;
@@ -4544,7 +4573,7 @@
 		rLen = 0;
 		rLoc = 1056;
 		rType = 0;
-		vrLen = 1174;
+		vrLen = 1173;
 		vrLoc = 0;
 	};
 	9BC06B0C104DC78D0050746A /* PBXTextBookmark */ = {
@@ -4632,7 +4661,7 @@
 		fRef = 9BC06A11104DB1600050746A /* ORTreeMarshaller.m */;
 		name = "ORTreeMarshaller.m: 67";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1816;
 		rType = 0;
 		vrLen = 837;
 		vrLoc = 1000;
@@ -4768,8 +4797,8 @@
 	9BC52B34104831DA00DC0B8B /* ORTreeUnmarshaller.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1190, 0}";
-			sepNavVisRange = "{0, 1543}";
+			sepNavSelRange = "{1416, 0}";
+			sepNavVisRange = "{0, 1545}";
 		};
 	};
 	9BC52B35104831DA00DC0B8B /* ORTreeUnmarshaller.m */ = {
@@ -5025,11 +5054,11 @@
 			sepNavVisRange = "{0, 1248}";
 		};
 	};
-	9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */ = {
+	9BF5D0CC1045CFEC005966E2 /* ORConverterProvider.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1089, 54}";
-			sepNavVisRange = "{0, 1149}";
+			sepNavSelRange = "{1162, 0}";
+			sepNavVisRange = "{0, 1162}";
 		};
 	};
 	9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */ = {
@@ -5161,7 +5190,7 @@
 	};
 	9BF5D1381045D39A005966E2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */;
+		fRef = 9BF5D0CC1045CFEC005966E2 /* ORConverterProvider.h */;
 		name = "ORConverterLookup.h: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -5184,7 +5213,7 @@
 		fRef = 9BF5D0D11045D100005966E2 /* ORDefaultConverterLookup.h */;
 		name = "ORDefaultConverterLookup.h: 11";
 		rLen = 0;
-		rLoc = 1120;
+		rLoc = 1122;
 		rType = 0;
 		vrLen = 339;
 		vrLoc = 0;

@@ -34,7 +34,7 @@
 		_driver = [[ORLibXmlDriver alloc] init];
 		_mapper = [[ORMapper alloc] init];
 		_marshallingStrategy = [[ORTreeMarshallingStrategy alloc] initWithMapper:_mapper];
-		_converterLookup = [[ORDefaultConverterLookup alloc] init];
+		_converterProvider = [[ORDefaultConverterLookup alloc] init];
 	}
 	
 	return self;
@@ -48,7 +48,7 @@
 	
 	return [_marshallingStrategy unmarshalValue:nil
 									  xmlReader:xmlReader 
-								converterLookup:_converterLookup 
+								converterProvider:_converterProvider 
 										context:nil];
 }
 
@@ -58,7 +58,7 @@
 
 	[_marshallingStrategy marshalValue:target
 							 xmlWriter:xmlWriter 
-					   converterLookup:_converterLookup 
+					   converterProvider:_converterProvider 
 							   context:nil];
 
 	return [xmlWriter data];
@@ -69,7 +69,7 @@
 	[_driver release];
 	[_mapper release];
 	[_marshallingStrategy release];
-	[_converterLookup release];
+	[_converterProvider release];
 	[super dealloc];
 }
 

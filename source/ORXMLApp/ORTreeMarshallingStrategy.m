@@ -41,15 +41,15 @@
 	[super dealloc];
 }
 
-- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext
+- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer converterProvider:(id<ORConverterProvider>)provider context:(id<ORContext>)aContext
 {
-	ORTreeMarshaller *marshaller = [[[ORTreeMarshaller alloc] initWithXmlWriter:writer converterLookup:aConverterLookup mapper:_mapper] autorelease];
+	ORTreeMarshaller *marshaller = [[[ORTreeMarshaller alloc] initWithXmlWriter:writer converterProvider:provider mapper:_mapper] autorelease];
 	[marshaller startMarshallingItem:value withContext:aContext];
 }
 
-- (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterLookup:(id<ORConverterLookup>)aConverterLookup context:(id<ORContext>)aContext
+- (id)unmarshalValue:(id)value xmlReader:(id<ORXMLReader>)reader  converterProvider:(id<ORConverterProvider>)provider context:(id<ORContext>)aContext
 {
-	ORTreeUnmarshaller *unmarshaller = [[[ORTreeUnmarshaller alloc] initWithItem:value xmlReader:reader converterLookup:aConverterLookup mapper:_mapper] autorelease];
+	ORTreeUnmarshaller *unmarshaller = [[[ORTreeUnmarshaller alloc] initWithItem:value xmlReader:reader converterProvider:provider mapper:_mapper] autorelease];
 	return [unmarshaller startUnmarshallingWithContext:aContext];
 }
 

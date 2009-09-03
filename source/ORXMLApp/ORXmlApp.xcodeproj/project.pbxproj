@@ -61,7 +61,7 @@
 		9BF5D0C11045CBD6005966E2 /* ORContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0C01045CBD6005966E2 /* ORContext.h */; };
 		9BF5D0C31045CC7C005966E2 /* ORMarshallingContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0C21045CC7C005966E2 /* ORMarshallingContext.h */; };
 		9BF5D0C51045CCB8005966E2 /* ORUnmarshallingContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */; };
-		9BF5D0CD1045CFEC005966E2 /* ORConverterLookup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */; };
+		9BF5D0CD1045CFEC005966E2 /* ORConverterProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0CC1045CFEC005966E2 /* ORConverterProvider.h */; };
 		9BF5D0CF1045D043005966E2 /* ORConverterRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */; };
 		9BF5D0D31045D100005966E2 /* ORDefaultConverterLookup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF5D0D11045D100005966E2 /* ORDefaultConverterLookup.h */; };
 		9BF5D0D41045D100005966E2 /* ORDefaultConverterLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5D0D21045D100005966E2 /* ORDefaultConverterLookup.m */; };
@@ -157,7 +157,7 @@
 		9BF5D0C01045CBD6005966E2 /* ORContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORContext.h; sourceTree = "<group>"; };
 		9BF5D0C21045CC7C005966E2 /* ORMarshallingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMarshallingContext.h; sourceTree = "<group>"; };
 		9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORUnmarshallingContext.h; sourceTree = "<group>"; };
-		9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterLookup.h; sourceTree = "<group>"; };
+		9BF5D0CC1045CFEC005966E2 /* ORConverterProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterProvider.h; sourceTree = "<group>"; };
 		9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterRegistry.h; sourceTree = "<group>"; };
 		9BF5D0D11045D100005966E2 /* ORDefaultConverterLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDefaultConverterLookup.h; sourceTree = "<group>"; };
 		9BF5D0D21045D100005966E2 /* ORDefaultConverterLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDefaultConverterLookup.m; sourceTree = "<group>"; };
@@ -385,7 +385,7 @@
 				9BF5D0C01045CBD6005966E2 /* ORContext.h */,
 				9BF5D0C21045CC7C005966E2 /* ORMarshallingContext.h */,
 				9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */,
-				9BF5D0CC1045CFEC005966E2 /* ORConverterLookup.h */,
+				9BF5D0CC1045CFEC005966E2 /* ORConverterProvider.h */,
 				9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */,
 			);
 			name = Converter;
@@ -426,7 +426,7 @@
 				9BF5D0C11045CBD6005966E2 /* ORContext.h in Headers */,
 				9BF5D0C31045CC7C005966E2 /* ORMarshallingContext.h in Headers */,
 				9BF5D0C51045CCB8005966E2 /* ORUnmarshallingContext.h in Headers */,
-				9BF5D0CD1045CFEC005966E2 /* ORConverterLookup.h in Headers */,
+				9BF5D0CD1045CFEC005966E2 /* ORConverterProvider.h in Headers */,
 				9BF5D0CF1045D043005966E2 /* ORConverterRegistry.h in Headers */,
 				9BF5D0D31045D100005966E2 /* ORDefaultConverterLookup.h in Headers */,
 				9BF5D0D81045D220005966E2 /* ORMapper.h in Headers */,
