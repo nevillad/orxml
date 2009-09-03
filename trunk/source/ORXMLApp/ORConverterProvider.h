@@ -23,6 +23,6 @@
 
 @protocol ORConverterProvider <NSObject>
 
-- (id<ORConverter>)lookupConverterForType:(Class)type;
+- (id<ORConverter>)converterForType:(Class)type;
 
 @end
