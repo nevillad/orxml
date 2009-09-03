@@ -40,6 +40,8 @@
 		9BA4A6FA1046F5A100AF29DF /* ORTreeMarshallingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4A6F81046F5A100AF29DF /* ORTreeMarshallingStrategy.m */; };
 		9BA4A7891047040000AF29DF /* ORTreeMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */; };
 		9BA4A78A1047040000AF29DF /* ORTreeMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */; };
+		9BA6ED6910502279003392EE /* ORDefaultObjectConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */; };
+		9BA6ED6A10502279003392EE /* ORDefaultObjectConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */; };
 		9BC0692E104C524C0050746A /* ORDataContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC0692C104C524C0050746A /* ORDataContext.h */; };
 		9BC0692F104C524C0050746A /* ORDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0692D104C524C0050746A /* ORDataContext.m */; };
 		9BC06A6E104DB7E40050746A /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC06A6D104DB7E40050746A /* Library.m */; };
@@ -133,6 +135,8 @@
 		9BA4A6F81046F5A100AF29DF /* ORTreeMarshallingStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeMarshallingStrategy.m; sourceTree = "<group>"; };
 		9BA4A7871047040000AF29DF /* ORTreeMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTreeMarshaller.h; sourceTree = "<group>"; };
 		9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeMarshaller.m; sourceTree = "<group>"; };
+		9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDefaultObjectConverter.h; sourceTree = "<group>"; };
+		9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDefaultObjectConverter.m; sourceTree = "<group>"; };
 		9BC0692C104C524C0050746A /* ORDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDataContext.h; sourceTree = "<group>"; };
 		9BC0692D104C524C0050746A /* ORDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDataContext.m; sourceTree = "<group>"; };
 		9BC06A6C104DB7E40050746A /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
@@ -328,6 +332,15 @@
 			name = Writer;
 			sourceTree = "<group>";
 		};
+		9BA6ED66105021FC003392EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */,
+				9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		9BDDE2290FDDA0F400D1312B /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +378,7 @@
 		9BF5D0B61045C973005966E2 /* Converter */ = {
 			isa = PBXGroup;
 			children = (
+				9BA6ED66105021FC003392EE /* Base */,
 				9BF5D0B71045C993005966E2 /* ORConverterMatcher.h */,
 				9BF5D0B91045CA2B005966E2 /* ORSingleValueConverter.h */,
 				9BF5D0BD1045CABB005966E2 /* ORConverter.h */,
@@ -422,6 +436,7 @@
 				9BC52B36104831DA00DC0B8B /* ORTreeUnmarshaller.h in Headers */,
 				9BC0692E104C524C0050746A /* ORDataContext.h in Headers */,
 				9BC06AA0104DC1650050746A /* ORDataDictionary.h in Headers */,
+				9BA6ED6910502279003392EE /* ORDefaultObjectConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +552,7 @@
 				9BC52B37104831DA00DC0B8B /* ORTreeUnmarshaller.m in Sources */,
 				9BC0692F104C524C0050746A /* ORDataContext.m in Sources */,
 				9BC06AA1104DC1650050746A /* ORDataDictionary.m in Sources */,
+				9BA6ED6A10502279003392EE /* ORDefaultObjectConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

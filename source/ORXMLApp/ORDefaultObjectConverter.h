@@ -19,16 +19,10 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
-#import "ORConverterMatcher.h"
-#import "ORXMLWriter.h"
-#import "ORXMLReader.h"
+#import "ORConverter.h"
 
-@protocol ORMarshallingContext, ORUnmarshallingContext;
+@interface ORDefaultObjectConverter : NSObject <ORConverter>{
 
-
-@protocol ORConverter <ORConverterMatcher>
-
-- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context;
-- (id)unmarshalFromXmlReader:(id<ORXMLReader>)reader unmarshallingContext:(id<ORUnmarshallingContext>)context;
+}
 
 @end
