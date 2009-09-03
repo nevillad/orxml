@@ -22,7 +22,7 @@
 
 @implementation ORDefaultConverterLookup
 
-- (id<ORConverter>)lookupConverterForType:(Class)type
+- (id<ORConverter>)converterForType:(Class)type
 {
 	return nil;
 }

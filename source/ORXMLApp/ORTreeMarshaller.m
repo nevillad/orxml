@@ -56,7 +56,7 @@
 
 - (void)convertValue:(id)value withConverter:(id<ORConverter>)converter
 {
-	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterProvider lookupConverterForType:[value class]];
+	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterProvider converterForType:[value class]];
 	
 	if(![valueConverter canConvertType:[value class]]) {
 		// throw an exception
