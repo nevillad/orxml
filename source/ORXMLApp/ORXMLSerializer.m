@@ -25,6 +25,8 @@
 #import "ORTreeMarshallingStrategy.h"
 #import "ORMapper.h"
 #import "ORDefaultConverterProvider.h"
+#import "ORConverterPriority.h"
+#import "ORDefaultObjectConverter.h"
 
 @implementation ORXMLSerializer
 
@@ -35,9 +37,20 @@
 		_mapper = [[ORMapper alloc] init];
 		_marshallingStrategy = [[ORTreeMarshallingStrategy alloc] initWithMapper:_mapper];
 		_converterProvider = [[ORDefaultConverterProvider alloc] init];
+		
+		[self setupConverters];
 	}
 	
 	return self;
+}
+
+- (void)dealloc
+{
+	[_driver release];
+	[_mapper release];
+	[_marshallingStrategy release];
+	[_converterProvider release];
+	[super dealloc];
 }
 
 - (id)deserializeWithData:(NSData *)data error:(NSError **)outError
@@ -64,13 +77,9 @@
 	return [xmlWriter data];
 }
 
-- (void)dealloc
+- (void)setupConverters
 {
-	[_driver release];
-	[_mapper release];
-	[_marshallingStrategy release];
-	[_converterProvider release];
-	[super dealloc];
+	[_converterProvider registerConverter:[ORDefaultObjectConverter converter] withPriority:ORConverterPriorityNormal];
 }
 
 @end

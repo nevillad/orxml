@@ -19,16 +19,46 @@
  *****************************************************************************/
 
 #import "ORDefaultConverterProvider.h"
+#import "ORPriorizedItem.h"
 
 @implementation ORDefaultConverterProvider
 
-- (id<ORConverter>)converterForType:(Class)type
+- (id)init
 {
-	return nil;
+	if(self = [super init]) {
+		_registeredConverters = [[NSMutableArray alloc] init];
+	}
+	
+	return self;
 }
 
-- (void)registerConverter:(id<ORConverter>)converter withPriority:(int)priority;
+- (void)dealloc
 {
+	[_registeredConverters release];
+	[super dealloc];
+}
+
+- (id<ORConverter>)converterForType:(Class)type
+{
+	NSSortDescriptor *descriptor = [[[NSSortDescriptor alloc] initWithKey:@"priority" ascending:NO] autorelease];
+	NSArray *sortedConverters = [_registeredConverters sortedArrayUsingDescriptors:[NSArray arrayWithObject:descriptor]];
+	
+	id<ORConverter> converter;
+	
+	for(id pi in sortedConverters) {
+		if([[pi item] canConvertType:type]) {
+			converter = [pi item];
+			break;
+		}
+	}
+	
+	return converter;
+}
+
+- (void)registerConverter:(id<ORConverter>)converter withPriority:(ORConverterPriority)priority;
+{
+	ORPriorizedItem *item = [ORPriorizedItem priorizedItemWithItemAndPriority:converter priority:priority];
+	[_registeredConverters addObject:item];
 }
 
 @end

@@ -28,10 +28,12 @@
 @interface ORXMLSerializer : NSObject {
 	id<ORXMLDriver> _driver;
 	id<ORMarshallingStrategy> _marshallingStrategy;
-	id<ORConverterProvider> _converterProvider;
+	id _converterProvider;
 	ORMapper *_mapper;
 }
 - (id)deserializeWithData:(NSData *)data error:(NSError **)outError;
 - (NSData *)serializeTarget:(id)target;
+
+- (void)setupConverters;
 
 @end

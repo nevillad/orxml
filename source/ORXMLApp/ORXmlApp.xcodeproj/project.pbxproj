@@ -42,6 +42,9 @@
 		9BA4A78A1047040000AF29DF /* ORTreeMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */; };
 		9BA6ED6910502279003392EE /* ORDefaultObjectConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */; };
 		9BA6ED6A10502279003392EE /* ORDefaultObjectConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */; };
+		9BA6EE0E10502ABB003392EE /* ORPriorizedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA6EE0C10502ABB003392EE /* ORPriorizedItem.h */; };
+		9BA6EE0F10502ABB003392EE /* ORPriorizedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6EE0D10502ABB003392EE /* ORPriorizedItem.m */; };
+		9BA6EE1110502BB2003392EE /* ORConverterPriority.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA6EE1010502BB2003392EE /* ORConverterPriority.h */; };
 		9BC0692E104C524C0050746A /* ORDataContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC0692C104C524C0050746A /* ORDataContext.h */; };
 		9BC0692F104C524C0050746A /* ORDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0692D104C524C0050746A /* ORDataContext.m */; };
 		9BC06A6E104DB7E40050746A /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC06A6D104DB7E40050746A /* Library.m */; };
@@ -137,6 +140,9 @@
 		9BA4A7881047040000AF29DF /* ORTreeMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeMarshaller.m; sourceTree = "<group>"; };
 		9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDefaultObjectConverter.h; sourceTree = "<group>"; };
 		9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDefaultObjectConverter.m; sourceTree = "<group>"; };
+		9BA6EE0C10502ABB003392EE /* ORPriorizedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORPriorizedItem.h; sourceTree = "<group>"; };
+		9BA6EE0D10502ABB003392EE /* ORPriorizedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORPriorizedItem.m; sourceTree = "<group>"; };
+		9BA6EE1010502BB2003392EE /* ORConverterPriority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConverterPriority.h; sourceTree = "<group>"; };
 		9BC0692C104C524C0050746A /* ORDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDataContext.h; sourceTree = "<group>"; };
 		9BC0692D104C524C0050746A /* ORDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDataContext.m; sourceTree = "<group>"; };
 		9BC06A6C104DB7E40050746A /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
@@ -371,6 +377,8 @@
 				9B8A6A750FD9775F00696B99 /* NSString+FormatCategory.m */,
 				9BDDE20C0FDD9E5300D1312B /* ORStack.h */,
 				9BDDE20D0FDD9E5300D1312B /* ORStack.m */,
+				9BA6EE0C10502ABB003392EE /* ORPriorizedItem.h */,
+				9BA6EE0D10502ABB003392EE /* ORPriorizedItem.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -387,6 +395,7 @@
 				9BF5D0C41045CCB8005966E2 /* ORUnmarshallingContext.h */,
 				9BF5D0CC1045CFEC005966E2 /* ORConverterProvider.h */,
 				9BF5D0CE1045D043005966E2 /* ORConverterRegistry.h */,
+				9BA6EE1010502BB2003392EE /* ORConverterPriority.h */,
 			);
 			name = Converter;
 			sourceTree = "<group>";
@@ -437,6 +446,8 @@
 				9BC0692E104C524C0050746A /* ORDataContext.h in Headers */,
 				9BC06AA0104DC1650050746A /* ORDataDictionary.h in Headers */,
 				9BA6ED6910502279003392EE /* ORDefaultObjectConverter.h in Headers */,
+				9BA6EE0E10502ABB003392EE /* ORPriorizedItem.h in Headers */,
+				9BA6EE1110502BB2003392EE /* ORConverterPriority.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +564,7 @@
 				9BC0692F104C524C0050746A /* ORDataContext.m in Sources */,
 				9BC06AA1104DC1650050746A /* ORDataDictionary.m in Sources */,
 				9BA6ED6A10502279003392EE /* ORDefaultObjectConverter.m in Sources */,
+				9BA6EE0F10502ABB003392EE /* ORPriorizedItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

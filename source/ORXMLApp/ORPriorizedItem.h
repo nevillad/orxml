@@ -19,12 +19,16 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
-#import "ORConverter.h"
 
-@interface ORDefaultObjectConverter : NSObject <ORConverter>{
-
+@interface ORPriorizedItem : NSObject {
+	id item;
+	int priority;
 }
 
-+ (ORDefaultObjectConverter *)converter;
+@property (nonatomic, retain) id item;
+@property (nonatomic, readwrite) int priority;
+
+- (id)priorizedItemWithItemAndPriority:(id)anItem priority:(int)aPriority;
++ (ORPriorizedItem *)priorizedItemWithItemAndPriority:(id)anItem priority:(int)aPriority;
 
 @end
