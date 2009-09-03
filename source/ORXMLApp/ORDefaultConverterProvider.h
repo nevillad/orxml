@@ -24,7 +24,7 @@
 
 @protocol ORConverter;
 
-@interface ORDefaultConverterLookup : NSObject <ORConverterProvider, ORConverterRegistry>{
+@interface ORDefaultConverterProvider : NSObject <ORConverterProvider, ORConverterRegistry>{
 
 }
 

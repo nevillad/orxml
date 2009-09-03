@@ -24,7 +24,7 @@
 #import "ORXMLReader.h"
 #import "ORTreeMarshallingStrategy.h"
 #import "ORMapper.h"
-#import "ORDefaultConverterLookup.h"
+#import "ORDefaultConverterProvider.h"
 
 @implementation ORXMLSerializer
 
@@ -34,7 +34,7 @@
 		_driver = [[ORLibXmlDriver alloc] init];
 		_mapper = [[ORMapper alloc] init];
 		_marshallingStrategy = [[ORTreeMarshallingStrategy alloc] initWithMapper:_mapper];
-		_converterProvider = [[ORDefaultConverterLookup alloc] init];
+		_converterProvider = [[ORDefaultConverterProvider alloc] init];
 	}
 	
 	return self;
