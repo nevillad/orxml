@@ -42,7 +42,7 @@
 
 - (NSString *)name
 {
-	return [NSString stringWithUTF8String:class_getName(classOfType)];
+	return [NSString stringWithUTF8String:class_getName(self.classOfType)];
 }
 
 - (ORType *)superClass
@@ -54,7 +54,7 @@
 {
 	NSMutableArray *array = [[[NSMutableArray alloc] init] autorelease];
 	unsigned int outCount = 0;
-	objc_property_t *propertyList = class_copyPropertyList(classOfType, &outCount);
+	objc_property_t *propertyList = class_copyPropertyList(self.classOfType, &outCount);
 	
 	for(int i=0; i<outCount; i++) {
 		objc_property_t property = propertyList[i];
