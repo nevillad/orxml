@@ -28,6 +28,12 @@
 #import "ORConverterPriority.h"
 #import "ORDefaultObjectConverter.h"
 
+@interface ORXMLSerializer ( PrivateExtension )
+
+- (void)setupConverters;
+
+@end
+
 @implementation ORXMLSerializer
 
 - (id)init

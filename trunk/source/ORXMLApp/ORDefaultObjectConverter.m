@@ -36,7 +36,7 @@
 	return nil;
 }
 
-- (BOOL)canConvertType:(Class)type
+- (BOOL)canConvertType:(ORType *)type
 {
 	return YES;
 }

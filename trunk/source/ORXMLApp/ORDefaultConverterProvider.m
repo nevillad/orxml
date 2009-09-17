@@ -20,6 +20,7 @@
 
 #import "ORDefaultConverterProvider.h"
 #import "ORPriorizedItem.h"
+#import "ORType.h"
 
 @implementation ORDefaultConverterProvider
 
@@ -38,7 +39,7 @@
 	[super dealloc];
 }
 
-- (id<ORConverter>)converterForType:(Class)type
+- (id<ORConverter>)converterForType:(ORType *)type
 {
 	NSSortDescriptor *descriptor = [[[NSSortDescriptor alloc] initWithKey:@"priority" ascending:NO] autorelease];
 	NSArray *sortedConverters = [_registeredConverters sortedArrayUsingDescriptors:[NSArray arrayWithObject:descriptor]];

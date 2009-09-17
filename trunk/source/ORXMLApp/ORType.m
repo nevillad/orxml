@@ -20,7 +20,39 @@
 
 #import "ORType.h"
 
-
 @implementation ORType
+
+@synthesize name, declaringType, classOfType;
+@dynamic superClass;
+
+- (id)initWithClass:(Class)aClass
+{
+	if(self = [super init]) {
+		classOfType = aClass;
+	}
+	
+	return self;
+}
+
++ (ORType *)typeWithClass:(Class)aClass
+{
+	return [[[ORType alloc] initWithClass:aClass] autorelease];
+}
+
+- (ORType *)superClass
+{
+	return [ORType typeWithClass: class_getSuperclass(self.classOfType)];
+}
+
+- (BOOL)isSubclassOfType:(ORType *)aType
+{
+	ORType *sc = [self superClass];
+	return [self isEqual:aType] || [sc isSubclassOfClass:aType];
+}
+
+- (BOOL)isEqual:(id)anObject
+{
+	return classOfType == [anObject classOfType];
+}
 
 @end

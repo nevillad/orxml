@@ -34,6 +34,6 @@
 - (id)deserializeWithData:(NSData *)data;
 - (NSData *)serializeTarget:(id)target;
 
-- (void)setupConverters;
+//- (void)setupConverters;
 
 @end

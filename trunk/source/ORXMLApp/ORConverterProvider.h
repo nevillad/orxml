@@ -20,9 +20,10 @@
 
 #import <Foundation/Foundation.h>
 #import "ORConverter.h"
+#import "ORType.h"
 
 @protocol ORConverterProvider <NSObject>
 
-- (id<ORConverter>)converterForType:(Class)type;
+- (id<ORConverter>)converterForType:(ORType *)type;
 
 @end

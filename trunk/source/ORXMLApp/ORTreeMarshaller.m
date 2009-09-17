@@ -22,6 +22,7 @@
 #import "ORMapper.h"
 #import "ORXMLWriter.h"
 #import "ORConverterProvider.h"
+#import "NSObject+ReflectionCategory.h"
 
 @implementation ORTreeMarshaller
 
@@ -56,9 +57,9 @@
 
 - (void)convertValue:(id)value withConverter:(id<ORConverter>)converter
 {
-	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterProvider converterForType:[value class]];
+	id<ORConverter> valueConverter = (converter != nil) ? converter : [_converterProvider converterForType:[value typeOfObject]];
 	
-	if(![valueConverter canConvertType:[value class]]) {
+	if(![valueConverter canConvertType:[value typeOfObject]]) {
 		// throw an exception
 	}
 	
