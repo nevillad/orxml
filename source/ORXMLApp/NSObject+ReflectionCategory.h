@@ -19,20 +19,11 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
-#import "ORType.h"
-#import "ORMemberInfo.h"
 
-@interface ORType : NSObject <ORMemberInfo> {
-	NSString *name;
-	ORType *declaringType;
-	Class classOfType;
-}
+@class ORType;
 
-@property (nonatomic, readonly) Class classOfType;
-@property (nonatomic, readonly) ORType *superClass;
+@interface NSObject ( ReflectionCategory )
 
-- (id)initWithClass:(Class)aClass;
-- (BOOL)isSubclassOfType:(ORType *)aType;
-+ (ORType *)typeWithClass:(Class)aClass;
+- (ORType *)typeOfObject;
 
 @end

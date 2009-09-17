@@ -20,3 +20,4 @@
 
 #import "ORMemberInfo.h"
 #import "ORType.h"
+#import "NSString+FormatCategory.h"

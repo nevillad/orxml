@@ -18,21 +18,14 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import <Foundation/Foundation.h>
+#import "NSObject+ReflectionCategory.h"
 #import "ORType.h"
-#import "ORMemberInfo.h"
 
-@interface ORType : NSObject <ORMemberInfo> {
-	NSString *name;
-	ORType *declaringType;
-	Class classOfType;
+@implementation NSObject ( ReflectionCategory )
+
+- (ORType *)typeOfObject;
+{
+	return [[[ORType alloc] initWithClass:[self class]] autorelease];
 }
-
-@property (nonatomic, readonly) Class classOfType;
-@property (nonatomic, readonly) ORType *superClass;
-
-- (id)initWithClass:(Class)aClass;
-- (BOOL)isSubclassOfType:(ORType *)aType;
-+ (ORType *)typeWithClass:(Class)aClass;
 
 @end

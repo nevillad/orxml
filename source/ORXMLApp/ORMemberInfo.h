@@ -19,3 +19,13 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+
+@class ORType;
+
+@protocol ORMemberInfo <NSObject>
+
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) ORType *declaringType;
+
+@end

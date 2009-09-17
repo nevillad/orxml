@@ -19,9 +19,10 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "ORType.h"
 
 @protocol ORConverterMatcher <NSObject>
 
-- (BOOL)canConvertType:(Class)type;
+- (BOOL)canConvertType:(ORType *)type;
 
 @end

@@ -39,6 +39,8 @@
 		9B8A6AB10FD97D3F00696B99 /* ORLibXmlDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */; };
 		9B8A6B330FD9829300696B99 /* ORLibXmlWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */; };
 		9B8A6B340FD9829300696B99 /* ORLibXmlWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */; };
+		9BA2830F106299B500C611B1 /* NSObject+ReflectionCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA2830D106299B500C611B1 /* NSObject+ReflectionCategory.h */; };
+		9BA28310106299B500C611B1 /* NSObject+ReflectionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2830E106299B500C611B1 /* NSObject+ReflectionCategory.m */; };
 		9BA4A6F21046F40100AF29DF /* ORMarshallingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA4A6F11046F40100AF29DF /* ORMarshallingStrategy.h */; };
 		9BA4A6F91046F5A100AF29DF /* ORTreeMarshallingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA4A6F71046F5A100AF29DF /* ORTreeMarshallingStrategy.h */; };
 		9BA4A6FA1046F5A100AF29DF /* ORTreeMarshallingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4A6F81046F5A100AF29DF /* ORTreeMarshallingStrategy.m */; };
@@ -141,6 +143,8 @@
 		9B8A6AAF0FD97D3F00696B99 /* ORLibXmlDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlDriver.m; sourceTree = "<group>"; };
 		9B8A6B310FD9829300696B99 /* ORLibXmlWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlWriter.h; sourceTree = "<group>"; };
 		9B8A6B320FD9829300696B99 /* ORLibXmlWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlWriter.m; sourceTree = "<group>"; };
+		9BA2830D106299B500C611B1 /* NSObject+ReflectionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ReflectionCategory.h"; sourceTree = "<group>"; };
+		9BA2830E106299B500C611B1 /* NSObject+ReflectionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ReflectionCategory.m"; sourceTree = "<group>"; };
 		9BA4A6F11046F40100AF29DF /* ORMarshallingStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMarshallingStrategy.h; sourceTree = "<group>"; };
 		9BA4A6F71046F5A100AF29DF /* ORTreeMarshallingStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTreeMarshallingStrategy.h; sourceTree = "<group>"; };
 		9BA4A6F81046F5A100AF29DF /* ORTreeMarshallingStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTreeMarshallingStrategy.m; sourceTree = "<group>"; };
@@ -295,6 +299,8 @@
 				9B35B51D1050543E0006874C /* ORType.h */,
 				9B35B51E1050543E0006874C /* ORType.m */,
 				9B35B5211050544D0006874C /* ORReflection.h */,
+				9BA2830D106299B500C611B1 /* NSObject+ReflectionCategory.h */,
+				9BA2830E106299B500C611B1 /* NSObject+ReflectionCategory.m */,
 			);
 			name = Reflection;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				9B35B51C105054130006874C /* ORMemberInfo.h in Headers */,
 				9B35B51F1050543E0006874C /* ORType.h in Headers */,
 				9B35B5221050544D0006874C /* ORReflection.h in Headers */,
+				9BA2830F106299B500C611B1 /* NSObject+ReflectionCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +596,7 @@
 				9BA6ED6A10502279003392EE /* ORDefaultObjectConverter.m in Sources */,
 				9BA6EE0F10502ABB003392EE /* ORPriorizedItem.m in Sources */,
 				9B35B5201050543E0006874C /* ORType.m in Sources */,
+				9BA28310106299B500C611B1 /* NSObject+ReflectionCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
