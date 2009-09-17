@@ -19,6 +19,7 @@
  *****************************************************************************/
 
 #import "ORType.h"
+#import "ORPropertyInfo.h"
 
 @implementation ORType
 
@@ -51,7 +52,18 @@
 
 - (NSArray *)properties
 {
-	return nil;
+	NSMutableArray *array = [[[NSMutableArray alloc] init] autorelease];
+	unsigned int outCount = 0;
+	objc_property_t *propertyList = class_copyPropertyList(classOfType, &outCount);
+	
+	for(int i=0; i<outCount; i++) {
+		objc_property_t property = propertyList[i];
+		ORPropertyInfo *propertyInfo = [ORPropertyInfo propertyInfoWithProperty:property];
+		[array addObject:propertyInfo];
+	}
+	
+	free(propertyList);
+	return array;
 }
 
 - (BOOL)isSubclassOfType:(ORType *)aType
