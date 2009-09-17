@@ -18,14 +18,11 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORMapper.h"
-#import "ORType.h"
+#import <Foundation/Foundation.h>
+#import "ORMemberInfo.h"
 
-@implementation ORMapper
+@interface ORPropertyInfo : NSObject <ORMemberInfo> {
 
-- (NSString *)aliasForType:(ORType *)type
-{
-	return type != nil ? [type name] : @"NULL";
 }
 
 @end

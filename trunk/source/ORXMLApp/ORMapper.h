@@ -20,11 +20,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class ORType;
 
 @interface ORMapper : NSObject {
 
 }
 
-- (NSString *)aliasForType:(Class)type;
+- (NSString *)aliasForType:(ORType *)type;
 
 @end

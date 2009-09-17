@@ -15,6 +15,8 @@
 		9B2059E10FD83C27001CD2DF /* ORXml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B846AC10FD6FB6E00F2268B /* ORXml.framework */; };
 		9B205A2C0FD83E5C001CD2DF /* ORLibXmlReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */; };
 		9B205A2D0FD83E5C001CD2DF /* ORLibXmlReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */; };
+		9B31D47B1062CC560091DEBB /* ORPropertyInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B31D4791062CC560091DEBB /* ORPropertyInfo.h */; };
+		9B31D47C1062CC560091DEBB /* ORPropertyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B31D47A1062CC560091DEBB /* ORPropertyInfo.m */; };
 		9B35B51C105054130006874C /* ORMemberInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B35B51B105054130006874C /* ORMemberInfo.h */; };
 		9B35B51F1050543E0006874C /* ORType.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B35B51D1050543E0006874C /* ORType.h */; };
 		9B35B5201050543E0006874C /* ORType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B35B51E1050543E0006874C /* ORType.m */; };
@@ -115,6 +117,8 @@
 		9B1A6C320FD868FA0088E7E7 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlReader.h; sourceTree = "<group>"; };
 		9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlReader.m; sourceTree = "<group>"; };
+		9B31D4791062CC560091DEBB /* ORPropertyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORPropertyInfo.h; sourceTree = "<group>"; };
+		9B31D47A1062CC560091DEBB /* ORPropertyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORPropertyInfo.m; sourceTree = "<group>"; };
 		9B35B51B105054130006874C /* ORMemberInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMemberInfo.h; sourceTree = "<group>"; };
 		9B35B51D1050543E0006874C /* ORType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORType.h; sourceTree = "<group>"; };
 		9B35B51E1050543E0006874C /* ORType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORType.m; sourceTree = "<group>"; };
@@ -301,6 +305,8 @@
 				9B35B5211050544D0006874C /* ORReflection.h */,
 				9BA2830D106299B500C611B1 /* NSObject+ReflectionCategory.h */,
 				9BA2830E106299B500C611B1 /* NSObject+ReflectionCategory.m */,
+				9B31D4791062CC560091DEBB /* ORPropertyInfo.h */,
+				9B31D47A1062CC560091DEBB /* ORPropertyInfo.m */,
 			);
 			name = Reflection;
 			sourceTree = "<group>";
@@ -478,6 +484,7 @@
 				9B35B51F1050543E0006874C /* ORType.h in Headers */,
 				9B35B5221050544D0006874C /* ORReflection.h in Headers */,
 				9BA2830F106299B500C611B1 /* NSObject+ReflectionCategory.h in Headers */,
+				9B31D47B1062CC560091DEBB /* ORPropertyInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +604,7 @@
 				9BA6EE0F10502ABB003392EE /* ORPriorizedItem.m in Sources */,
 				9B35B5201050543E0006874C /* ORType.m in Sources */,
 				9BA28310106299B500C611B1 /* NSObject+ReflectionCategory.m in Sources */,
+				9B31D47C1062CC560091DEBB /* ORPropertyInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

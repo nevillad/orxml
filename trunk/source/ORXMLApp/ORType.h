@@ -23,13 +23,13 @@
 #import "ORMemberInfo.h"
 
 @interface ORType : NSObject <ORMemberInfo> {
-	NSString *name;
 	ORType *declaringType;
 	Class classOfType;
 }
 
 @property (nonatomic, readonly) Class classOfType;
 @property (nonatomic, readonly) ORType *superClass;
+@property (nonatomic, readonly) NSArray *properties;
 
 - (id)initWithClass:(Class)aClass;
 - (BOOL)isSubclassOfType:(ORType *)aType;
