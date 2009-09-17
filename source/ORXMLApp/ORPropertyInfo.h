@@ -25,4 +25,7 @@
 
 }
 
+- (id)initWithProperty:(objc_property_t)aProperty;
++ (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty;
+
 @end

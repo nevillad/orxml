@@ -25,6 +25,19 @@
 
 @dynamic name, declaringType;
 
+- (id)initWithProperty:(objc_property_t)aProperty
+{
+	if(self = [super init]) {
+	}
+	
+	return self;
+}
+
++ (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty
+{
+	return [[[ORPropertyInfo alloc] initWithProperty:aProperty] autorelease];
+}
+
 - (NSString *)name
 {
 	return nil;
