@@ -69,7 +69,15 @@
 - (void)startMarshallingItem:(id)item withContext:(id<ORContext>)context
 {
 	_data = context;
-	[self convertValue:item];
+	if(item == nil) {
+		[_writer startNodeWithName:[_mapper aliasForType:nil]];
+		[_writer endNode];
+	}
+	else {
+		[_writer startNodeWithName:[_mapper aliasForType:[item typeOfObject]]];
+		[self convertValue:item];
+		[_writer endNode];
+	}
 }
 
 @end

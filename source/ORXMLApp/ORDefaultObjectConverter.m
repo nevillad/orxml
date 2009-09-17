@@ -19,6 +19,9 @@
  *****************************************************************************/
 
 #import "ORDefaultObjectConverter.h"
+#import "ORType.h";
+#import "ORPropertyInfo.h"
+#import "NSObject+ReflectionCategory.h"
 
 @implementation ORDefaultObjectConverter
 
@@ -29,6 +32,12 @@
 
 - (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context
 {
+	ORType *type = [value typeOfObject];
+	NSArray *properties = [type properties];
+	
+	for(ORPropertyInfo *pi in properties) {
+		// marshal the properties
+	}
 }
 
 - (id)unmarshalFromXmlReader:(id<ORXMLReader>)reader unmarshallingContext:(id<ORUnmarshallingContext>)context
@@ -38,7 +47,9 @@
 
 - (BOOL)canConvertType:(ORType *)type
 {
-	return YES;
+	// the converter can convert every subclass of NSObject
+	ORType *nsObjectType = [ORType typeWithClass:[NSObject class]];
+	return [type isSubclassOfType:nsObjectType];
 }
 
 @end

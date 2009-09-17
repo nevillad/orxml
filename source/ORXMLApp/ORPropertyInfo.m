@@ -18,14 +18,21 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORMapper.h"
+#import "ORPropertyInfo.h"
 #import "ORType.h"
 
-@implementation ORMapper
+@implementation ORPropertyInfo
 
-- (NSString *)aliasForType:(ORType *)type
+@dynamic name, declaringType;
+
+- (NSString *)name
 {
-	return type != nil ? [type name] : @"NULL";
+	return nil;
+}
+
+- (ORType *)declaringType
+{
+	return nil;
 }
 
 @end

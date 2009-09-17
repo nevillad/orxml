@@ -22,8 +22,8 @@
 
 @implementation ORType
 
-@synthesize name, declaringType, classOfType;
-@dynamic superClass;
+@synthesize declaringType, classOfType;
+@dynamic name, superClass, properties;
 
 - (id)initWithClass:(Class)aClass
 {
@@ -39,15 +39,25 @@
 	return [[[ORType alloc] initWithClass:aClass] autorelease];
 }
 
+- (NSString *)name
+{
+	return [NSString stringWithUTF8String:class_getName(classOfType)];
+}
+
 - (ORType *)superClass
 {
 	return [ORType typeWithClass: class_getSuperclass(self.classOfType)];
 }
 
+- (NSArray *)properties
+{
+	return nil;
+}
+
 - (BOOL)isSubclassOfType:(ORType *)aType
 {
 	ORType *sc = [self superClass];
-	return [self isEqual:aType] || [sc isSubclassOfClass:aType];
+	return (sc != nil && [sc isEqual:aType]) || (sc != nil && [sc isSubclassOfType:aType]);
 }
 
 - (BOOL)isEqual:(id)anObject
