@@ -23,8 +23,8 @@
 
 @implementation ORType
 
-@synthesize declaringType, classOfType;
-@dynamic name, superClass, properties;
+@synthesize classOfType;
+@dynamic name, superClass, properties, declaringType;
 
 - (id)initWithClass:(Class)aClass
 {
@@ -58,12 +58,17 @@
 	
 	for(int i=0; i<outCount; i++) {
 		objc_property_t property = propertyList[i];
-		ORPropertyInfo *propertyInfo = [ORPropertyInfo propertyInfoWithProperty:property];
+		ORPropertyInfo *propertyInfo = [ORPropertyInfo propertyInfoWithProperty:property declaringType:self];
 		[array addObject:propertyInfo];
 	}
 	
 	free(propertyList);
 	return array;
+}
+
+- (ORType *)declaringType
+{
+	return nil;
 }
 
 - (BOOL)isSubclassOfType:(ORType *)aType

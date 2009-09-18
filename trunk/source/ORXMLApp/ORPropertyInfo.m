@@ -23,29 +23,33 @@
 
 @implementation ORPropertyInfo
 
-@dynamic name, declaringType;
+@synthesize declaringType;
+@dynamic name;
 
-- (id)initWithProperty:(objc_property_t)aProperty
+- (id)initWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type;
 {
 	if(self = [super init]) {
+		property = aProperty;
+		declaringType = type;
 	}
 	
 	return self;
 }
 
-+ (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty
+- (void)dealloc
 {
-	return [[[ORPropertyInfo alloc] initWithProperty:aProperty] autorelease];
+	[declaringType release];
+	[super dealloc];
+}
+
++ (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type
+{
+	return [[[ORPropertyInfo alloc] initWithProperty:aProperty declaringType:type] autorelease];
 }
 
 - (NSString *)name
 {
-	return nil;
-}
-
-- (ORType *)declaringType
-{
-	return nil;
+	return [NSString stringWithUTF8String:property_getName(property)];
 }
 
 @end

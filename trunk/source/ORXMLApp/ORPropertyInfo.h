@@ -22,10 +22,11 @@
 #import "ORMemberInfo.h"
 
 @interface ORPropertyInfo : NSObject <ORMemberInfo> {
-
+	objc_property_t property;
+	ORType *declaringType;
 }
 
-- (id)initWithProperty:(objc_property_t)aProperty;
-+ (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty;
+- (id)initWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type;
++ (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type;
 
 @end
