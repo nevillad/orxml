@@ -23,7 +23,6 @@
 #import "ORMemberInfo.h"
 
 @interface ORType : NSObject <ORMemberInfo> {
-	ORType *declaringType;
 	Class classOfType;
 }
 
