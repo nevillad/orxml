@@ -10,7 +10,7 @@
 		breakpoints = (
 			9BC06A13104DB1600050746A /* ORTreeMarshaller.m:31 */,
 			9BA6EE6D105048CD003392EE /* ORTreeMarshaller.m:60 */,
-			9B35B4E610504AD70006874C /* ORXMLSerializer.m:78 */,
+			9B35B4E610504AD70006874C /* ORXMLSerializer.m:80 */,
 			9B35B50110504BD90006874C /* ORDefaultConverterProvider.m:44 */,
 			9BD2EF4210629A1C00723762 /* NSObject+ReflectionCategory.h:29 */,
 			9B31D4611062CB2C0091DEBB /* ORTreeMarshaller.m:71 */,
@@ -696,8 +696,8 @@
 		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1426, 0}";
-			sepNavVisRange = "{0, 1458}";
+			sepNavSelRange = "{1427, 0}";
+			sepNavVisRange = "{0, 1434}";
 		};
 	};
 	9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */ = {
@@ -708,8 +708,8 @@
 		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 1120}}";
-			sepNavSelRange = "{1812, 0}";
-			sepNavVisRange = "{1200, 1200}";
+			sepNavSelRange = "{1369, 0}";
+			sepNavVisRange = "{160, 1633}";
 		};
 	};
 	9B141EBA1065279100F1CE8D /* PBXTextBookmark */ = {
@@ -855,7 +855,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 44";
 		rLen = 0;
-		rLoc = 1612;
+		rLoc = 1592;
 		rType = 0;
 		vrLen = 1503;
 		vrLoc = 418;
@@ -875,7 +875,7 @@
 		fRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 78";
 		rLen = 0;
-		rLoc = 2232;
+		rLoc = 2306;
 		rType = 0;
 		vrLen = 1156;
 		vrLoc = 1399;
@@ -1085,7 +1085,7 @@
 		fRef = 9B141E7B10651D8600F1CE8D /* ORSingleValueConverterContainer.h */;
 		name = "ORSingleValueConverterContainer.h: 15";
 		rLen = 0;
-		rLoc = 1452;
+		rLoc = 1428;
 		rType = 0;
 		vrLen = 250;
 		vrLoc = 0;
@@ -1105,7 +1105,7 @@
 		fRef = 9B141E7B10651D8600F1CE8D /* ORSingleValueConverterContainer.h */;
 		name = "ORSingleValueConverterContainer.h: 15";
 		rLen = 0;
-		rLoc = 1452;
+		rLoc = 1428;
 		rType = 0;
 		vrLen = 250;
 		vrLoc = 0;
@@ -1195,7 +1195,7 @@
 		fRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 31";
 		rLen = 0;
-		rLoc = 2393;
+		rLoc = 2373;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 0;
@@ -1215,7 +1215,7 @@
 		fRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 39";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2128;
 		rType = 0;
 		vrLen = 1496;
 		vrLoc = 0;
@@ -1235,7 +1235,7 @@
 		fRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 52";
 		rLen = 0;
-		rLoc = 2189;
+		rLoc = 2169;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 160;
@@ -1255,7 +1255,7 @@
 		fRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 52";
 		rLen = 0;
-		rLoc = 2189;
+		rLoc = 2169;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 160;
@@ -1264,8 +1264,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9B141E7B10651D8600F1CE8D /* ORSingleValueConverterContainer.h */;
 		name = "ORSingleValueConverterContainer.h: 29";
-		rLen = 132;
-		rLoc = 1319;
+		rLen = 109;
+		rLoc = 1317;
 		rType = 0;
 		vrLen = 1442;
 		vrLoc = 0;
@@ -1314,7 +1314,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 27";
-		rLen = 518;
+		rLen = 498;
 		rLoc = 1124;
 		rType = 0;
 		vrLen = 1326;
@@ -1354,7 +1354,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 27";
-		rLen = 518;
+		rLen = 498;
 		rLoc = 1124;
 		rType = 0;
 		vrLen = 1341;
@@ -1415,7 +1415,7 @@
 		fRef = 9B141EA01065253A00F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 68";
 		rLen = 204;
-		rLoc = 2189;
+		rLoc = 2169;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 1330;
@@ -1505,7 +1505,7 @@
 		fRef = 9B141EA01065253A00F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 57";
 		rLen = 334;
-		rLoc = 1814;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 1048;
 		vrLoc = 1198;
@@ -1554,7 +1554,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9B141EAD1065261600F1CE8D /* ORSingleValueConverterContainer.h */;
 		name = "ORSingleValueConverterContainer.h: 29";
-		rLen = 209;
+		rLen = 184;
 		rLoc = 1242;
 		rType = 0;
 		vrLen = 1455;
@@ -1665,7 +1665,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 44";
 		rLen = 0;
-		rLoc = 1612;
+		rLoc = 1592;
 		rType = 0;
 		vrLen = 1503;
 		vrLoc = 418;
@@ -1685,7 +1685,7 @@
 		fRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 78";
 		rLen = 0;
-		rLoc = 2232;
+		rLoc = 2306;
 		rType = 0;
 		vrLen = 1156;
 		vrLoc = 1399;
@@ -1755,7 +1755,7 @@
 		fRef = 9B141EAD1065261600F1CE8D /* ORSingleValueConverterContainer.h */;
 		name = "ORSingleValueConverterContainer.h: 30";
 		rLen = 0;
-		rLoc = 1426;
+		rLoc = 1404;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 0;
@@ -1785,7 +1785,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 44";
 		rLen = 0;
-		rLoc = 1612;
+		rLoc = 1592;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 418;
@@ -1815,7 +1815,7 @@
 		fRef = 9B141EAD1065261600F1CE8D /* ORSingleValueConverterContainer.h */;
 		name = "ORSingleValueConverterContainer.h: 30";
 		rLen = 0;
-		rLoc = 1426;
+		rLoc = 1404;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 0;
@@ -1875,7 +1875,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 52";
 		rLen = 0;
-		rLoc = 1775;
+		rLoc = 1755;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 1124;
@@ -1895,7 +1895,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 52";
 		rLen = 0;
-		rLoc = 1775;
+		rLoc = 1755;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 1124;
@@ -1905,7 +1905,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 52";
 		rLen = 0;
-		rLoc = 1775;
+		rLoc = 1755;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 1124;
@@ -1925,7 +1925,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 63";
 		rLen = 39;
-		rLoc = 2106;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1123;
@@ -1955,7 +1955,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 67";
 		rLen = 21;
-		rLoc = 1952;
+		rLoc = 1932;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 1198;
@@ -1965,7 +1965,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 63";
 		rLen = 39;
-		rLoc = 2106;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1123;
@@ -1985,7 +1985,7 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 67";
 		rLen = 21;
-		rLoc = 1952;
+		rLoc = 1932;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 1198;
@@ -2005,10 +2005,25 @@
 		fRef = 9B141EB5106526E100F1CE8D /* ORSingleValueConverterContainer.m */;
 		name = "ORSingleValueConverterContainer.m: 55";
 		rLen = 0;
-		rLoc = 1812;
+		rLoc = 1792;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 1200;
+	};
+	9B141F4610652A6400F1CE8D /* ORNumberConverter.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
+			sepNavSelRange = "{1142, 33}";
+			sepNavVisRange = "{0, 1182}";
+			sepNavWindowFrame = "{{75, 40}, {991, 983}}";
+		};
+	};
+	9B141F4710652A6400F1CE8D /* ORNumberConverter.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 770}}";
+			sepNavSelRange = "{1580, 0}";
+			sepNavVisRange = "{160, 1505}";
+		};
 	};
 	9B1A6C320FD868FA0088E7E7 /* license.txt */ = {
 		uiCtxt = {
@@ -2529,7 +2544,7 @@
 		fRef = 9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */;
 		name = "ORXMLSerializer.m: 78";
 		rLen = 0;
-		rLoc = 2232;
+		rLoc = 2306;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 1426;
@@ -2614,7 +2629,7 @@
 		vrLen = 1657;
 		vrLoc = 240;
 	};
-	9B35B4E610504AD70006874C /* ORXMLSerializer.m:78 */ = {
+	9B35B4E610504AD70006874C /* ORXMLSerializer.m:80 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2626,7 +2641,7 @@
 		functionName = "-serializeTarget:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 78;
+		lineNumber = 80;
 		location = ORXml;
 		modificationTime = 274910006.721607;
 		state = 1;
@@ -2700,7 +2715,7 @@
 		path = /Users/lehmamic/Development/Projects/Cocoa/ORXMLApp/ORType.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 1148}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 1204}}";
 			sepNavSelRange = "{2334, 0}";
 			sepNavVisRange = "{0, 1563}";
 		};
@@ -3133,9 +3148,9 @@
 	};
 	9B846AB40FD6FAD600F2268B /* ORXMLSerializer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1152, 1288}}";
-			sepNavSelRange = "{2232, 0}";
-			sepNavVisRange = "{1399, 1156}";
+			sepNavIntBoundsRect = "{{0, 0}, {1152, 1344}}";
+			sepNavSelRange = "{2708, 0}";
+			sepNavVisRange = "{1473, 1326}";
 		};
 	};
 	9B846AB50FD6FAD600F2268B /* Adress.h */ = {
@@ -3824,7 +3839,7 @@
 	9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 722}}";
-			sepNavSelRange = "{1126, 40}";
+			sepNavSelRange = "{0, 999}";
 			sepNavVisRange = "{0, 1173}";
 		};
 	};

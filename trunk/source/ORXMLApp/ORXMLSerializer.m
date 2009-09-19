@@ -27,6 +27,8 @@
 #import "ORDefaultConverterProvider.h"
 #import "ORConverterPriority.h"
 #import "ORDefaultObjectConverter.h"
+#import "ORSingleValueConverterContainer.h"
+#import "ORNumberConverter.h"
 
 @interface ORXMLSerializer ( PrivateExtension )
 
@@ -85,7 +87,8 @@
 
 - (void)setupConverters
 {
-	[_converterProvider registerConverter:[ORDefaultObjectConverter converter] withPriority:ORConverterPriorityNormal];
+	[_converterProvider registerConverter:[ORDefaultObjectConverter converter] withPriority:ORConverterPriorityLowest];
+	[_converterProvider registerConverter:[ORSingleValueConverterContainer containerWithConverter:[ORNumberConverter converter]] withPriority:ORConverterPriorityNormal];
 }
 
 @end

@@ -13,6 +13,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		9B141E7D10651D8600F1CE8D /* ORSingleValueConverterContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B141E7B10651D8600F1CE8D /* ORSingleValueConverterContainer.h */; };
 		9B141E7E10651D8600F1CE8D /* ORSingleValueConverterContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */; };
+		9B141F4810652A6400F1CE8D /* ORNumberConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B141F4610652A6400F1CE8D /* ORNumberConverter.h */; };
+		9B141F4910652A6400F1CE8D /* ORNumberConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B141F4710652A6400F1CE8D /* ORNumberConverter.m */; };
 		9B2059C70FD83B0E001CD2DF /* ORXml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B846AC10FD6FB6E00F2268B /* ORXml.framework */; };
 		9B2059E10FD83C27001CD2DF /* ORXml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B846AC10FD6FB6E00F2268B /* ORXml.framework */; };
 		9B205A2C0FD83E5C001CD2DF /* ORLibXmlReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */; };
@@ -118,6 +120,8 @@
 		8D1107320486CEB800E47090 /* ORXmlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORXmlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B141E7B10651D8600F1CE8D /* ORSingleValueConverterContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSingleValueConverterContainer.h; sourceTree = "<group>"; };
 		9B141E7C10651D8600F1CE8D /* ORSingleValueConverterContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSingleValueConverterContainer.m; sourceTree = "<group>"; };
+		9B141F4610652A6400F1CE8D /* ORNumberConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORNumberConverter.h; sourceTree = "<group>"; };
+		9B141F4710652A6400F1CE8D /* ORNumberConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORNumberConverter.m; sourceTree = "<group>"; };
 		9B1A6C320FD868FA0088E7E7 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		9B205A2A0FD83E5C001CD2DF /* ORLibXmlReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLibXmlReader.h; sourceTree = "<group>"; };
 		9B205A2B0FD83E5C001CD2DF /* ORLibXmlReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLibXmlReader.m; sourceTree = "<group>"; };
@@ -378,6 +382,8 @@
 			children = (
 				9BA6ED6710502279003392EE /* ORDefaultObjectConverter.h */,
 				9BA6ED6810502279003392EE /* ORDefaultObjectConverter.m */,
+				9B141F4610652A6400F1CE8D /* ORNumberConverter.h */,
+				9B141F4710652A6400F1CE8D /* ORNumberConverter.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -492,6 +498,7 @@
 				9BA2830F106299B500C611B1 /* NSObject+ReflectionCategory.h in Headers */,
 				9B31D47B1062CC560091DEBB /* ORPropertyInfo.h in Headers */,
 				9B141E7D10651D8600F1CE8D /* ORSingleValueConverterContainer.h in Headers */,
+				9B141F4810652A6400F1CE8D /* ORNumberConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +620,7 @@
 				9BA28310106299B500C611B1 /* NSObject+ReflectionCategory.m in Sources */,
 				9B31D47C1062CC560091DEBB /* ORPropertyInfo.m in Sources */,
 				9B141E7E10651D8600F1CE8D /* ORSingleValueConverterContainer.m in Sources */,
+				9B141F4910652A6400F1CE8D /* ORNumberConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
