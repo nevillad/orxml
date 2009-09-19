@@ -1,4 +1,4 @@
-#labels Phase-Design
+#labels Phase-Design,Featured
 This page should show the tasks and the progress of the ORXml project.
 
 *last update:* 19. Sept. 09
