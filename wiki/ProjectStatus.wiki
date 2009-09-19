@@ -30,11 +30,9 @@ This page should show the tasks and the progress of the ORXml project.
   * ~~Converter API architecture~~
   * ~~Converter API protocols (simple value converter/converter/converter provider/converter registry)~~
   * ~~Converter registry / Converter provider~~
-  * Simple converter wrapper
+  * ~~Simple converter wrapper~~
   * Default object converter
   * Collection converter
   * Dictionary converter
-  * Simple converter for base types (int, float, ...)
+  * ~~Simple converter for base types (int, float, ...)~~
   * Converter API tests
-
-
