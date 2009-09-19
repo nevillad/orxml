@@ -18,15 +18,15 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORMapper.h"
-#import "ORType.h"
+#import <Foundation/Foundation.h>
+#import "ORConverter.h"
+#import "ORSingleValueConverter.h"
 
-@implementation ORMapper
-
-- (NSString *)aliasForType:(ORType *)type
-{
-	// just temporar until the mapping is implemented
-	return type != nil ? [type name] : @"NULL";
+@interface ORSingleValueConverterContainer : NSObject <ORConverter, ORSingleValueConverter> {
+	id<ORSingleValueConverter> singleValueConverter;
 }
+
+- (id)initWithConverter:(id<ORSingleValueConverter>)aSingleValueConverter;
+//+ (ORSingleValueConverterContainer *)singleValueConverterContainerWithConverter:(id<ORSingleValueConverter> *)aSingleValueConverter;
 
 @end
