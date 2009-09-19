@@ -25,7 +25,6 @@
 
 @protocol ORMarshallingContext, ORUnmarshallingContext;
 
-
 @protocol ORConverter <ORConverterMatcher>
 
 - (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context;
