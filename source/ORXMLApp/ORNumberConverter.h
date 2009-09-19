@@ -19,14 +19,12 @@
  *****************************************************************************/
 
 #import <Foundation/Foundation.h>
-#import "ORConverter.h"
 #import "ORSingleValueConverter.h"
 
-@interface ORSingleValueConverterContainer : NSObject <ORConverter, ORSingleValueConverter> {
-	id<ORSingleValueConverter> singleValueConverter;
+@interface ORNumberConverter : NSObject <ORSingleValueConverter> {
+
 }
 
-- (id)initWithConverter:(id<ORSingleValueConverter>)aSingleValueConverter;
-+ (ORSingleValueConverterContainer *)containerWithConverter:(id<ORSingleValueConverter>)aSingleValueConverter;
++ (ORNumberConverter *)converter;
 
 @end

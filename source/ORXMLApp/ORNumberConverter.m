@@ -18,62 +18,37 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORSingleValueConverterContainer.h"
+#import "ORNumberConverter.h"
 
-@implementation ORSingleValueConverterContainer
+@implementation ORNumberConverter
 
-#pragma mark Initialization
+#pragma mark Initialization Members
 
-- (id)initWithConverter:(id<ORSingleValueConverter>)aSingleValueConverter
++ (ORNumberConverter *)converter
 {
-	if(self = [super init]) {
-		[aSingleValueConverter retain];
-		singleValueConverter = aSingleValueConverter;
-	}
-	
-	return self;
-}
-
-+ (ORSingleValueConverterContainer *)containerWithConverter:(id<ORSingleValueConverter>)aSingleValueConverter
-{
-	return [[[ORSingleValueConverterContainer alloc] initWithConverter:aSingleValueConverter] autorelease];
-}
-
-- (void) dealloc
-{
-	[singleValueConverter release];
-	[super dealloc];
+	return [[[ORNumberConverter alloc] init] autorelease];
 }
 
 #pragma mark ORConverterMatcher Members
 
 - (BOOL)canConvertType:(ORType *)type
 {
-	return [singleValueConverter canConvertType:type];
-}
-
-#pragma mark ORConverter Members
-
-- (void)marshalValue:(id)value xmlWriter:(id<ORXMLWriter>)writer marshallingContext:(id<ORMarshallingContext>)context
-{
-	[writer setValue:[self convertToString:value]];
-}
-
-- (id)unmarshalFromXmlReader:(id<ORXMLReader>)reader unmarshallingContext:(id<ORUnmarshallingContext>)context
-{
-	return [self convertFromString:[reader value]];
+	return [[ORType typeWithClass:[NSNumber class]] isEqual:type];
 }
 
 #pragma ORSingleValueCnverter Members
 
 - (id)convertFromString:(NSString *)aString
 {
-	return [singleValueConverter convertFromString:aString];
+	long long scannedNumber;
+	[[NSScanner scannerWithString:aString] scanLongLong:&scannedNumber];
+	
+	return [NSNumber  numberWithLongLong:scannedNumber];
 }
 
 - (NSString *)convertToString:(id)value
 {
-	return [singleValueConverter convertToString:value];
+	return [value stringValue];
 }
 
 @end
