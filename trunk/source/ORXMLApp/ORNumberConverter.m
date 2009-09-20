@@ -40,10 +40,9 @@
 
 - (id)convertFromString:(NSString *)aString
 {
-	long long scannedNumber;
-	[[NSScanner scannerWithString:aString] scanLongLong:&scannedNumber];
-	
-	return [NSNumber  numberWithLongLong:scannedNumber];
+	NSNumberFormatter *formatter = [[[NSNumberFormatter alloc] init] autorelease];
+	[formatter setNilSymbol:NSNumberFormatterDecimalStyle];
+	return [formatter numberFromString:aString];
 }
 
 - (NSString *)convertToString:(id)value
