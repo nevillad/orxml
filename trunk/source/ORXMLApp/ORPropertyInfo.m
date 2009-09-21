@@ -20,6 +20,7 @@
 
 #import "ORPropertyInfo.h"
 #import "ORType.h"
+#import "ORTypeDecodingStrategy.h"
 
 @interface ORPropertyInfo ( PrivateExtension )
 
@@ -61,8 +62,9 @@
 
 - (ORType *)propertyType
 {
+	ORTypeDecodingStrategy *strategy = [ORTypeDecodingStrategy strategy];
 	NSString *encodedType = [[[NSString stringWithUTF8String:property_getAttributes(property)] componentsSeparatedByString:@","] objectAtIndex:0];
-	return nil;
+	return [strategy decodeTypeString:encodedType];
 }
 
 - (BOOL)isReadonly

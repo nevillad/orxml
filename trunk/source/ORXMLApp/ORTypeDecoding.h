@@ -17,37 +17,13 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
-
-#import "ORNumberConverter.h"
-
-@implementation ORNumberConverter
-
-#pragma mark Initialization Members
-
-+ (ORNumberConverter *)converter
-{
-	return [[[ORNumberConverter alloc] init] autorelease];
-}
-
-#pragma mark ORConverterMatcher Members
-
-- (BOOL)canConvertType:(ORType *)type
-{
-	return [[ORType typeWithClass:[NSNumber class]] isEqual:type];
-}
-
-#pragma ORSingleValueCnverter Members
-
-- (id)convertFromString:(NSString *)aString
-{
-	NSNumberFormatter *formatter = [[[NSNumberFormatter alloc] init] autorelease];
-	[formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-	return [formatter numberFromString:aString];
-}
-
-- (NSString *)convertToString:(id)value
-{
-	return [value stringValue];
-}
-
-@end
+ 
+ #import <Foundation/Foundation.h>
+ #import "ORType.h"
+ 
+ @protocol ORTypeDecoding <NSObject>
+ 
+ - (BOOL)canDecodeTypeString:(NSString *)encodedType;
+ - (ORType *)decodeTypeString:(NSString *)encodedType;
+ 
+ @end

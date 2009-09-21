@@ -17,37 +17,29 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
+ 
+#import "ORPrimitiveTypeDecoder.h"
+ 
+@implementation ORPrimitiveTypeDecoder
 
-#import "ORNumberConverter.h"
-
-@implementation ORNumberConverter
-
-#pragma mark Initialization Members
-
-+ (ORNumberConverter *)converter
++ (ORPrimitiveTypeDecoder *)decoder
 {
-	return [[[ORNumberConverter alloc] init] autorelease];
+	return [[[ORPrimitiveTypeDecoder alloc] init] autorelease];
 }
 
-#pragma mark ORConverterMatcher Members
-
-- (BOOL)canConvertType:(ORType *)type
+- (BOOL)canDecodeTypeString:(NSString *)encodedType
 {
-	return [[ORType typeWithClass:[NSNumber class]] isEqual:type];
+	// allowed encoded types: char, int, short, long, long long, 
+	// unsigned char, unsigned int, unsigned short, unsigned long, unsigned long long, 
+	// float, double, BOOL.
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES 'T(c|i|s|l|q|C|I|S|L|Q|f|d|B){1}'"];
+	return [predicate evaluateWithObject:encodedType];
 }
 
-#pragma ORSingleValueCnverter Members
-
-- (id)convertFromString:(NSString *)aString
+- (ORType *)decodeTypeString:(NSString *)encodedType
 {
-	NSNumberFormatter *formatter = [[[NSNumberFormatter alloc] init] autorelease];
-	[formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-	return [formatter numberFromString:aString];
+	// return the type of NSNumber, which can wrap all primitive data types.
+	return [ORType typeWithClass:[NSNumber class]];
 }
-
-- (NSString *)convertToString:(id)value
-{
-	return [value stringValue];
-}
-
+ 
 @end
