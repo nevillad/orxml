@@ -18,36 +18,13 @@
  * along with ORXml.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#import "ORNumberConverter.h"
+#import <Foundation/Foundation.h>
+#import "ORTypeDecoding.h"
+ 
+@interface ORPrimitiveTypeDecoder : NSObject <ORTypeDecoding> {
 
-@implementation ORNumberConverter
-
-#pragma mark Initialization Members
-
-+ (ORNumberConverter *)converter
-{
-	return [[[ORNumberConverter alloc] init] autorelease];
 }
 
-#pragma mark ORConverterMatcher Members
-
-- (BOOL)canConvertType:(ORType *)type
-{
-	return [[ORType typeWithClass:[NSNumber class]] isEqual:type];
-}
-
-#pragma ORSingleValueCnverter Members
-
-- (id)convertFromString:(NSString *)aString
-{
-	NSNumberFormatter *formatter = [[[NSNumberFormatter alloc] init] autorelease];
-	[formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-	return [formatter numberFromString:aString];
-}
-
-- (NSString *)convertToString:(id)value
-{
-	return [value stringValue];
-}
++ (ORPrimitiveTypeDecoder *)decoder;
 
 @end
