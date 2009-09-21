@@ -24,7 +24,7 @@
 @implementation ORPropertyInfo
 
 @synthesize declaringType;
-@dynamic name;
+@dynamic name, propertyType, isReadonly;
 
 - (id)initWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type;
 {
@@ -50,6 +50,18 @@
 - (NSString *)name
 {
 	return [NSString stringWithUTF8String:property_getName(property)];
+}
+
+- (ORType *)propertyType
+{
+	NSString *encodedType = [[[NSString stringWithUTF8String:property_getAttributes(property)] componentsSeparatedByString:@","] objectAtIndex:0];
+	return nil;
+}
+
+- (BOOL)isReadonly
+{
+	NSArray *attributes = [[NSString stringWithUTF8String:property_getAttributes(property)] componentsSeparatedByString:@","];
+	return [[attributes filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF == 'R'"]] count] > 0;
 }
 
 @end
