@@ -26,6 +26,9 @@
 	ORType *declaringType;
 }
 
+@property (nonatomic, readonly) ORType *propertyType;
+@property (nonatomic, readonly) BOOL isReadonly;
+
 - (id)initWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type;
 + (ORPropertyInfo *)propertyInfoWithProperty:(objc_property_t)aProperty declaringType:(ORType *)type;
 
