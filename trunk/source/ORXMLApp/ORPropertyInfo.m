@@ -21,6 +21,12 @@
 #import "ORPropertyInfo.h"
 #import "ORType.h"
 
+@interface ORPropertyInfo ( PrivateExtension )
+
+- (BOOL)isEncodedWithDescriptor:(NSString *)aDescriptor;
+
+@end
+
 @implementation ORPropertyInfo
 
 @synthesize declaringType;
@@ -31,6 +37,7 @@
 	if(self = [super init]) {
 		property = aProperty;
 		declaringType = type;
+		[declaringType retain];
 	}
 	
 	return self;
@@ -60,8 +67,13 @@
 
 - (BOOL)isReadonly
 {
+	return [self isEncodedWithDescriptor:@"R"];
+}
+
+- (BOOL)isEncodedWithDescriptor:(NSString *)aDescriptor
+{
 	NSArray *attributes = [[NSString stringWithUTF8String:property_getAttributes(property)] componentsSeparatedByString:@","];
-	return [[attributes filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF == 'R'"]] count] > 0;
+	return [[attributes filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF == %@", aDescriptor]] count] > 0;
 }
 
 @end
